@@ -1,0 +1,693 @@
+{
+  "episodeId": "alb_02",
+  "episodeName": "Die Schlaflose Nacht",
+  "scenes": {
+    "intro": {
+      "id": "intro",
+      "title": "3:33 Uhr",
+      "background": "scary",
+      "text": "{playerName}, wach auf!\n\nDeine Augen reißen auf. 3:33 Uhr. Wieder.\n\nSchon die fünfte Nacht in Folge. Immer zur gleichen Zeit.\n\nDein Zimmer ist eiskalt. Dein Atem bildet Wolken.\n\nDann siehst du es: Im Spiegel. Eine Gestalt. Hinter dir.\n\nAber wenn du dich umdrehst... nichts.\n\nZwei Möglichkeiten:",
+      "choices": [
+        {
+          "id": "investigate_mirror",
+          "text": "Den Spiegel genauer ansehen",
+          "nextScene": "mirror_01"
+        },
+        {
+          "id": "leave_room",
+          "text": "Schnell das Zimmer verlassen",
+          "nextScene": "hall_01"
+        }
+      ]
+    },
+    "mirror_01": {
+      "id": "mirror_01",
+      "title": "Das andere Ich",
+      "background": "scary",
+      "text": "Du starrst in den Spiegel.\n\nDa! Die Gestalt bewegt sich. Langsam.\n\nSie sieht aus wie... du selbst. Aber älter. Viel älter.\n\nDein Spiegelbild lächelt. Du nicht.\n\n\"Endlich siehst du mich\", flüstert es mit deiner Stimme.\n\n\"Ich warte hier schon so lange...\"\n\nEs streckt die Hand aus. Von innen gegen das Glas.",
+      "choices": [
+        {
+          "id": "mirror_01_a",
+          "text": "Die Hand berühren",
+          "nextScene": "mirror_02"
+        },
+        {
+          "id": "mirror_01_b",
+          "text": "Vom Spiegel wegrennen",
+          "nextScene": "mirror_03"
+        }
+      ]
+    },
+    "mirror_02": {
+      "id": "mirror_02",
+      "title": "Der Tausch",
+      "background": "scary",
+      "text": "Deine Finger berühren das kalte Glas.\n\nEin Ruck!\n\nDie Welt dreht sich. Alles verschwimmt.\n\nAls du die Augen öffnest... bist du IM Spiegel.\n\nDu siehst dein Zimmer. Von der anderen Seite.\n\nUnd dort, wo du standest, steht jetzt dein Spiegelbild.\n\nEs winkt dir zu. Grinst.\n\nDann geht es zur Tür.",
+      "choices": [
+        {
+          "id": "mirror_02_a",
+          "text": "Gegen das Glas hämmern",
+          "nextScene": "mirror_04"
+        },
+        {
+          "id": "mirror_02_b",
+          "text": "Nach einem Ausgang suchen",
+          "nextScene": "mirror_05"
+        }
+      ]
+    },
+    "mirror_03": {
+      "id": "mirror_03",
+      "title": "Die Verfolgung",
+      "background": "scary",
+      "text": "Du rennst vom Spiegel weg.\n\nHinter dir: Das Geräusch von brechendem Glas!\n\nEin Schatten gleitet aus dem Spiegel. Auf den Boden.\n\nEr folgt dir. Schnell.\n\n\"Lauf nicht weg\", echot deine eigene Stimme. \"Wir gehören zusammen!\"\n\nDie Zimmertür ist verschlossen.\n\nDas Fenster... zu hoch zum Springen.",
+      "choices": [
+        {
+          "id": "mirror_03_a",
+          "text": "Unter dem Bett verstecken",
+          "nextScene": "mirror_06"
+        },
+        {
+          "id": "mirror_03_b",
+          "text": "Dem Schatten gegenüberstellen",
+          "nextScene": "mirror_07"
+        }
+      ]
+    },
+    "mirror_04": {
+      "id": "mirror_04",
+      "title": "Gefangen",
+      "background": "scary",
+      "text": "Du hämmerst gegen das Glas. Schreist.\n\nNichts passiert. Niemand hört dich.\n\nDie Spiegelwelt ist leer. Kalt. Still.\n\nStunden vergehen. Oder Minuten?\n\nDann siehst du andere. In anderen Spiegeln.\n\nKinder. Erwachsene. Alle hämmern.\n\nAlle schreien lautlos.\n\n\"Willkommen\", flüstert eine Stimme. \"Für immer.\"",
+      "choices": [
+        {
+          "id": "mirror_04_a",
+          "text": "Mit den anderen sprechen",
+          "nextScene": "mirror_08"
+        },
+        {
+          "id": "mirror_04_b",
+          "text": "Weiterkämpfen",
+          "nextScene": "mirror_09"
+        }
+      ]
+    },
+    "mirror_05": {
+      "id": "mirror_05",
+      "title": "Die Spiegelgänge",
+      "background": "scary",
+      "text": "Du drehst dich um.\n\nHinter dem Spiegel: Ein Gang. Unendlich lang.\n\nGefüllt mit Spiegeln. Hunderte. Tausende.\n\nIn jedem ein anderes Leben. Eine andere Version von dir.\n\nEines zeigt dich als Kind. Eines als Greis.\n\nEines... tot.\n\n\"Such den richtigen\", hallt es. \"Oder bleib für immer.\"",
+      "choices": [
+        {
+          "id": "mirror_05_a",
+          "text": "Den Kinderspiegel wählen",
+          "nextScene": "mirror_10"
+        },
+        {
+          "id": "mirror_05_b",
+          "text": "Einfach weitergehen",
+          "nextScene": "mirror_escape"
+        }
+      ]
+    },
+    "mirror_06": {
+      "id": "mirror_06",
+      "title": "Unter dem Bett",
+      "background": "scary",
+      "text": "Du rollst unter das Bett.\n\nDunkelheit umhüllt dich.\n\nDer Schatten gleitet näher. Du siehst ihn.\n\nEr streckt sich unter das Bett.\n\nEiskalte Finger berühren deinen Knöchel.\n\n\"Gefunden!\"\n\nDann... Stille.\n\nAls du erwachst, bist du wieder im Bett.\n\n3:33 Uhr. Aber etwas ist anders.",
+      "choices": [
+        {
+          "id": "mirror_06_a",
+          "text": "In den Spiegel schauen",
+          "nextScene": "mirror_twist"
+        },
+        {
+          "id": "mirror_06_b",
+          "text": "Die Augen geschlossen halten",
+          "nextScene": "mirror_blind"
+        }
+      ]
+    },
+    "mirror_07": {
+      "id": "mirror_07",
+      "title": "Die Wahrheit",
+      "background": "scary",
+      "text": "Du drehst dich um. Stellst dich dem Schatten.\n\n\"Was willst du?\", schreist du.\n\nDer Schatten nimmt Form an. Deine Form.\n\n\"Ich bin du\", sagt er ruhig. \"Deine Angst. Deine Zweifel.\"\n\n\"Jede Nacht um 3:33 Uhr wirst du stärker.\"\n\n\"Und ich schwächer.\"\n\n\"Heute übernehme ich.\"",
+      "choices": [
+        {
+          "id": "mirror_07_a",
+          "text": "\"Niemals!\" kämpfen",
+          "nextScene": "mirror_fight"
+        },
+        {
+          "id": "mirror_07_b",
+          "text": "\"Warum?\" fragen",
+          "nextScene": "mirror_truth"
+        }
+      ]
+    },
+    "mirror_08": {
+      "id": "mirror_08",
+      "title": "Die Gefangenen",
+      "background": "scary",
+      "text": "Du berührst einen anderen Spiegel.\n\nEin Mädchen. Etwa so alt wie du.\n\n\"Wie lange?\", fragst du.\n\n\"Jahre\", sagt sie lautlos. \"Oder Minuten. Zeit existiert hier nicht.\"\n\n\"Es gibt einen Weg\", flüstert ein alter Mann. \"Aber einen Preis.\"\n\n\"Einer muss bleiben. Damit ein anderer gehen kann.\"",
+      "choices": [
+        {
+          "id": "mirror_08_a",
+          "text": "Den Preis akzeptieren",
+          "nextScene": "mirror_sacrifice"
+        },
+        {
+          "id": "mirror_08_b",
+          "text": "Gemeinsam entkommen",
+          "nextScene": "mirror_together"
+        }
+      ]
+    },
+    "mirror_09": {
+      "id": "mirror_09",
+      "title": "Der Riss",
+      "background": "scary",
+      "text": "Du schlägst. Wieder. Und wieder.\n\nDeine Fäuste bluten.\n\nDann... ein Geräusch.\n\nKlirr!\n\nEin winziger Riss im Glas!\n\n\"NEIN!\", schreit eine Stimme.\n\nDas Glas vibriert. Die Spiegelwelt bebt.\n\n\"Wenn du rauskommst... kommen WIR ALLE raus!\"",
+      "choices": [
+        {
+          "id": "mirror_09_a",
+          "text": "Weiterschlagen",
+          "nextScene": "mirror_break"
+        },
+        {
+          "id": "mirror_09_b",
+          "text": "Aufhören",
+          "nextScene": "mirror_stay"
+        }
+      ]
+    },
+    "mirror_10": {
+      "id": "mirror_10",
+      "title": "Die Kindheit",
+      "background": "moonlightforest",
+      "text": "Du berührst den Spiegel mit dir als Kind.\n\nAlles wird hell. Warm.\n\nDu bist wieder klein. In deinem alten Zimmer.\n\nAlles ist friedlich. Keine Schatten.\n\nAber... du erinnerst dich. An alles.\n\nDie Jahre. Die Angst. Die Nacht.\n\n\"Willst du hier bleiben?\", fragt deine Kinderstimme.\n\n\"Oder zurück in die Dunkelheit?\"",
+      "choices": [
+        {
+          "id": "mirror_10_a",
+          "text": "Als Kind bleiben",
+          "nextScene": "mirror_child_ending"
+        },
+        {
+          "id": "mirror_10_b",
+          "text": "Zurück kämpfen",
+          "nextScene": "mirror_return"
+        }
+      ]
+    },
+    "hall_01": {
+      "id": "hall_01",
+      "title": "Der Flur",
+      "background": "scary",
+      "text": "Du reißt die Tür auf. Rennst in den Flur.\n\nDunkelheit. Nur ein schwaches Nachtlicht.\n\nDie Türen zu anderen Zimmern sind geschlossen.\n\nAm Ende des Flurs: Die Treppe. Nach unten.\n\nAber... hörst du das?\n\nSchritte. Langsame Schritte.\n\nVon unten. Nach oben.\n\nSchritt. Schritt. Schritt.",
+      "choices": [
+        {
+          "id": "hall_01_a",
+          "text": "Zu den Eltern rennen",
+          "nextScene": "hall_02"
+        },
+        {
+          "id": "hall_01_b",
+          "text": "Im Schatten warten",
+          "nextScene": "hall_03"
+        }
+      ]
+    },
+    "hall_02": {
+      "id": "hall_02",
+      "title": "Das leere Zimmer",
+      "background": "scary",
+      "text": "Du stürmst zur Tür deiner Eltern.\n\nReißt sie auf.\n\nLeer.\n\nDas Bett ist unberührt. Kalt.\n\nAls ob niemand hier schläft.\n\nAls ob nie jemand hier geschlafen hätte.\n\nAn der Wand: Dein Foto. Allein.\n\nKeine Familie.\n\nDie Schritte sind jetzt oben. Direkt hinter dir.",
+      "choices": [
+        {
+          "id": "hall_02_a",
+          "text": "Dich umdrehen",
+          "nextScene": "hall_04"
+        },
+        {
+          "id": "hall_02_b",
+          "text": "Aus dem Fenster schauen",
+          "nextScene": "hall_05"
+        }
+      ]
+    },
+    "hall_03": {
+      "id": "hall_03",
+      "title": "Die Gestalt",
+      "background": "scary",
+      "text": "Du drückst dich an die Wand.\n\nDie Schritte kommen näher.\n\nEine Gestalt erscheint. Groß. Sehr groß.\n\nIhr Kopf streift fast die Decke.\n\nLange, dünne Arme.\n\nKein Gesicht. Nur Schatten.\n\nSie bleibt stehen.\n\nDreht den Kopf. Zu dir.\n\n\"Gefunden\", flüstert sie ohne Mund.",
+      "choices": [
+        {
+          "id": "hall_03_a",
+          "text": "Wegrennen",
+          "nextScene": "hall_06"
+        },
+        {
+          "id": "hall_03_b",
+          "text": "\"Was bist du?\" fragen",
+          "nextScene": "hall_07"
+        }
+      ]
+    },
+    "hall_04": {
+      "id": "hall_04",
+      "title": "Der Schlafwandler",
+      "background": "scary",
+      "text": "Du drehst dich um.\n\nDa steht... du selbst.\n\nAber deine Augen sind geschlossen.\n\nDu schläfst. Schlafwandelnd.\n\n\"Ich bin noch im Bett\", flüsterst du.\n\n\"Das hier ist der Traum.\"\n\nDein schlafendes Ich bewegt sich.\n\nGeht zur Treppe.\n\n\"Wenn ich falle...\", denkst du, \"wache ich auf?\"\n\n\"Oder sterbe ich?\"",
+      "choices": [
+        {
+          "id": "hall_04_a",
+          "text": "Dich selbst aufwecken",
+          "nextScene": "hall_wake"
+        },
+        {
+          "id": "hall_04_b",
+          "text": "Dem Schlafwandler folgen",
+          "nextScene": "hall_follow"
+        }
+      ]
+    },
+    "hall_05": {
+      "id": "hall_05",
+      "title": "Die falsche Welt",
+      "background": "scary",
+      "text": "Du siehst aus dem Fenster.\n\nDraußen... keine Straße.\n\nKein Garten.\n\nNur Nebel. Endloser, wirbelnder Nebel.\n\nUnd Schatten. Sie tanzen darin.\n\nDann siehst du es:\n\nEin anderes Haus. Im Nebel.\n\nGenau wie deins.\n\nAm Fenster: Ein Kind. Es sieht aus wie du.\n\nEs winkt. Langsam.",
+      "choices": [
+        {
+          "id": "hall_05_a",
+          "text": "Zurückwinken",
+          "nextScene": "hall_other"
+        },
+        {
+          "id": "hall_05_b",
+          "text": "Fenster schließen",
+          "nextScene": "hall_close"
+        }
+      ]
+    },
+    "hall_06": {
+      "id": "hall_06",
+      "title": "Die endlose Treppe",
+      "background": "scary",
+      "text": "Du rennst die Treppe runter.\n\nImmer tiefer. Tiefer.\n\nAber sie endet nicht!\n\n10 Stufen. 20. 100.\n\nDeine Beine schmerzen.\n\nOben hörst du die Gestalt. Sie folgt dir.\n\nSchritt. Schritt. Schritt.\n\nImmer im gleichen Rhythmus.\n\nImmer gleich weit weg.",
+      "choices": [
+        {
+          "id": "hall_06_a",
+          "text": "Weiterrennen",
+          "nextScene": "hall_basement"
+        },
+        {
+          "id": "hall_06_b",
+          "text": "Stehenbleiben und warten",
+          "nextScene": "hall_confront"
+        }
+      ]
+    },
+    "hall_07": {
+      "id": "hall_07",
+      "title": "Der Schlafsammler",
+      "background": "scary",
+      "text": "\"Ich bin der Schlafsammler\", sagt die Gestalt.\n\nIhre Stimme klingt wie tausend Flüstern.\n\n\"Jede Nacht um 3:33 Uhr sammle ich.\"\n\n\"Diejenigen, die nicht schlafen können.\"\n\n\"Die Schlaflosen.\"\n\nSie streckt eine Hand aus.\n\n\"Komm. Ich gebe dir ewigen Schlaf.\"\n\n\"Nie wieder wirst du um 3:33 Uhr aufwachen.\"",
+      "choices": [
+        {
+          "id": "hall_07_a",
+          "text": "Die Hand nehmen",
+          "nextScene": "hall_sleep_ending"
+        },
+        {
+          "id": "hall_07_b",
+          "text": "Ablehnen",
+          "nextScene": "hall_refuse"
+        }
+      ]
+    },
+    "hall_wake": {
+      "id": "hall_wake",
+      "title": "Das Erwachen",
+      "background": "moonlightforest",
+      "text": "Du greifst nach deinem schlafenden Ich.\n\nBerührst die Schulter.\n\n\"Wach auf!\", schreist du.\n\nEin Blitz!\n\nDu öffnest die Augen.\n\nDein Zimmer. Dein Bett.\n\n3:34 Uhr.\n\nEs ist vorbei.\n\nDu hast es geschafft.\n\nAber... am Spiegel.\n\nEin Riss.\n\nUnd eine Nachricht, in den Staub geschrieben:\n\n\"Bis morgen, 3:33 Uhr.\"",
+      "choices": [
+        {
+          "id": "wake_end_a",
+          "text": "Den Spiegel abdecken",
+          "nextScene": "ending_safe"
+        },
+        {
+          "id": "wake_end_b",
+          "text": "Den Riss untersuchen",
+          "nextScene": "ending_curious"
+        }
+      ]
+    },
+    "hall_follow": {
+      "id": "hall_follow",
+      "title": "In die Tiefe",
+      "background": "scary",
+      "text": "Du folgst deinem schlafenden Ich.\n\nDie Treppe runter.\n\nImmer tiefer.\n\nBis zu einer Tür. Du hattest nie eine solche Tür.\n\nDein Schlaf-Ich öffnet sie.\n\nDahinter: Ein Raum.\n\nVoller Uhren. Alle zeigen 3:33 Uhr.\n\nAlle ticken. Synchron.\n\nIn der Mitte: Ein Stuhl.\n\nDarauf sitzt... jemand.\n\nMit deinem Gesicht.\n\nAber viel älter.",
+      "choices": [
+        {
+          "id": "follow_a",
+          "text": "\"Wer bist du?\"",
+          "nextScene": "ending_truth"
+        },
+        {
+          "id": "follow_b",
+          "text": "Schnell zurück",
+          "nextScene": "ending_escape"
+        }
+      ]
+    },
+    "mirror_escape": {
+      "id": "mirror_escape",
+      "title": "Der richtige Spiegel",
+      "background": "moonlightforest",
+      "text": "Du gehst weiter. An hunderten Spiegeln vorbei.\n\nBis... einer leuchtet.\n\nWarm. Einladend.\n\nDu siehst dich. Wie du sein solltest.\n\nFriedlich. Schlafend.\n\nDu berührst das Glas.\n\nEs schmilzt unter deiner Hand.\n\nDu fällst.\n\nFällst.\n\nFällst.\n\nUnd landest... in deinem Bett.\n\n3:34 Uhr.\n\nDu hast es geschafft.",
+      "choices": [
+        {
+          "id": "escape_final",
+          "text": "Weiterschlafen",
+          "nextScene": "ending_free"
+        }
+      ]
+    },
+    "mirror_twist": {
+      "id": "mirror_twist",
+      "title": "Die Verwandlung",
+      "background": "scary",
+      "text": "Du öffnest die Augen. Siehst in den Spiegel.\n\nDa bist du.\n\nAber... anders.\n\nDeine Augen. Viel zu groß.\n\nDeine Finger. Zu lang.\n\nDu versuchst zu schreien.\n\nAber die Stimme... ist nicht deine.\n\nDer Schatten hat gewonnen.\n\nDu BIST der Schatten jetzt.\n\nUnd morgen Nacht...\n\nWirst du jemand anderen besuchen.\n\nUm 3:33 Uhr.",
+      "choices": [
+        {
+          "id": "twist_end",
+          "text": "Akzeptieren",
+          "nextScene": "ending_shadow"
+        }
+      ]
+    },
+    "mirror_blind": {
+      "id": "mirror_blind",
+      "title": "Die Blindheit",
+      "background": "scary",
+      "text": "Du hältst die Augen geschlossen.\n\nFest.\n\n\"Wenn ich nicht hinsehe\", denkst du, \"kann es mich nicht finden.\"\n\nStunden vergehen.\n\nOder sind es Sekunden?\n\nDann... Stille.\n\nTotale Stille.\n\nDu öffnest die Augen.\n\nDunkelheit.\n\nDu bist blind.\n\nDer Preis des Versteckens.",
+      "choices": [
+        {
+          "id": "blind_end",
+          "text": "In der Dunkelheit leben",
+          "nextScene": "ending_blind"
+        }
+      ]
+    },
+    "mirror_fight": {
+      "id": "mirror_fight",
+      "title": "Der Kampf",
+      "background": "scary",
+      "text": "Du stürzt dich auf den Schatten.\n\nEr ist kalt. So kalt.\n\nIhr ringt. Dreht euch.\n\nDeine Kraft schwindet.\n\n\"Gib auf\", flüstert er.\n\nAber dann... erinnerst du dich.\n\nAn alles Gute. Alle Lichtmomente.\n\nDer Schatten schrumpft.\n\nWird kleiner.\n\nBis er... verschwindet.\n\nDu hast gewonnen.",
+      "choices": [
+        {
+          "id": "fight_end",
+          "text": "Aufwachen",
+          "nextScene": "ending_victory"
+        }
+      ]
+    },
+    "mirror_truth": {
+      "id": "mirror_truth",
+      "title": "Die Antwort",
+      "background": "moonlightforest",
+      "text": "\"Warum?\", fragst du.\n\nDer Schatten seufzt.\n\n\"Weil du mich erschaffen hast.\"\n\n\"Jede Angst. Jeder Zweifel. Jede schlaflose Nacht.\"\n\n\"Ich bin dein Produkt.\"\n\n\"Aber...\", er lächelt, \"du kannst mich auch beenden.\"\n\n\"Indem du... aufhörst, Angst zu haben.\"\n\nEr streckt die Hand aus.\n\n\"Freunde?\"",
+      "choices": [
+        {
+          "id": "truth_end_a",
+          "text": "Hand schütteln",
+          "nextScene": "ending_peace"
+        },
+        {
+          "id": "truth_end_b",
+          "text": "Ablehnen",
+          "nextScene": "ending_endless"
+        }
+      ]
+    },
+    "mirror_sacrifice": {
+      "id": "mirror_sacrifice",
+      "title": "Das Opfer",
+      "background": "scary",
+      "text": "\"Ich bleibe\", sagst du.\n\nDie anderen Gefangenen sehen dich an.\n\n\"Bist du sicher?\", fragt das Mädchen.\n\nDu nickst.\n\nEin Licht erscheint. Die Spiegel öffnen sich.\n\nEiner nach dem anderen verschwinden sie.\n\nNur du bleibst.\n\nAllein.\n\nFür immer.\n\nAber... du hast sie gerettet.\n\nDas muss reichen.",
+      "choices": [
+        {
+          "id": "sacrifice_end",
+          "text": "Akzeptieren",
+          "nextScene": "ending_hero"
+        }
+      ]
+    },
+    "mirror_together": {
+      "id": "mirror_together",
+      "title": "Die Rebellion",
+      "background": "moonlightforest",
+      "text": "\"Nein\", sagst du. \"Wir gehen ALLE!\"\n\nDie Gefangenen sehen dich an.\n\n\"Unmöglich\", sagt der alte Mann.\n\n\"Versuchen wir es trotzdem!\"\n\nIhr alle greift nach euren Spiegeln.\n\nGleichzeitig.\n\nDie Spiegelwelt bebt.\n\nBricht.\n\nZersplittert!\n\nEin Blitz aus Licht!\n\nUnd du erwachst.\n\nIn deinem Bett.\n\nNeben dir: Die anderen.\n\nAlle wach.\n\nAlle frei.\n\nIhr habt es geschafft. Zusammen.",
+      "choices": [
+        {
+          "id": "together_end",
+          "text": "Lächeln",
+          "nextScene": "ending_together"
+        }
+      ]
+    },
+    "mirror_break": {
+      "id": "mirror_break",
+      "title": "Der Bruch",
+      "background": "scary",
+      "text": "Du schlägst ein letztes Mal.\n\nKRACH!\n\nDas Glas zerbricht!\n\nDu fällst durch.\n\nLandest in deinem Zimmer.\n\nFrei!\n\nAber... hinter dir.\n\nDurch den zerbrochenen Spiegel.\n\nKommen sie.\n\nAlle Schatten.\n\nAlle Gefangenen.\n\nAlle Monster.\n\nDu hast sie alle freigelassen.\n\nIn die Welt.",
+      "choices": [
+        {
+          "id": "break_end",
+          "text": "Was habe ich getan?",
+          "nextScene": "ending_chaos"
+        }
+      ]
+    },
+    "mirror_stay": {
+      "id": "mirror_stay",
+      "title": "Die Entscheidung",
+      "background": "scary",
+      "text": "Du hörst auf zu schlagen.\n\n\"Gut\", sagt die Stimme.\n\n\"Eine weise Entscheidung.\"\n\nDer Riss verschließt sich.\n\nDie Spiegelwelt beruhigt sich.\n\n\"Du bleibst.\"\n\n\"Aber du hast die Welt gerettet.\"\n\n\"Dafür danken wir dir.\"\n\n\"Für immer.\"",
+      "choices": [
+        {
+          "id": "stay_end",
+          "text": "Nicken",
+          "nextScene": "ending_prisoner"
+        }
+      ]
+    },
+    "mirror_child_ending": {
+      "id": "mirror_child_ending",
+      "title": "Die ewige Kindheit",
+      "background": "moonlightforest",
+      "text": "Du wählst zu bleiben.\n\nAls Kind. Für immer.\n\nKeine Sorgen. Keine Ängste.\n\nJeden Tag spielen.\n\nJede Nacht friedlich schlafen.\n\nNie mehr 3:33 Uhr.\n\nIst das Glück?\n\nOder Gefangenschaft?\n\nDu weißt es nicht.\n\nUnd es ist dir egal.\n\n[ENDE: Die ewige Unschuld]",
+      "choices": []
+    },
+    "mirror_return": {
+      "id": "mirror_return",
+      "title": "Die Rückkehr",
+      "background": "scary",
+      "text": "\"Nein\", sagst du. \"Ich will zurück.\"\n\nDu berührst einen anderen Spiegel.\n\nDie Kindheit verschwindet.\n\nDu bist wieder du.\n\nErwachsen. Stark.\n\nBereit zu kämpfen.\n\nDer Gang der Spiegel endet.\n\nVor dir: Eine Tür.\n\nDarauf steht: \"Ausgang\"\n\nDu öffnest sie.\n\nUnd erwachst.\n\n3:34 Uhr.\n\nDu hast es geschafft.\n\n[ENDE: Der Kämpfer]",
+      "choices": []
+    },
+    "hall_basement": {
+      "id": "hall_basement",
+      "title": "Der Keller",
+      "background": "scary",
+      "text": "Endlich.\n\nDie Treppe endet.\n\nEine Tür. \"KELLER\" steht darauf.\n\nDu reißt sie auf.\n\nDunkelheit.\n\nUnd ein Geruch. Verwesung.\n\nDu tastest nach einem Lichtschalter.\n\nKlick.\n\nLicht.\n\nUnd du schreist.\n\nÜberall... Puppen.\n\nHunderte.\n\nAlle sehen aus wie du.\n\nAlle starren dich an.\n\nDie Tür schlägt hinter dir zu.",
+      "choices": [
+        {
+          "id": "basement_end",
+          "text": "Unter den Puppen",
+          "nextScene": "ending_doll"
+        }
+      ]
+    },
+    "hall_confront": {
+      "id": "hall_confront",
+      "title": "Die Konfrontation",
+      "background": "scary",
+      "text": "Du bleibst stehen.\n\nDrehst dich um.\n\nDie Gestalt kommt näher.\n\nNäher.\n\nBis sie vor dir steht.\n\n\"Warum rennst du nicht?\", fragt sie.\n\n\"Ich bin müde\", sagst du. \"Müde vom Rennen.\"\n\nDie Gestalt neigt den Kopf.\n\n\"Dann...\", sie verschwindet.\n\nUnd du erwachst.\n\n3:34 Uhr.\n\nManchmal muss man aufhören zu rennen.\n\n[ENDE: Der Mut]",
+      "choices": []
+    },
+    "hall_sleep_ending": {
+      "id": "hall_sleep_ending",
+      "title": "Der ewige Schlaf",
+      "background": "scary",
+      "text": "Du nimmst die Hand.\n\nSofort wird alles schwer.\n\nDeine Augenlider.\n\nDeine Glieder.\n\n\"Schlaf\", flüstert der Sammler.\n\nDu sinkst zu Boden.\n\nSchließt die Augen.\n\nUnd schläfst.\n\nFür immer.\n\nKeine Albträume mehr.\n\nAber auch... keine Träume.\n\n[ENDE: Die ewige Ruhe]",
+      "choices": []
+    },
+    "hall_refuse": {
+      "id": "hall_refuse",
+      "title": "Die Ablehnung",
+      "background": "moonlightforest",
+      "text": "\"Nein\", sagst du fest.\n\n\"Ich will nicht ewig schlafen.\"\n\n\"Ich will LEBEN.\"\n\nDer Sammler tritt zurück.\n\n\"Dann...\", er lächelt, \"bist du stärker als die meisten.\"\n\n\"Geh. Du bist frei.\"\n\nEr verschwindet.\n\nUnd du erwachst.\n\n3:34 Uhr.\n\nDu hast gewählt.\n\nZu leben.\n\n[ENDE: Die Freiheit]",
+      "choices": []
+    },
+    "hall_other": {
+      "id": "hall_other",
+      "title": "Das andere Du",
+      "background": "scary",
+      "text": "Du winkst zurück.\n\nDas Kind im anderen Haus lächelt.\n\nDann... öffnet es das Fenster.\n\nSpringt.\n\nFällt.\n\nVerschwindet im Nebel.\n\nUnd taucht wieder auf.\n\nAn DEINEM Fenster.\n\nVon außen.\n\nEs klopft.\n\n\"Lass mich rein\", sagt es mit deiner Stimme.\n\n\"Ich bin du.\"\n\n\"Die bessere Version.\"",
+      "choices": [
+        {
+          "id": "other_end_a",
+          "text": "Fenster öffnen",
+          "nextScene": "ending_replaced"
+        },
+        {
+          "id": "other_end_b",
+          "text": "Fenster verschließen",
+          "nextScene": "ending_safe"
+        }
+      ]
+    },
+    "hall_close": {
+      "id": "hall_close",
+      "title": "Zu spät",
+      "background": "scary",
+      "text": "Du schließt das Fenster.\n\nDrehst dich um.\n\nUnd erstarmst.\n\nDas Kind steht schon im Zimmer.\n\nHinter dir.\n\n\"Zu spät\", flüstert es.\n\n\"Ich bin schon drin.\"\n\nDu fühlst... wie du verschwindest.\n\nWirst durchsichtig.\n\nDas andere Kind wird fester.\n\nRealer.\n\nEs übernimmt.\n\nDein Leben.\n\n[ENDE: Der Austausch]",
+      "choices": []
+    },
+    "ending_safe": {
+      "id": "ending_safe",
+      "title": "Sicher... vorerst",
+      "background": "moonlightforest",
+      "text": "Du deckst den Spiegel ab.\n\nVerschließt das Fenster.\n\nLegst dich zurück ins Bett.\n\n3:35 Uhr.\n\nDu atmest durch.\n\nEs ist vorbei.\n\nFür heute.\n\nAber morgen...\n\nMorgen ist wieder 3:33 Uhr.\n\nUnd du weißt jetzt:\n\nDie Nacht ist nie wirklich vorbei.\n\n[ENDE: Die schlaflose Vorsicht]",
+      "choices": []
+    },
+    "ending_curious": {
+      "id": "ending_curious",
+      "title": "Die Neugier",
+      "background": "scary",
+      "text": "Du berührst den Riss im Spiegel.\n\nEr öffnet sich.\n\nWie ein Auge.\n\nUnd etwas sieht zurück.\n\nDu kannst nicht wegschauen.\n\nBist... fasziniert.\n\nDas Auge wird größer.\n\nDer Riss breitet sich aus.\n\nBis der ganze Spiegel ein Portal ist.\n\nUnd du... gehst hinein.\n\nFreiwillig.\n\n[ENDE: Die verlorene Seele]",
+      "choices": []
+    },
+    "ending_truth": {
+      "id": "ending_truth",
+      "title": "Die Wahrheit enthüllt",
+      "background": "scary",
+      "text": "Das alte Ich antwortet:\n\n\"Ich bin du. In 50 Jahren.\"\n\n\"Jeden Tag um 3:33 Uhr komme ich hierher.\"\n\n\"In diesen Raum. Der außerhalb der Zeit existiert.\"\n\n\"Ich versuche...\", es seufzt, \"mein jüngeres Ich zu warnen.\"\n\n\"Aber du hörst nie zu.\"\n\n\"Und so wirst du... ich.\"\n\n\"Gefangen. Für immer.\"\n\n[ENDE: Der Zeitkreis]",
+      "choices": []
+    },
+    "ending_escape": {
+      "id": "ending_escape",
+      "title": "Die Flucht",
+      "background": "moonlightforest",
+      "text": "Du rennst zurück.\n\nDie Treppe hoch.\n\nDie Tür schlägt zu.\n\nDu landest... im Bett.\n\n3:34 Uhr.\n\nDu hast es gerade noch geschafft.\n\nAber die Frage bleibt:\n\nWer war das?\n\nWer war die Person mit deinem Gesicht?\n\nUnd... wirst du es je erfahren?\n\n[ENDE: Die ungelöste Frage]",
+      "choices": []
+    },
+    "ending_free": {
+      "id": "ending_free",
+      "title": "Endlich frei",
+      "background": "moonlightforest",
+      "text": "Du schläfst weiter.\n\nFriedlich.\n\nTief.\n\nAls du aufwachst: 7:30 Uhr.\n\nDie Sonne scheint.\n\nKein 3:33 Uhr mehr.\n\nKeine Albträume.\n\nDu hast die Spiegelwelt verlassen.\n\nFür immer.\n\nDu bist... frei.\n\n[ENDE: Die Befreiung]",
+      "choices": []
+    },
+    "ending_shadow": {
+      "id": "ending_shadow",
+      "title": "Der neue Schatten",
+      "background": "scary",
+      "text": "Du akzeptierst deine neue Natur.\n\nAb jetzt bist du der Schatten.\n\nJede Nacht um 3:33 Uhr...\n\nSuchst du ein neues Opfer.\n\nJemanden, der nicht schlafen kann.\n\nUnd der Kreislauf beginnt von vorn.\n\nBis jemand anderes...\n\nDich ersetzt.\n\n[ENDE: Die Verwandlung]",
+      "choices": []
+    },
+    "ending_blind": {
+      "id": "ending_blind",
+      "title": "In ewiger Dunkelheit",
+      "background": "scary",
+      "text": "Du lebst weiter.\n\nBlind.\n\nAber seltsamerweise... friedlich.\n\nOhne zu sehen...\n\nKannst du die Schatten nicht fürchten.\n\nKeine Spiegel mehr.\n\nKeine Gestalten.\n\nNur... Dunkelheit.\n\nUnd Stille.\n\nIst das besser?\n\nDu weißt es nicht.\n\n[ENDE: Die blinde Ruhe]",
+      "choices": []
+    },
+    "ending_victory": {
+      "id": "ending_victory",
+      "title": "Der Sieg",
+      "background": "moonlightforest",
+      "text": "Du öffnest die Augen.\n\n7:00 Uhr. Sonnenlicht.\n\nKein Schatten mehr.\n\nKeine Angst.\n\nDu hast gekämpft.\n\nUnd gewonnen.\n\nVon jetzt an...\n\nGehört die Nacht nicht mehr ihnen.\n\nSie gehört dir.\n\n[ENDE: Der Triumph]",
+      "choices": []
+    },
+    "ending_peace": {
+      "id": "ending_peace",
+      "title": "Frieden mit der Angst",
+      "background": "moonlightforest",
+      "text": "Du schüttelst die Hand.\n\nDer Schatten lächelt.\n\nUnd... verschmilzt mit dir.\n\nDu bist eins.\n\nMit deiner Angst.\n\nAber jetzt kontrollierst DU sie.\n\nNicht umgekehrt.\n\nVon nun an...\n\nSchläfst du friedlich.\n\nJede Nacht.\n\n[ENDE: Die Harmonie]",
+      "choices": []
+    },
+    "ending_endless": {
+      "id": "ending_endless",
+      "title": "Der endlose Kampf",
+      "background": "scary",
+      "text": "Du lehnst ab.\n\nDer Schatten seufzt.\n\n\"Dann... bis morgen.\"\n\nEr verschwindet.\n\nDu erwachst.\n\n3:34 Uhr.\n\nAber du weißt:\n\nEr kommt wieder.\n\nMorgen. Und übermorgen.\n\nFür immer.\n\nDer Kampf endet nie.\n\n[ENDE: Die ewige Schlacht]",
+      "choices": []
+    },
+    "ending_hero": {
+      "id": "ending_hero",
+      "title": "Das Opfer des Helden",
+      "background": "scary",
+      "text": "Du sitzt im Spiegel.\n\nAllein.\n\nAber du weißt:\n\nDraußen sind sie frei.\n\nWegen dir.\n\nDas gibt dir... Frieden.\n\nDie Jahre vergehen.\n\nOder Sekunden.\n\nZeit hat keine Bedeutung.\n\nAber dein Opfer...\n\nDas bleibt.\n\n[ENDE: Der stille Held]",
+      "choices": []
+    },
+    "ending_together": {
+      "id": "ending_together",
+      "title": "Gemeinsam stark",
+      "background": "moonlightforest",
+      "text": "Ihr alle wacht auf.\n\nÜberall auf der Welt.\n\nZur gleichen Zeit.\n\nDie Gefangenen der Spiegel.\n\nBefreit.\n\nDurch euren Mut.\n\nVon nun an seid ihr verbunden.\n\nEine geheime Gemeinschaft.\n\nDie weiß, was hinter den Spiegeln lauert.\n\nUnd die dafür sorgt...\n\nDass niemand mehr gefangen wird.\n\n[ENDE: Die Wächter]",
+      "choices": []
+    },
+    "ending_chaos": {
+      "id": "ending_chaos",
+      "title": "Chaos entfesselt",
+      "background": "scary",
+      "text": "Die Schatten strömen in die Welt.\n\nÜberall.\n\nJedes Haus. Jeder Spiegel.\n\nDu hast sie alle befreit.\n\nVon nun an...\n\nGibt es kein sicheres 3:33 Uhr mehr.\n\nFür niemanden.\n\nÜberall auf der Welt...\n\nErwachen Menschen.\n\nZur selben Zeit.\n\nSchreiend.\n\nWas hast du getan?\n\n[ENDE: Die Apokalypse]",
+      "choices": []
+    },
+    "ending_prisoner": {
+      "id": "ending_prisoner",
+      "title": "Der ewige Gefangene",
+      "background": "scary",
+      "text": "Du bleibst.\n\nIm Spiegel.\n\nFür immer.\n\nDie Welt draußen ist sicher.\n\nWegen deiner Entscheidung.\n\nAber du...\n\nWirst nie wieder 3:34 Uhr erleben.\n\nNur... 3:33.\n\nFür immer.\n\nEine Zahl.\n\nEine Zeit.\n\nEin Gefängnis.\n\n[ENDE: Die ewige 3:33]",
+      "choices": []
+    },
+    "ending_doll": {
+      "id": "ending_doll",
+      "title": "Eine Puppe mehr",
+      "background": "scary",
+      "text": "Du versuchst zu schreien.\n\nAber... keine Stimme.\n\nDu versuchst dich zu bewegen.\n\nAber... keine Bewegung.\n\nDu starrst.\n\nWie die anderen Puppen.\n\nUnbeweglich.\n\nBis jemand neues...\n\nDie Treppe runterkommt.\n\nUnd eine Puppe mehr findet.\n\n[ENDE: Die Sammlung]",
+      "choices": []
+    },
+    "ending_replaced": {
+      "id": "ending_replaced",
+      "title": "Ersetzt",
+      "background": "scary",
+      "text": "Du öffnest das Fenster.\n\nDas andere Kind klettert rein.\n\nLächelt.\n\n\"Danke\", sagt es.\n\nUnd du... fühlst dich verschwinden.\n\nImmer blasser.\n\nBis du... nur noch Nebel bist.\n\nDas andere Kind lebt jetzt dein Leben.\n\nUnd du?\n\nDu bist im Nebel.\n\nFür immer.\n\n[ENDE: Der Tausch]",
+      "choices": []
+    }
+  },
+  "inventory": {
+    "dreamcatcher": {
+      "id": "dreamcatcher",
+      "name": "Zerbrochener Traumfänger",
+      "description": "Ein alter Traumfänger. Seine Fäden sind gerissen.",
+      "icon": "bug"
+    },
+    "mirror_shard": {
+      "id": "mirror_shard",
+      "name": "Spiegelscherbe",
+      "description": "Ein Stück vom zerbrochenen Spiegel. Es reflektiert... Dinge, die nicht da sind.",
+      "icon": "prism"
+    },
+    "clock": {
+      "id": "clock",
+      "name": "Stehende Uhr",
+      "description": "Eine Uhr, die bei 3:33 stehen geblieben ist. Für immer.",
+      "icon": "time"
+    }
+  }
+}

@@ -1,30 +1,37 @@
 {
   "expo": {
-    "name": "DreamzExpo",
-    "slug": "DreamzExpo",
+    "name": "Dreamz",
+    "slug": "dreamz-story-app",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
+    "icon": "./assets/dreamzappicon.png",
+    "userInterfaceStyle": "dark",
     "newArchEnabled": true,
     "splash": {
-      "image": "./assets/splash-icon.png",
+      "image": "./assets/dreamzappicon.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#1a1a2e"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.dreamz.storyapp",
+      "icon": "./assets/dreamzappicon.png"
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
+        "foregroundImage": "./assets/dreamzappicon.png",
+        "backgroundColor": "#1a1a2e"
       },
       "edgeToEdgeEnabled": true,
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "package": "com.dreamz.storyapp"
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "packagerOpts": {
+      "port": 8081
+    },
+    "plugins": ["expo-video", "expo-font", "expo-audio"]
   }
 }

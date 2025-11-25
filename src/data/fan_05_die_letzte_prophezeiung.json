@@ -1,0 +1,38 @@
+﻿{
+  "episodeId": "fan_05",
+  "episodeName": "Die letzte Prophezeiung",
+  "scenes": {
+    "intro": {
+      "id": "intro",
+      "title": "Der Anfang",
+      "background": "moonlightforest",
+      "text": "Willkommen, {playerName}!\n\nDies ist der Beginn von 'Die letzte Prophezeiung'...\n\nDeine Geschichte wartet darauf, geschrieben zu werden.",
+      "choices": [
+        {
+          "id": "choice_1",
+          "text": "Geschichte beginnen",
+          "nextScene": "light_01"
+        },
+        {
+          "id": "choice_2",
+          "text": "Noch nicht bereit",
+          "nextScene": "shadow_01"
+        }
+      ]
+    },
+    "light_01": {
+      "id": "light_01",
+      "title": "Erster Schritt",
+      "background": "moonlightforest",
+      "text": "Du hast dich entschieden, {playerName}.\n\nDer Weg liegt vor dir...\n\n(Diese Szene wartet auf ihren Inhalt)",
+      "choices": []
+    },
+    "shadow_01": {
+      "id": "shadow_01",
+      "title": "Der andere Weg",
+      "background": "scary",
+      "text": "Ein ZÃ¶gern, {playerName}?\n\nManchmal ist der dunkle Pfad der interessantere...\n\n(Diese Szene wartet auf ihren Inhalt)",
+      "choices": []
+    }
+  }
+}

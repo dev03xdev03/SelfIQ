@@ -1,0 +1,270 @@
+{
+  "episodeId": "ep1_nightmare",
+  "episodeName": "Lunas Albtraum",
+  "scenes": {
+    "intro": {
+      "id": "intro",
+      "title": "Der erste Schatten",
+      "background": "moonlightforest",
+      "text": "{playerName}, du liegst in deinem Bett. Es ist Nacht.\n\nPlötzlich... bist du nicht mehr in deinem Zimmer.\n\nDu stehst in einem Wald. Mondlicht. Nebel. Flüstern.\n\nVor dir zwei Wege:\n\nEiner schimmert sanft - wie deine Nachtlampe. Der andere ist dunkel - wie unter deinem Bett.\n\nEine Stimme flüstert: \"Welchen Weg wählst du, kleines {playerName}?\"",
+      "choices": [
+        {
+          "id": "follow_light",
+          "text": "Zum hellen Weg gehen",
+          "nextScene": "light_01"
+        },
+        {
+          "id": "follow_shadow",
+          "text": "In die Dunkelheit schauen",
+          "nextScene": "shadow_01"
+        }
+      ]
+    },
+    "light_01": {
+      "id": "light_01",
+      "title": "Die falsche Freundin",
+      "background": "moonlightforest",
+      "text": "Das Licht wird warm. Eine Frau erscheint.\n\n{playerName}, sie sieht aus wie Mama. Aber... ihre Augen sind zu groß.\n\n\"Ich bin Luna\", lächelt sie. \"Komm, ich zeig dir was Schönes!\"\n\nSie nimmt deine Hand. Ihre Finger sind eiskalt.",
+      "choices": [
+        {
+          "id": "light_01_a",
+          "text": "Mit Luna mitgehen",
+          "nextScene": "light_02"
+        },
+        {
+          "id": "light_01_b",
+          "text": "Hand wegziehen",
+          "nextScene": "light_03"
+        }
+      ]
+    },
+    "light_02": {
+      "id": "light_02",
+      "title": "Das Puppenhaus",
+      "background": "scary",
+      "text": "Luna führt dich zu einem riesigen Puppenhaus.\n\n{playerName}, es ist so groß wie ein echtes Haus!\n\nDrinnen sitzen Puppen. Sie... sie bewegen sich.\n\nEine dreht ihren Kopf zu dir. \"Bleib bei uns, {playerName}...\"\n\nLuna lacht. Zu laut.",
+      "choices": [
+        {
+          "id": "light_02_a",
+          "text": "Ins Puppenhaus gehen",
+          "nextScene": "light_04"
+        },
+        {
+          "id": "light_02_b",
+          "text": "Wegrennen!",
+          "nextScene": "light_05"
+        }
+      ]
+    },
+    "light_03": {
+      "id": "light_03",
+      "title": "Lunas wahres Gesicht",
+      "background": "scary",
+      "text": "Du ziehst deine Hand weg.\n\nLuna... verändert sich. Ihr Lächeln wird breiter. Zu breit.\n\n\"Du willst nicht spielen?\", fragt sie. Ihre Stimme klingt jetzt anders.\n\n{playerName}, ihre Zähne sind spitz geworden.\n\n\"Schade...\"",
+      "choices": [
+        {
+          "id": "light_03_a",
+          "text": "Entschuldigen und mitgehen",
+          "nextScene": "light_04"
+        },
+        {
+          "id": "light_03_b",
+          "text": "Schnell wegrennen!",
+          "nextScene": "light_05"
+        }
+      ]
+    },
+    "light_04": {
+      "id": "light_04",
+      "title": "Gefangen im Spiel",
+      "background": "water",
+      "text": "Das Puppenhaus verschluckt dich.\n\nPlötzlich bist DU die Puppe, {playerName}.\n\nLuna spielt mit dir. Bewegt deine Arme. Deine Beine.\n\n\"Jetzt gehörst du mir!\", lacht sie.\n\nAber... warte. Da ist ein Licht. Weit weg.",
+      "choices": [
+        {
+          "id": "light_04_a",
+          "text": "Gegen Lunas Kontrolle kämpfen",
+          "nextScene": "light_06"
+        },
+        {
+          "id": "light_04_b",
+          "text": "Aufgeben und Puppe bleiben",
+          "nextScene": "light_07"
+        }
+      ]
+    },
+    "light_05": {
+      "id": "light_05",
+      "title": "Die endlose Jagd",
+      "background": "blizzard",
+      "text": "Du rennst! Der Wald dreht sich.\n\n{playerName}, Luna ist hinter dir. Aber... sie wird größer!\n\nBäume fallen um. Der Boden bricht.\n\nDu stolperst. Fällst.\n\nTiefe. Dunkelheit.\n\nDann... Stille.",
+      "choices": [
+        {
+          "id": "light_05_a",
+          "text": "Nach einem Ausweg suchen",
+          "nextScene": "light_06"
+        },
+        {
+          "id": "light_05_b",
+          "text": "Augen schließen und aufgeben",
+          "nextScene": "light_07"
+        }
+      ]
+    },
+    "light_06": {
+      "id": "light_06",
+      "title": "Erwachen aus dem Albtraum",
+      "background": "whitelight",
+      "text": "Du kämpfst! Mit aller Kraft!\n\n\"NEIN!\", schreist du.\n\nLuna zerplatzt wie eine Seifenblase.\n\nWeißes Licht.\n\n{playerName}... du öffnest die Augen.\n\nDein Zimmer. Mama sitzt neben dir.\n\n\"Albtraum?\", fragt sie sanft.\n\nDu nickst. Es war nur ein Traum...\n\n[Ende: Befreiung]",
+      "choices": [
+        {
+          "id": "restart",
+          "text": "Neustarten",
+          "nextScene": "intro"
+        }
+      ]
+    },
+    "light_07": {
+      "id": "light_07",
+      "title": "Für immer gefangen",
+      "background": "water",
+      "text": "Du gibst auf.\n\nDie Puppenaugen starren.\n\nLunas Lachen hallt.\n\n{playerName}, du wirst Teil des Puppenhauses. Für immer.\n\nAber dann...\n\nDeine Augen öffnen sich. Im echten Bett.\n\nMama ist da. \"Böser Traum?\"\n\nDu nickst. Aber... warum fühlt es sich so real an?\n\n[Ende: Der Schatten bleibt]",
+      "choices": [
+        {
+          "id": "restart",
+          "text": "Neustarten",
+          "nextScene": "intro"
+        }
+      ]
+    },
+    "shadow_01": {
+      "id": "shadow_01",
+      "title": "Das Ding unter dem Bett",
+      "background": "scary",
+      "text": "Du gehst in die Dunkelheit.\n\n{playerName}, etwas bewegt sich.\n\nEine Hand. Schwarz wie Tinte. Sie kriecht aus dem Schatten.\n\n\"Endlich...\", flüstert es. \"Du bist gekommen.\"\n\nDie Hand greift nach deinem Fuß.",
+      "choices": [
+        {
+          "id": "shadow_01_a",
+          "text": "Stehen bleiben und sprechen",
+          "nextScene": "shadow_02"
+        },
+        {
+          "id": "shadow_01_b",
+          "text": "Wegspringen!",
+          "nextScene": "shadow_03"
+        }
+      ]
+    },
+    "shadow_02": {
+      "id": "shadow_02",
+      "title": "Das Schattenmonster",
+      "background": "scary",
+      "text": "\"Wer... wer bist du?\", fragst du.\n\nDas Ding kriecht hervor. Keine Form. Nur Schatten.\n\n\"Ich bin deine Angst, {playerName}.\"\n\nEs wird größer. Füllt den Wald.\n\n\"Jede Nacht unter deinem Bett. Jetzt bist DU in meiner Welt.\"",
+      "choices": [
+        {
+          "id": "shadow_02_a",
+          "text": "Mit der Angst reden",
+          "nextScene": "shadow_04"
+        },
+        {
+          "id": "shadow_02_b",
+          "text": "Schreien und rennen!",
+          "nextScene": "shadow_05"
+        }
+      ]
+    },
+    "shadow_03": {
+      "id": "shadow_03",
+      "title": "Die Flucht beginnt",
+      "background": "blizzard",
+      "text": "Du springst weg! Rennst!\n\nAber {playerName}... dein Schatten bewegt sich falsch.\n\nEr rennt nicht mit dir. Er rennt ZU dir!\n\nDein eigener Schatten jagt dich.\n\n\"Du kannst nicht entkommen!\", lacht er.",
+      "choices": [
+        {
+          "id": "shadow_03_a",
+          "text": "Weiterrennen!",
+          "nextScene": "shadow_05"
+        },
+        {
+          "id": "shadow_03_b",
+          "text": "Stehen bleiben und kämpfen",
+          "nextScene": "shadow_04"
+        }
+      ]
+    },
+    "shadow_04": {
+      "id": "shadow_04",
+      "title": "Freundschaft mit der Angst",
+      "background": "water",
+      "text": "\"Ich habe keine Angst vor dir!\", sagst du.\n\nDas Schattenmonster... zögert.\n\n\"Wirklich nicht?\", fragt es leise.\n\n{playerName}, es wird kleiner. Weniger gruselig.\n\n\"Niemand... niemand hat je mit mir geredet...\"",
+      "choices": [
+        {
+          "id": "shadow_04_a",
+          "text": "\"Lass uns Freunde sein\"",
+          "nextScene": "shadow_06"
+        },
+        {
+          "id": "shadow_04_b",
+          "text": "\"Verschwinde für immer!\"",
+          "nextScene": "shadow_07"
+        }
+      ]
+    },
+    "shadow_05": {
+      "id": "shadow_05",
+      "title": "Verschlungen von Dunkelheit",
+      "background": "water",
+      "text": "Du rennst und rennst.\n\nAber die Schatten sind überall.\n\nSie umschlingen dich. Kalt. Klebrig.\n\n{playerName}, du sinkst.\n\nTiefer. Tiefer.\n\nBis... Stille.",
+      "choices": [
+        {
+          "id": "shadow_05_a",
+          "text": "Ein letztes Mal kämpfen",
+          "nextScene": "shadow_06"
+        },
+        {
+          "id": "shadow_05_b",
+          "text": "Aufgeben und versinken",
+          "nextScene": "shadow_07"
+        }
+      ]
+    },
+    "shadow_06": {
+      "id": "shadow_06",
+      "title": "Mut besiegt die Angst",
+      "background": "whitelight",
+      "text": "Du schreist: \"ICH BIN STÄRKER!\"\n\nDie Schatten zerreißen.\n\nLicht bricht durch.\n\n{playerName}, du öffnest die Augen.\n\nDein Zimmer. Dein Bett. Mama.\n\n\"Albtraum?\", fragt sie.\n\n\"Ja... aber ich hab gewonnen.\"\n\nDu lächelst. Es war nur ein Traum.\n\n[Ende: Der Mut gewinnt]",
+      "choices": [
+        {
+          "id": "restart",
+          "text": "Neustarten",
+          "nextScene": "intro"
+        }
+      ]
+    },
+    "shadow_07": {
+      "id": "shadow_07",
+      "title": "Eins mit der Dunkelheit",
+      "background": "water",
+      "text": "Die Schatten umarmen dich.\n\nKalt. Aber... ruhig.\n\n{playerName}, du wirst Teil der Dunkelheit.\n\nKeine Angst mehr. Nur Stille.\n\nDann...\n\nEin Piepen. Dein Wecker.\n\nDu bist wach. Mama kommt rein.\n\n\"Böser Traum?\"\n\nDu nickst. Aber unter deinem Bett... bewegt sich etwas.\n\n[Ende: Die Angst bleibt]",
+      "choices": [
+        {
+          "id": "restart",
+          "text": "Neustarten",
+          "nextScene": "intro"
+        }
+      ]
+    }
+  },
+  "inventory": {
+    "maxSlots": 5,
+    "items": []
+  },
+  "playerData": {
+    "name": "",
+    "currentScene": "intro",
+    "visitedScenes": [],
+    "choices": [],
+    "progress": {
+      "completedScenes": [],
+      "lastPlayedDate": null
+    }
+  }
+}
