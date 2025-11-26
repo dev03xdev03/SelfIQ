@@ -1,0 +1,668 @@
+{
+  "tests": [
+    {
+      "testId": "pers_01",
+      "testName": "Klassischer Persönlichkeitstest",
+      "category": "Persönlichkeitstyp",
+      "questions": [
+        {
+          "id": "q1",
+          "question": "Du bist auf einer Party. Wie verhältst du dich?",
+          "answers": [
+            {
+              "id": "a1",
+              "text": "Ich suche aktiv das Gespräch mit vielen neuen Menschen",
+              "score": { "extraversion": 2, "openness": 1 }
+            },
+            {
+              "id": "a2",
+              "text": "Ich unterhalte mich mit wenigen vertrauten Personen",
+              "score": { "extraversion": -1, "agreeableness": 1 }
+            },
+            {
+              "id": "a3",
+              "text": "Ich beobachte lieber und höre zu",
+              "score": { "extraversion": -2, "conscientiousness": 1 }
+            },
+            {
+              "id": "a4",
+              "text": "Ich verlasse die Party früh, Partys sind nicht meins",
+              "score": { "extraversion": -3, "neuroticism": 1 }
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "question": "Wie triffst du wichtige Entscheidungen?",
+          "answers": [
+            {
+              "id": "a1",
+              "text": "Ich analysiere alle Fakten und möglichen Konsequenzen gründlich",
+              "score": { "conscientiousness": 2, "openness": -1 }
+            },
+            {
+              "id": "a2",
+              "text": "Ich folge meinem Bauchgefühl und meiner Intuition",
+              "score": { "openness": 2, "neuroticism": 1 }
+            },
+            {
+              "id": "a3",
+              "text": "Ich hole mir Rat von Freunden und Familie",
+              "score": { "agreeableness": 2, "extraversion": 1 }
+            },
+            {
+              "id": "a4",
+              "text": "Ich lasse andere für mich entscheiden",
+              "score": { "neuroticism": 2, "conscientiousness": -2 }
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "question": "Wie reagierst du auf Kritik?",
+          "answers": [
+            {
+              "id": "a1",
+              "text": "Ich nehme sie konstruktiv an und arbeite an mir",
+              "score": { "conscientiousness": 2, "openness": 1 }
+            },
+            {
+              "id": "a2",
+              "text": "Ich verteidige zunächst meine Position",
+              "score": { "extraversion": 1, "agreeableness": -1 }
+            },
+            {
+              "id": "a3",
+              "text": "Es verletzt mich und ich grüble lange darüber nach",
+              "score": { "neuroticism": 2, "agreeableness": 1 }
+            },
+            {
+              "id": "a4",
+              "text": "Ich ignoriere sie, meine Meinung zählt mehr",
+              "score": { "extraversion": 2, "agreeableness": -2 }
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "question": "Was ist dir in Freundschaften am wichtigsten?",
+          "answers": [
+            {
+              "id": "a1",
+              "text": "Tiefe Gespräche und emotionale Unterstützung",
+              "score": { "agreeableness": 2, "openness": 1 }
+            },
+            {
+              "id": "a2",
+              "text": "Gemeinsame Aktivitäten und Spaß haben",
+              "score": { "extraversion": 2, "openness": 1 }
+            },
+            {
+              "id": "a3",
+              "text": "Verlässlichkeit und gegenseitiges Vertrauen",
+              "score": { "conscientiousness": 2, "agreeableness": 1 }
+            },
+            {
+              "id": "a4",
+              "text": "Dass jeder sein eigenes Leben lebt",
+              "score": { "extraversion": -2, "agreeableness": -1 }
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "question": "Wie gehst du mit Stress um?",
+          "answers": [
+            {
+              "id": "a1",
+              "text": "Ich erstelle einen Plan und arbeite strukturiert daran",
+              "score": { "conscientiousness": 2, "neuroticism": -1 }
+            },
+            {
+              "id": "a2",
+              "text": "Ich suche Ablenkung bei Freunden oder Hobbys",
+              "score": { "extraversion": 2, "agreeableness": 1 }
+            },
+            {
+              "id": "a3",
+              "text": "Ich werde nervös und habe Schwierigkeiten zu schlafen",
+              "score": { "neuroticism": 2, "conscientiousness": -1 }
+            },
+            {
+              "id": "a4",
+              "text": "Ich bleibe ruhig, Stress motiviert mich",
+              "score": { "conscientiousness": 1, "neuroticism": -2 }
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "question": "Welche Arbeitsumgebung bevorzugst du?",
+          "answers": [
+            {
+              "id": "a1",
+              "text": "Ein lebhaftes Großraumbüro mit vielen Kollegen",
+              "score": { "extraversion": 2, "openness": 1 }
+            },
+            {
+              "id": "a2",
+              "text": "Ein ruhiges Einzelbüro, wo ich mich konzentrieren kann",
+              "score": { "extraversion": -2, "conscientiousness": 1 }
+            },
+            {
+              "id": "a3",
+              "text": "Flexible Arbeitsmodelle mit Homeoffice-Option",
+              "score": { "openness": 2, "conscientiousness": 1 }
+            },
+            {
+              "id": "a4",
+              "text": "Ein strukturiertes Umfeld mit klaren Regeln",
+              "score": { "conscientiousness": 2, "openness": -1 }
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "question": "Was treibt dich am meisten an?",
+          "answers": [
+            {
+              "id": "a1",
+              "text": "Anerkennung und Erfolg",
+              "score": { "extraversion": 2, "conscientiousness": 1 }
+            },
+            {
+              "id": "a2",
+              "text": "Anderen Menschen zu helfen",
+              "score": { "agreeableness": 2, "openness": 1 }
+            },
+            {
+              "id": "a3",
+              "text": "Persönliches Wachstum und neue Erfahrungen",
+              "score": { "openness": 2, "conscientiousness": 1 }
+            },
+            {
+              "id": "a4",
+              "text": "Sicherheit und Stabilität",
+              "score": { "conscientiousness": 2, "neuroticism": 1 }
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "question": "Wie planst du deinen Urlaub?",
+          "answers": [
+            {
+              "id": "a1",
+              "text": "Alles ist Wochen vorher durchgeplant",
+              "score": { "conscientiousness": 2, "openness": -1 }
+            },
+            {
+              "id": "a2",
+              "text": "Ich buche spontan und lasse mich treiben",
+              "score": { "openness": 2, "conscientiousness": -1 }
+            },
+            {
+              "id": "a3",
+              "text": "Ich plane grobe Eckpunkte, der Rest ergibt sich",
+              "score": { "openness": 1, "conscientiousness": 1 }
+            },
+            {
+              "id": "a4",
+              "text": "Ich fahre immer zum selben Ort, den ich kenne",
+              "score": { "conscientiousness": 1, "openness": -2 }
+            }
+          ]
+        },
+        {
+          "id": "q9",
+          "question": "Wie gehst du mit Konflikten um?",
+          "answers": [
+            {
+              "id": "a1",
+              "text": "Ich suche sofort das klärende Gespräch",
+              "score": { "extraversion": 2, "agreeableness": 1 }
+            },
+            {
+              "id": "a2",
+              "text": "Ich brauche Zeit um nachzudenken, dann spreche ich",
+              "score": { "conscientiousness": 2, "extraversion": -1 }
+            },
+            {
+              "id": "a3",
+              "text": "Ich versuche Konflikte zu vermeiden",
+              "score": { "agreeableness": 1, "neuroticism": 2 }
+            },
+            {
+              "id": "a4",
+              "text": "Ich konfrontiere direkt und sage klar meine Meinung",
+              "score": { "extraversion": 2, "agreeableness": -2 }
+            }
+          ]
+        },
+        {
+          "id": "q10",
+          "question": "Was beschreibt dein Zimmer am besten?",
+          "answers": [
+            {
+              "id": "a1",
+              "text": "Aufgeräumt und organisiert, alles hat seinen Platz",
+              "score": { "conscientiousness": 2, "neuroticism": -1 }
+            },
+            {
+              "id": "a2",
+              "text": "Kreatives Chaos, ich finde trotzdem alles",
+              "score": { "openness": 2, "conscientiousness": -2 }
+            },
+            {
+              "id": "a3",
+              "text": "Minimalistisch mit wenig Dekoration",
+              "score": { "conscientiousness": 1, "openness": -1 }
+            },
+            {
+              "id": "a4",
+              "text": "Vollgestellt mit persönlichen Erinnerungen",
+              "score": { "agreeableness": 2, "openness": 1 }
+            }
+          ]
+        },
+        {
+          "id": "q11",
+          "question": "Wie verhältst du dich bei Gruppenarbeiten?",
+          "answers": [
+            {
+              "id": "a1",
+              "text": "Ich übernehme die Führung und koordiniere",
+              "score": { "extraversion": 2, "conscientiousness": 2 }
+            },
+            {
+              "id": "a2",
+              "text": "Ich bringe kreative Ideen ein",
+              "score": { "openness": 2, "extraversion": 1 }
+            },
+            {
+              "id": "a3",
+              "text": "Ich arbeite zuverlässig im Hintergrund",
+              "score": { "conscientiousness": 2, "extraversion": -1 }
+            },
+            {
+              "id": "a4",
+              "text": "Ich arbeite lieber alleine als in Gruppen",
+              "score": { "extraversion": -2, "agreeableness": -1 }
+            }
+          ]
+        },
+        {
+          "id": "q12",
+          "question": "Was machst du am liebsten am Wochenende?",
+          "answers": [
+            {
+              "id": "a1",
+              "text": "Ich treffe Freunde und unternehme etwas",
+              "score": { "extraversion": 2, "agreeableness": 1 }
+            },
+            {
+              "id": "a2",
+              "text": "Ich bleibe zu Hause und entspanne",
+              "score": { "extraversion": -2, "conscientiousness": -1 }
+            },
+            {
+              "id": "a3",
+              "text": "Ich nutze die Zeit produktiv für Projekte",
+              "score": { "conscientiousness": 2, "openness": 1 }
+            },
+            {
+              "id": "a4",
+              "text": "Ich probiere neue Aktivitäten und Hobbys aus",
+              "score": { "openness": 2, "extraversion": 1 }
+            }
+          ]
+        },
+        {
+          "id": "q13",
+          "question": "Wie reagierst du auf Veränderungen?",
+          "answers": [
+            {
+              "id": "a1",
+              "text": "Ich freue mich auf neue Möglichkeiten",
+              "score": { "openness": 2, "neuroticism": -1 }
+            },
+            {
+              "id": "a2",
+              "text": "Ich brauche Zeit um mich anzupassen",
+              "score": { "conscientiousness": 1, "neuroticism": 1 }
+            },
+            {
+              "id": "a3",
+              "text": "Veränderungen machen mir Angst",
+              "score": { "neuroticism": 2, "openness": -2 }
+            },
+            {
+              "id": "a4",
+              "text": "Ich bevorzuge Routinen und Stabilität",
+              "score": { "conscientiousness": 2, "openness": -1 }
+            }
+          ]
+        },
+        {
+          "id": "q14",
+          "question": "Was ist deine größte Stärke?",
+          "answers": [
+            {
+              "id": "a1",
+              "text": "Meine Kommunikationsfähigkeit",
+              "score": { "extraversion": 2, "agreeableness": 1 }
+            },
+            {
+              "id": "a2",
+              "text": "Meine Zuverlässigkeit und Genauigkeit",
+              "score": { "conscientiousness": 2, "agreeableness": 1 }
+            },
+            {
+              "id": "a3",
+              "text": "Meine Kreativität und Offenheit",
+              "score": { "openness": 2, "extraversion": 1 }
+            },
+            {
+              "id": "a4",
+              "text": "Meine Empathie und Fürsorge",
+              "score": { "agreeableness": 2, "openness": 1 }
+            }
+          ]
+        },
+        {
+          "id": "q15",
+          "question": "Wie würden deine Freunde dich beschreiben?",
+          "answers": [
+            {
+              "id": "a1",
+              "text": "Als lebhaft und kontaktfreudig",
+              "score": { "extraversion": 2, "openness": 1 }
+            },
+            {
+              "id": "a2",
+              "text": "Als ruhig und nachdenklich",
+              "score": { "extraversion": -2, "conscientiousness": 1 }
+            },
+            {
+              "id": "a3",
+              "text": "Als hilfsbereit und verständnisvoll",
+              "score": { "agreeableness": 2, "openness": 1 }
+            },
+            {
+              "id": "a4",
+              "text": "Als organisiert und zielstrebig",
+              "score": { "conscientiousness": 2, "extraversion": 1 }
+            }
+          ]
+        },
+        {
+          "id": "q16",
+          "question": "Was beschreibt deinen Kommunikationsstil?",
+          "answers": [
+            {
+              "id": "a1",
+              "text": "Direkt und ohne Umschweife",
+              "score": { "extraversion": 2, "agreeableness": -1 }
+            },
+            {
+              "id": "a2",
+              "text": "Diplomatisch und rücksichtsvoll",
+              "score": { "agreeableness": 2, "conscientiousness": 1 }
+            },
+            {
+              "id": "a3",
+              "text": "Enthusiastisch und expressiv",
+              "score": { "extraversion": 2, "openness": 1 }
+            },
+            {
+              "id": "a4",
+              "text": "Zurückhaltend, ich höre mehr zu als zu reden",
+              "score": { "extraversion": -2, "agreeableness": 1 }
+            }
+          ]
+        },
+        {
+          "id": "q17",
+          "question": "Wie gehst du mit Misserfolgen um?",
+          "answers": [
+            {
+              "id": "a1",
+              "text": "Ich analysiere was schief lief und lerne daraus",
+              "score": { "conscientiousness": 2, "openness": 1 }
+            },
+            {
+              "id": "a2",
+              "text": "Ich bin lange niedergeschlagen",
+              "score": { "neuroticism": 2, "conscientiousness": -1 }
+            },
+            {
+              "id": "a3",
+              "text": "Ich probiere sofort einen neuen Ansatz",
+              "score": { "openness": 2, "conscientiousness": 1 }
+            },
+            {
+              "id": "a4",
+              "text": "Ich suche Trost bei Freunden und Familie",
+              "score": { "agreeableness": 2, "extraversion": 1 }
+            }
+          ]
+        },
+        {
+          "id": "q18",
+          "question": "Was ist dir bei einem Partner am wichtigsten?",
+          "answers": [
+            {
+              "id": "a1",
+              "text": "Emotionale Tiefe und Verständnis",
+              "score": { "agreeableness": 2, "openness": 1 }
+            },
+            {
+              "id": "a2",
+              "text": "Gemeinsame Interessen und Spaß",
+              "score": { "extraversion": 2, "openness": 1 }
+            },
+            {
+              "id": "a3",
+              "text": "Zuverlässigkeit und Treue",
+              "score": { "conscientiousness": 2, "agreeableness": 1 }
+            },
+            {
+              "id": "a4",
+              "text": "Intellektuelle Stimulation",
+              "score": { "openness": 2, "conscientiousness": 1 }
+            }
+          ]
+        },
+        {
+          "id": "q19",
+          "question": "Wie triffst du neue Leute?",
+          "answers": [
+            {
+              "id": "a1",
+              "text": "Ich gehe aktiv auf sie zu und stelle mich vor",
+              "score": { "extraversion": 2, "openness": 1 }
+            },
+            {
+              "id": "a2",
+              "text": "Ich warte bis andere auf mich zukommen",
+              "score": { "extraversion": -2, "agreeableness": 1 }
+            },
+            {
+              "id": "a3",
+              "text": "Über gemeinsame Freunde oder Aktivitäten",
+              "score": { "agreeableness": 2, "conscientiousness": 1 }
+            },
+            {
+              "id": "a4",
+              "text": "Ich bin generell nicht interessiert an neuen Bekanntschaften",
+              "score": { "extraversion": -2, "openness": -1 }
+            }
+          ]
+        },
+        {
+          "id": "q20",
+          "question": "Was ist deine Einstellung zu Risiken?",
+          "answers": [
+            {
+              "id": "a1",
+              "text": "Ich liebe Abenteuer und neue Herausforderungen",
+              "score": { "openness": 2, "neuroticism": -1 }
+            },
+            {
+              "id": "a2",
+              "text": "Ich wäge Risiken sorgfältig ab",
+              "score": { "conscientiousness": 2, "neuroticism": 1 }
+            },
+            {
+              "id": "a3",
+              "text": "Ich vermeide Risiken wo möglich",
+              "score": { "neuroticism": 2, "openness": -2 }
+            },
+            {
+              "id": "a4",
+              "text": "Ich gehe kalkulierte Risiken ein",
+              "score": { "conscientiousness": 1, "openness": 1 }
+            }
+          ]
+        },
+        {
+          "id": "q21",
+          "question": "Wie verbringst du einen perfekten Abend?",
+          "answers": [
+            {
+              "id": "a1",
+              "text": "Mit Freunden ausgehen und feiern",
+              "score": { "extraversion": 2, "openness": 1 }
+            },
+            {
+              "id": "a2",
+              "text": "Mit einem guten Buch oder Film zu Hause",
+              "score": { "extraversion": -2, "openness": 1 }
+            },
+            {
+              "id": "a3",
+              "text": "An einem kreativen Projekt arbeiten",
+              "score": { "openness": 2, "conscientiousness": 1 }
+            },
+            {
+              "id": "a4",
+              "text": "Tiefe Gespräche mit engen Freunden",
+              "score": { "agreeableness": 2, "openness": 1 }
+            }
+          ]
+        },
+        {
+          "id": "q22",
+          "question": "Wie organisierst du deine Aufgaben?",
+          "answers": [
+            {
+              "id": "a1",
+              "text": "Mit detaillierten To-Do-Listen und Zeitplänen",
+              "score": { "conscientiousness": 2, "neuroticism": 1 }
+            },
+            {
+              "id": "a2",
+              "text": "Ich erledige sie nach Gefühl und Priorität",
+              "score": { "openness": 1, "conscientiousness": -1 }
+            },
+            {
+              "id": "a3",
+              "text": "Ich arbeite in spontanen Schüben",
+              "score": { "openness": 2, "conscientiousness": -2 }
+            },
+            {
+              "id": "a4",
+              "text": "Ich prokrastiniere oft bis zur letzten Minute",
+              "score": { "conscientiousness": -2, "neuroticism": 1 }
+            }
+          ]
+        },
+        {
+          "id": "q23",
+          "question": "Was ist deine Reaktion auf Ungerechtigk?",
+          "answers": [
+            {
+              "id": "a1",
+              "text": "Ich setze mich lautstark für Gerechtigkeit ein",
+              "score": { "extraversion": 2, "agreeableness": 1 }
+            },
+            {
+              "id": "a2",
+              "text": "Ich arbeite im Hintergrund an Lösungen",
+              "score": { "conscientiousness": 2, "extraversion": -1 }
+            },
+            {
+              "id": "a3",
+              "text": "Es macht mich emotional betroffen",
+              "score": { "neuroticism": 2, "agreeableness": 2 }
+            },
+            {
+              "id": "a4",
+              "text": "Ich akzeptiere dass nicht alles gerecht ist",
+              "score": { "conscientiousness": 1, "neuroticism": -1 }
+            }
+          ]
+        },
+        {
+          "id": "q24",
+          "question": "Wie lernst du am besten?",
+          "answers": [
+            {
+              "id": "a1",
+              "text": "Durch Diskussionen und Austausch mit anderen",
+              "score": { "extraversion": 2, "agreeableness": 1 }
+            },
+            {
+              "id": "a2",
+              "text": "Durch selbstständiges Lesen und Recherchieren",
+              "score": { "conscientiousness": 2, "extraversion": -1 }
+            },
+            {
+              "id": "a3",
+              "text": "Durch praktisches Ausprobieren",
+              "score": { "openness": 2, "conscientiousness": 1 }
+            },
+            {
+              "id": "a4",
+              "text": "Durch strukturierte Anleitungen und Wiederholung",
+              "score": { "conscientiousness": 2, "openness": -1 }
+            }
+          ]
+        },
+        {
+          "id": "q25",
+          "question": "Was beschreibt deine Lebensphilosophie?",
+          "answers": [
+            {
+              "id": "a1",
+              "text": "Lebe im Moment und genieße das Leben",
+              "score": { "openness": 2, "extraversion": 1 }
+            },
+            {
+              "id": "a2",
+              "text": "Plane voraus und arbeite auf Ziele hin",
+              "score": { "conscientiousness": 2, "openness": -1 }
+            },
+            {
+              "id": "a3",
+              "text": "Sei gut zu anderen und hilf wo du kannst",
+              "score": { "agreeableness": 2, "openness": 1 }
+            },
+            {
+              "id": "a4",
+              "text": "Bleib vorsichtig und vermeide Fehler",
+              "score": { "neuroticism": 2, "conscientiousness": 1 }
+            }
+          ]
+        }
+      ],
+      "scoringCategories": [
+        "extraversion",
+        "agreeableness",
+        "conscientiousness",
+        "neuroticism",
+        "openness"
+      ]
+    }
+  ]
+}

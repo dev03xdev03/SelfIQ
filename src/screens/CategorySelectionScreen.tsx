@@ -1,4 +1,10 @@
-import React, { useState, useEffect, useMemo, useCallback } from 'react';
+import React, {
+  useState,
+  useEffect,
+  useMemo,
+  useCallback,
+  useRef,
+} from 'react';
 import {
   View,
   Text,
@@ -8,6 +14,7 @@ import {
   StatusBar,
   Animated,
   ScrollView,
+  FlatList,
 } from 'react-native';
 import { VideoView, useVideoPlayer } from 'expo-video';
 import { LinearGradient } from 'expo-linear-gradient';
@@ -19,20 +26,20 @@ import { loadAllProgress, EpisodeProgress } from '../utils/progressStorage';
 const { width, height } = Dimensions.get('window');
 
 export type StoryCategory =
-  | 'Albtraum'
-  | 'Mystery'
-  | 'Fantasy'
-  | 'Horror'
-  | 'Thriller'
-  | 'Romance'
-  | 'Sci-Fi'
-  | 'Adventure'
-  | 'Dark Fantasy'
-  | 'Psycho'
-  | 'Comedy'
-  | 'Drama'
-  | 'Crime'
-  | 'Supernatural';
+  | 'Persönlichkeitstyp'
+  | 'Emotionale Intelligenz'
+  | 'Führungsqualitäten'
+  | 'Stressresistenz'
+  | 'Kommunikationsstil'
+  | 'Beziehungspersönlichkeit'
+  | 'Berufungsfinder'
+  | 'Kreativitätsindex'
+  | 'Dark Triad'
+  | 'Growth vs Fixed Mindset'
+  | 'Soziale Kompetenz'
+  | 'Entscheidungsmacher'
+  | 'Konfliktlösung'
+  | 'Intuitions-Score';
 
 interface StoryOption {
   id: string;
@@ -71,6 +78,9 @@ const CategorySelectionScreen: React.FC<CategorySelectionScreenProps> = ({
   const scaleAnims = React.useRef(
     Array.from({ length: 14 }, () => new Animated.Value(1)),
   ).current;
+
+  // Refs for auto-scroll animations
+  const scrollAnims = useRef<Animated.Value[]>([]).current;
 
   useEffect(() => {
     const loadData = async () => {
@@ -214,169 +224,218 @@ const CategorySelectionScreen: React.FC<CategorySelectionScreenProps> = ({
   const stories: StoryOption[] = useMemo(
     () => [
       {
-        id: 'alb_01',
-        storyId: 'alb_01',
-        name: 'Die Nacht ohne Ende',
+        id: 'pers_01',
+        storyId: 'pers_01',
+        name: 'Persönlichkeitstyp',
         description:
-          'Wenn die Dunkelheit lebendig wird und es kein Erwachen gibt...',
-        icon: 'moon',
+          'Entdecke deinen einzigartigen Charakter - Intro/Extro, Denker/Fühler',
+        icon: 'person',
         gradientColors: ['#4a0e4e', '#8e2de2'],
-        totalPhases: 30,
+        totalPhases: 25,
         isLocked: false,
-        ageRating: 12,
+        ageRating: 0,
       },
       {
-        id: 'mys_01',
-        storyId: 'mys_01',
-        name: 'Das Echo der Verschwundenen',
-        description: 'Sie verschwinden spurlos, doch ihre Stimmen bleiben...',
-        icon: 'key',
-        gradientColors: ['#1a2a6c', '#b21f1f'],
-        totalPhases: 30,
-        isLocked: false,
-        ageRating: 12,
-      },
-      {
-        id: 'fan_01',
-        storyId: 'fan_01',
-        name: 'Chroniken des Verlorenen Reichs',
-        description: 'Wenn das letzte Kapitel die Welt auslöschen könnte...',
-        icon: 'sparkles',
-        gradientColors: ['#134e5e', '#71b280'],
-        totalPhases: 30,
-        isLocked: false,
-        ageRating: 6,
-      },
-      {
-        id: 'hor_01',
-        storyId: 'hor_01',
-        name: 'Raum 237: Niemals Verlassen',
-        description: 'Wer eintritt, gehört dem Haus. Für immer...',
-        icon: 'skull',
-        gradientColors: ['#2c1e31', '#8b0000'],
-        totalPhases: 30,
-        isLocked: true,
-        ageRating: 16,
-      },
-      {
-        id: 'thr_01',
-        storyId: 'thr_01',
-        name: '72 Stunden bis Mitternacht',
-        description:
-          'Die Uhr tickt. Jede Entscheidung zählt. Jeder Fehler tötet...',
-        icon: 'flash',
-        gradientColors: ['#141e30', '#ff6b6b'],
-        totalPhases: 30,
-        isLocked: true,
-        ageRating: 16,
-      },
-      {
-        id: 'rom_01',
-        storyId: 'rom_01',
-        name: 'Zwischen Herzschlag und Ewigkeit',
-        description:
-          'Eine Liebe, die die Zeit überwindet. Ein Preis, der alles kostet...',
+        id: 'eq_01',
+        storyId: 'eq_01',
+        name: 'Emotionale Intelligenz',
+        description: 'Wie gut verstehst du deine und fremde Emotionen?',
         icon: 'heart',
-        gradientColors: ['#ff6b9d', '#c44569'],
-        totalPhases: 30,
-        isLocked: true,
-        ageRating: 12,
+        gradientColors: ['#1a2a6c', '#b21f1f'],
+        totalPhases: 20,
+        isLocked: false,
+        ageRating: 0,
       },
       {
-        id: 'sci_01',
-        storyId: 'sci_01',
-        name: 'Omega Protokoll: Signal Null',
-        description: 'Die Menschheit ist tot. Du bist die letzte KI. Was nun?',
-        icon: 'planet',
-        gradientColors: ['#0f2027', '#2c5364'],
-        totalPhases: 30,
-        isLocked: true,
-        ageRating: 12,
+        id: 'lead_01',
+        storyId: 'lead_01',
+        name: 'Führungsqualitäten',
+        description: 'Bist du geboren, um zu führen oder zu folgen?',
+        icon: 'trophy',
+        gradientColors: ['#134e5e', '#71b280'],
+        totalPhases: 18,
+        isLocked: false,
+        ageRating: 0,
       },
       {
-        id: 'adv_01',
-        storyId: 'adv_01',
-        name: 'Das Vermächtnis der Sieben Meere',
-        description:
-          'Ein Schatz, der Könige zu Sklaven macht. Eine Karte aus Blut...',
-        icon: 'compass',
-        gradientColors: ['#f46b45', '#eea849'],
-        totalPhases: 30,
-        isLocked: true,
-        ageRating: 6,
-      },
-      {
-        id: 'daf_01',
-        storyId: 'daf_01',
-        name: 'Thron der zerbrochenen Seelen',
-        description: 'Um zu herrschen, musst du deine Menschlichkeit opfern...',
+        id: 'stress_01',
+        storyId: 'stress_01',
+        name: 'Stressresistenz',
+        description: 'Wie gehst du mit Druck und schwierigen Situationen um?',
         icon: 'flame',
-        gradientColors: ['#3a1c71', '#d76d77'],
-        totalPhases: 30,
-        isLocked: true,
-        ageRating: 16,
-      },
-      {
-        id: 'psy_01',
-        storyId: 'psy_01',
-        name: 'Ich bin du bist wir',
-        description: 'Wenn deine Gedanken nicht mehr dir gehören...',
-        icon: 'eye',
-        gradientColors: ['#000000', '#434343'],
-        totalPhases: 30,
-        isLocked: true,
-        ageRating: 16,
-      },
-      {
-        id: 'com_01',
-        storyId: 'com_01',
-        name: 'Murphy hatte Recht',
-        description:
-          'Alles was schiefgehen kann, wird schiefgehen. Heute. Gleichzeitig...',
-        icon: 'happy',
-        gradientColors: ['#f093fb', '#f5576c'],
-        totalPhases: 30,
+        gradientColors: ['#2c1e31', '#8b0000'],
+        totalPhases: 15,
         isLocked: true,
         ageRating: 0,
       },
       {
-        id: 'dra_01',
-        storyId: 'dra_01',
-        name: 'Die letzten Worte an dich',
-        description:
-          'Ein Brief. Eine Wahrheit. Ein Leben, das nie mehr dasselbe sein wird...',
-        icon: 'water',
-        gradientColors: ['#4b6cb7', '#182848'],
-        totalPhases: 30,
+        id: 'comm_01',
+        storyId: 'comm_01',
+        name: 'Kommunikationsstil',
+        description: 'Direkt oder diplomatisch? Finde deinen Kommunikationstyp',
+        icon: 'chatbubbles',
+        gradientColors: ['#141e30', '#ff6b6b'],
+        totalPhases: 16,
         isLocked: true,
-        ageRating: 12,
+        ageRating: 0,
       },
       {
-        id: 'cri_01',
-        storyId: 'cri_01',
-        name: 'Akte Blutmond: Ungelöst',
-        description: 'Drei Morde. Ein Muster. Du bist der nächste...',
-        icon: 'finger-print',
-        gradientColors: ['#2c3e50', '#fd746c'],
-        totalPhases: 30,
+        id: 'love_01',
+        storyId: 'love_01',
+        name: 'Beziehungspersönlichkeit',
+        description:
+          'Welcher Beziehungstyp bist du? Romantiker, Realist oder Pragmatiker?',
+        icon: 'heart-circle',
+        gradientColors: ['#ff6b9d', '#c44569'],
+        totalPhases: 22,
+        isLocked: true,
+        ageRating: 0,
+      },
+      {
+        id: 'career_01',
+        storyId: 'career_01',
+        name: 'Berufungsfinder',
+        description:
+          'Welcher Karriereweg passt wirklich zu deiner Persönlichkeit?',
+        icon: 'briefcase',
+        gradientColors: ['#0f2027', '#2c5364'],
+        totalPhases: 24,
+        isLocked: true,
+        ageRating: 0,
+      },
+      {
+        id: 'creative_01',
+        storyId: 'creative_01',
+        name: 'Kreativitätsindex',
+        description:
+          'Analytisch oder künstlerisch? Teste dein kreatives Potential',
+        icon: 'color-palette',
+        gradientColors: ['#f46b45', '#eea849'],
+        totalPhases: 19,
+        isLocked: true,
+        ageRating: 0,
+      },
+      {
+        id: 'dark_01',
+        storyId: 'dark_01',
+        name: 'Dark Triad',
+        description:
+          'Wie ausgeprägt sind deine dunklen Persönlichkeitsaspekte?',
+        icon: 'moon',
+        gradientColors: ['#3a1c71', '#d76d77'],
+        totalPhases: 21,
         isLocked: true,
         ageRating: 16,
       },
       {
-        id: 'sup_01',
-        storyId: 'sup_01',
-        name: 'Berührt von der Anderen Seite',
+        id: 'mindset_01',
+        storyId: 'mindset_01',
+        name: 'Growth vs Fixed Mindset',
+        description: 'Glaubst du an Wachstum oder bleibst du in Mustern?',
+        icon: 'trending-up',
+        gradientColors: ['#000000', '#434343'],
+        totalPhases: 17,
+        isLocked: true,
+        ageRating: 0,
+      },
+      {
+        id: 'social_01',
+        storyId: 'social_01',
+        name: 'Soziale Kompetenz',
         description:
-          'Deine Gabe ist kein Geschenk. Es ist ein Fluch, der dich verfolgt...',
-        icon: 'prism',
+          'Networking-Profi oder Einzelgänger? Teste deine sozialen Fähigkeiten',
+        icon: 'people',
+        gradientColors: ['#f093fb', '#f5576c'],
+        totalPhases: 20,
+        isLocked: true,
+        ageRating: 0,
+      },
+      {
+        id: 'decision_01',
+        storyId: 'decision_01',
+        name: 'Entscheidungsmacher',
+        description:
+          'Rational oder impulsiv? Analysiere deinen Entscheidungsprozess',
+        icon: 'git-branch',
+        gradientColors: ['#4b6cb7', '#182848'],
+        totalPhases: 18,
+        isLocked: true,
+        ageRating: 0,
+      },
+      {
+        id: 'conflict_01',
+        storyId: 'conflict_01',
+        name: 'Konfliktlösung',
+        description: 'Kämpfer, Vermittler oder Flüchter? Dein Konflikttyp',
+        icon: 'shield',
+        gradientColors: ['#2c3e50', '#fd746c'],
+        totalPhases: 16,
+        isLocked: true,
+        ageRating: 0,
+      },
+      {
+        id: 'intuition_01',
+        storyId: 'intuition_01',
+        name: 'Intuitions-Score',
+        description: 'Wie stark verlässt du dich auf dein Bauchgefühl?',
+        icon: 'eye',
         gradientColors: ['#5f2c82', '#49a09d'],
-        totalPhases: 30,
+        totalPhases: 15,
         isLocked: true,
         ageRating: 0,
       },
     ],
     [],
   );
+
+  // Gruppiere Stories in Reihen mit je 5 Cards
+  const storyRows = useMemo(() => {
+    const rows: StoryOption[][] = [];
+    for (let i = 0; i < stories.length; i += 5) {
+      rows.push(stories.slice(i, i + 5));
+    }
+    return rows;
+  }, [stories]);
+
+  // Initialize scroll animations for each row
+  useEffect(() => {
+    storyRows.forEach((_, index) => {
+      if (!scrollAnims[index]) {
+        scrollAnims[index] = new Animated.Value(0);
+      }
+    });
+  }, [storyRows]);
+
+  // Auto-scroll animation für jede Reihe
+  useEffect(() => {
+    const animations = storyRows.map((row, rowIndex) => {
+      const scrollAnim = scrollAnims[rowIndex] || new Animated.Value(0);
+      const cardWidth = width * 0.8 + 15; // Card width + gap
+      const totalWidth = row.length * cardWidth;
+      const isEven = rowIndex % 2 === 0;
+
+      return Animated.loop(
+        Animated.sequence([
+          Animated.timing(scrollAnim, {
+            toValue: isEven ? -totalWidth : totalWidth,
+            duration: 40000,
+            useNativeDriver: true,
+          }),
+          Animated.timing(scrollAnim, {
+            toValue: 0,
+            duration: 0,
+            useNativeDriver: true,
+          }),
+        ]),
+      );
+    });
+
+    animations.forEach((anim) => anim.start());
+
+    return () => {
+      animations.forEach((anim) => anim.stop());
+    };
+  }, [storyRows, scrollAnims]);
 
   const handleStoryPress = useCallback(
     (story: StoryOption, index: number) => {
@@ -427,7 +486,7 @@ const CategorySelectionScreen: React.FC<CategorySelectionScreenProps> = ({
           </TouchableOpacity>
           <View style={styles.headerTextContainer}>
             <Text style={styles.greeting}>Hallo {playerName}!</Text>
-            <Text style={styles.subtitle}>Wähle deine Geschichte</Text>
+            <Text style={styles.subtitle}>Wähle einen Test</Text>
           </View>
         </View>
 
@@ -458,38 +517,37 @@ const CategorySelectionScreen: React.FC<CategorySelectionScreenProps> = ({
                     selectedStory === story.id && styles.selectedCard,
                   ]}
                 >
-                  {/* Video Background - Only for unlocked stories */}
-                  {!story.isLocked && (
-                    <>
-                      <View style={styles.videoContainer}>
-                        <VideoView
-                          player={
-                            story.id === 'alb_01' && nightVideoPlayer
-                              ? nightVideoPlayer
-                              : story.id === 'mys_01' && echoVideoPlayer
-                              ? echoVideoPlayer
-                              : story.id === 'fan_01' && lostKingdomVideoPlayer
-                              ? lostKingdomVideoPlayer
-                              : nightVideoPlayer || videoPlayer
-                          }
-                          style={styles.videoBackground}
-                          nativeControls={false}
-                        />
-                      </View>
-                      <View style={styles.videoDarkOverlay} />
-                    </>
-                  )}
+                  {/* Video Background - Only for unlocked tests */}
+                  {!story.isLocked &&
+                    (story.id === 'pers_01' ||
+                      story.id === 'eq_01' ||
+                      story.id === 'lead_01') && (
+                      <>
+                        <View style={styles.videoContainer}>
+                          <VideoView
+                            player={
+                              story.id === 'pers_01' && nightVideoPlayer
+                                ? nightVideoPlayer
+                                : story.id === 'eq_01' && echoVideoPlayer
+                                ? echoVideoPlayer
+                                : story.id === 'lead_01' &&
+                                  lostKingdomVideoPlayer
+                                ? lostKingdomVideoPlayer
+                                : videoPlayer
+                            }
+                            style={styles.videoBackground}
+                            nativeControls={false}
+                          />
+                        </View>
+                        <View style={styles.videoDarkOverlay} />
+                      </>
+                    )}
 
-                  {/* FSK Badge - Top Left */}
-                  <View
-                    style={[
-                      styles.fskBadge,
-                      story.ageRating === 6 && styles.fskBadge6,
-                      story.ageRating === 12 && styles.fskBadge12,
-                      story.ageRating >= 16 && styles.fskBadge16Plus,
-                    ]}
-                  >
-                    <Text style={styles.fskText}>FSK {story.ageRating}</Text>
+                  {/* Dauer Badge - Top Left */}
+                  <View style={styles.fskBadge}>
+                    <Text style={styles.fskText}>
+                      ~{Math.round(story.totalPhases * 1.5)} Min
+                    </Text>
                   </View>
 
                   {/* Content Row */}
@@ -528,9 +586,9 @@ const CategorySelectionScreen: React.FC<CategorySelectionScreenProps> = ({
                           end={{ x: 1, y: 1 }}
                           style={styles.storyCountBadge}
                         >
-                          <Ionicons name="layers" size={14} color="#fff" />
+                          <Ionicons name="help-circle" size={14} color="#fff" />
                           <Text style={styles.storyCountText}>
-                            {story.totalPhases}
+                            {story.totalPhases} Fragen
                           </Text>
                         </LinearGradient>
                       )}
@@ -538,17 +596,11 @@ const CategorySelectionScreen: React.FC<CategorySelectionScreenProps> = ({
                   </View>
                   {/* Progress Bar & Percentage - Bottom Right Corner */}
                   <View style={styles.progressBottomContainer}>
-                    {/* Bald verfügbar Badge - links neben Progress */}
+                    {/* Premium Badge - links neben Progress */}
                     {story.isLocked && (
                       <View style={styles.comingSoonBadgeBottom}>
-                        <Ionicons
-                          name="lock-closed"
-                          size={12}
-                          color="#FFD700"
-                        />
-                        <Text style={styles.comingSoonTextBottom}>
-                          Bald verfügbar
-                        </Text>
+                        <Ionicons name="star" size={12} color="#FFD700" />
+                        <Text style={styles.comingSoonTextBottom}>Premium</Text>
                       </View>
                     )}
 

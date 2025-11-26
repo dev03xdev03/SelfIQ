@@ -76,223 +76,223 @@ const EpisodeSelectionScreen: React.FC<EpisodeSelectionScreenProps> = ({
     },
   );
 
-  // Episoden-Daten: 1 Story pro Kategorie mit 30 Phasen
+  // Test-Varianten: Verschiedene Versionen pro Testkategorie
   const episodes: Episode[] = [
-    // ALBTRAUM
+    // Persönlichkeitstyp
     {
-      id: 'alb_01',
-      name: 'Lunas Albtraum',
+      id: 'pers_01',
+      name: 'Klassischer Persönlichkeitstest',
       description:
-        'Ein kleines MÃ¤dchen erwacht in einem geheimnisvollen Wald...',
+        'Der umfassende Test für deinen Charaktertyp nach Myers-Briggs',
       isFree: true,
-      isCompleted: progressData['alb_01']?.progress === 100,
-      progress: progressData['alb_01']?.progress || 0,
-      category: 'Albtraum',
+      isCompleted: progressData['pers_01']?.progress === 100,
+      progress: progressData['pers_01']?.progress || 0,
+      category: 'Persönlichkeitstyp',
       gradientColors: ['#4a0e4e', '#8e2de2'],
-      icon: 'moon',
-      totalSubEpisodes: 30,
-      unlockedSubEpisodes: 30,
+      icon: 'person',
+      totalSubEpisodes: 25,
+      unlockedSubEpisodes: 25,
     },
 
-    // MYSTERY
+    // Emotionale Intelligenz
     {
-      id: 'mys_01',
-      name: 'Die vergessene TÃ¼r',
-      description: 'Hinter verschlossenen TÃ¼ren lauern Geheimnisse...',
+      id: 'eq_01',
+      name: 'EQ-Test Standard',
+      description: 'Messe deine emotionale Intelligenz in 5 Bereichen',
       isFree: true,
-      isCompleted: progressData['mys_01']?.progress === 100,
-      progress: progressData['mys_01']?.progress || 0,
-      category: 'Mystery',
+      isCompleted: progressData['eq_01']?.progress === 100,
+      progress: progressData['eq_01']?.progress || 0,
+      category: 'Emotionale Intelligenz',
       gradientColors: ['#1a2a6c', '#b21f1f'],
-      icon: 'key',
-      totalSubEpisodes: 30,
-      unlockedSubEpisodes: 30,
-    },
-
-    // FANTASY
-    {
-      id: 'fan_01',
-      name: 'Die vergessene Magie',
-      description: 'Vergessene Zauber erwachen...',
-      isFree: true,
-      isCompleted: progressData['fan_01']?.progress === 100,
-      progress: progressData['fan_01']?.progress || 0,
-      category: 'Fantasy',
-      gradientColors: ['#134e5e', '#71b280'],
-      icon: 'sparkles',
-      totalSubEpisodes: 30,
-      unlockedSubEpisodes: 30,
-    },
-
-    // HORROR
-    {
-      id: 'hor_01',
-      name: 'Die Geistervilla',
-      description: 'Ein altes Haus mit dunklen Geheimnissen...',
-      isFree: false,
-      isCompleted: progressData['hor_01']?.progress === 100,
-      progress: progressData['hor_01']?.progress || 0,
-      category: 'Horror',
-      gradientColors: ['#2c1e31', '#8b0000'],
-      icon: 'skull',
-      totalSubEpisodes: 30,
-      unlockedSubEpisodes: 30,
-    },
-
-    // THRILLER
-    {
-      id: 'thr_01',
-      name: 'Die Verfolgung',
-      description: 'Spannung bis zum letzten Moment...',
-      isFree: false,
-      isCompleted: progressData['thr_01']?.progress === 100,
-      progress: progressData['thr_01']?.progress || 0,
-      category: 'Thriller',
-      gradientColors: ['#141e30', '#ff6b6b'],
-      icon: 'flash',
-      totalSubEpisodes: 30,
-      unlockedSubEpisodes: 30,
-    },
-
-    // ROMANCE
-    {
-      id: 'rom_01',
-      name: 'Erste Liebe',
-      description: 'Wenn Herzen sich finden...',
-      isFree: false,
-      isCompleted: progressData['rom_01']?.progress === 100,
-      progress: progressData['rom_01']?.progress || 0,
-      category: 'Romance',
-      gradientColors: ['#ff6b9d', '#c44569'],
       icon: 'heart',
-      totalSubEpisodes: 30,
-      unlockedSubEpisodes: 30,
+      totalSubEpisodes: 20,
+      unlockedSubEpisodes: 20,
     },
 
-    // SCI-FI
+    // Führungsqualitäten
     {
-      id: 'sci_01',
-      name: 'Die Station',
-      description: 'Allein im Weltraum...',
-      isFree: false,
-      isCompleted: progressData['sci_01']?.progress === 100,
-      progress: progressData['sci_01']?.progress || 0,
-      category: 'Sci-Fi',
-      gradientColors: ['#0f2027', '#2c5364'],
-      icon: 'planet',
-      totalSubEpisodes: 30,
-      unlockedSubEpisodes: 30,
+      id: 'lead_01',
+      name: 'Leadership-Analyse',
+      description: 'Ermittle deinen Führungsstil und Führungspotenzial',
+      isFree: true,
+      isCompleted: progressData['lead_01']?.progress === 100,
+      progress: progressData['lead_01']?.progress || 0,
+      category: 'Führungsqualitäten',
+      gradientColors: ['#134e5e', '#71b280'],
+      icon: 'trophy',
+      totalSubEpisodes: 18,
+      unlockedSubEpisodes: 18,
     },
 
-    // ADVENTURE
+    // Stressresistenz
     {
-      id: 'adv_01',
-      name: 'Die Schatzinsel',
-      description: 'Auf der Suche nach dem verlorenen Schatz...',
+      id: 'stress_01',
+      name: 'Stress-Belastungstest',
+      description: 'Wie gut hältst du extremem Druck stand?',
       isFree: false,
-      isCompleted: progressData['adv_01']?.progress === 100,
-      progress: progressData['adv_01']?.progress || 0,
-      category: 'Adventure',
-      gradientColors: ['#f46b45', '#eea849'],
-      icon: 'compass',
-      totalSubEpisodes: 30,
-      unlockedSubEpisodes: 30,
-    },
-
-    // DARK FANTASY
-    {
-      id: 'daf_01',
-      name: 'Der dunkle KÃ¶nig',
-      description: 'In einer Welt voller Schatten...',
-      isFree: false,
-      isCompleted: progressData['daf_01']?.progress === 100,
-      progress: progressData['daf_01']?.progress || 0,
-      category: 'Dark Fantasy',
-      gradientColors: ['#3a1c71', '#d76d77'],
+      isCompleted: progressData['stress_01']?.progress === 100,
+      progress: progressData['stress_01']?.progress || 0,
+      category: 'Stressresistenz',
+      gradientColors: ['#2c1e31', '#8b0000'],
       icon: 'flame',
-      totalSubEpisodes: 30,
-      unlockedSubEpisodes: 30,
+      totalSubEpisodes: 15,
+      unlockedSubEpisodes: 15,
     },
 
-    // PSYCHO
+    // Kommunikationsstil
     {
-      id: 'psy_01',
-      name: 'Stimmen im Kopf',
-      description: 'RealitÃ¤t oder Wahnsinn?',
+      id: 'comm_01',
+      name: 'Kommunikationsanalyse',
+      description: 'Entdecke deinen primären Kommunikationstyp',
       isFree: false,
-      isCompleted: progressData['psy_01']?.progress === 100,
-      progress: progressData['psy_01']?.progress || 0,
-      category: 'Psycho',
+      isCompleted: progressData['comm_01']?.progress === 100,
+      progress: progressData['comm_01']?.progress || 0,
+      category: 'Kommunikationsstil',
+      gradientColors: ['#141e30', '#ff6b6b'],
+      icon: 'chatbubbles',
+      totalSubEpisodes: 16,
+      unlockedSubEpisodes: 16,
+    },
+
+    // Beziehungspersönlichkeit
+    {
+      id: 'love_01',
+      name: 'Beziehungstest Komplett',
+      description: 'Deine Liebe, dein Stil, deine Erwartungen',
+      isFree: false,
+      isCompleted: progressData['love_01']?.progress === 100,
+      progress: progressData['love_01']?.progress || 0,
+      category: 'Beziehungspersönlichkeit',
+      gradientColors: ['#ff6b9d', '#c44569'],
+      icon: 'heart-circle',
+      totalSubEpisodes: 22,
+      unlockedSubEpisodes: 22,
+    },
+
+    // Berufungsfinder
+    {
+      id: 'career_01',
+      name: 'Karriere-Match-Test',
+      description: 'Welcher Beruf passt wirklich zu dir?',
+      isFree: false,
+      isCompleted: progressData['career_01']?.progress === 100,
+      progress: progressData['career_01']?.progress || 0,
+      category: 'Berufungsfinder',
+      gradientColors: ['#0f2027', '#2c5364'],
+      icon: 'briefcase',
+      totalSubEpisodes: 24,
+      unlockedSubEpisodes: 24,
+    },
+
+    // Kreativitätsindex
+    {
+      id: 'creative_01',
+      name: 'Kreativitäts-Profil',
+      description: 'Links- oder Rechtshirn-Dominanz?',
+      isFree: false,
+      isCompleted: progressData['creative_01']?.progress === 100,
+      progress: progressData['creative_01']?.progress || 0,
+      category: 'Kreativitätsindex',
+      gradientColors: ['#f46b45', '#eea849'],
+      icon: 'color-palette',
+      totalSubEpisodes: 19,
+      unlockedSubEpisodes: 19,
+    },
+
+    // Dark Triad
+    {
+      id: 'dark_01',
+      name: 'Dark Triad Assessment',
+      description: 'Narzissmus, Machiavellismus, Psychopathie',
+      isFree: false,
+      isCompleted: progressData['dark_01']?.progress === 100,
+      progress: progressData['dark_01']?.progress || 0,
+      category: 'Dark Triad',
+      gradientColors: ['#3a1c71', '#d76d77'],
+      icon: 'moon',
+      totalSubEpisodes: 21,
+      unlockedSubEpisodes: 21,
+    },
+
+    // Growth vs Fixed Mindset
+    {
+      id: 'mindset_01',
+      name: 'Mindset-Analyse',
+      description: 'Wachstumsdenken vs. Fixe Denkweise',
+      isFree: false,
+      isCompleted: progressData['mindset_01']?.progress === 100,
+      progress: progressData['mindset_01']?.progress || 0,
+      category: 'Growth vs Fixed Mindset',
       gradientColors: ['#000000', '#434343'],
-      icon: 'eye',
-      totalSubEpisodes: 30,
-      unlockedSubEpisodes: 30,
+      icon: 'trending-up',
+      totalSubEpisodes: 17,
+      unlockedSubEpisodes: 17,
     },
 
-    // COMEDY
+    // Soziale Kompetenz
     {
-      id: 'com_01',
-      name: 'Chaos im Alltag',
-      description: 'Wenn alles schief geht...',
+      id: 'social_01',
+      name: 'Sozialkompetenz-Check',
+      description: 'Deine Fähigkeiten im Umgang mit Menschen',
       isFree: false,
-      isCompleted: progressData['com_01']?.progress === 100,
-      progress: progressData['com_01']?.progress || 0,
-      category: 'Comedy',
+      isCompleted: progressData['social_01']?.progress === 100,
+      progress: progressData['social_01']?.progress || 0,
+      category: 'Soziale Kompetenz',
       gradientColors: ['#f093fb', '#f5576c'],
-      icon: 'happy',
-      totalSubEpisodes: 30,
-      unlockedSubEpisodes: 30,
+      icon: 'people',
+      totalSubEpisodes: 20,
+      unlockedSubEpisodes: 20,
     },
 
-    // DRAMA
+    // Entscheidungsmacher
     {
-      id: 'dra_01',
-      name: 'Abschied',
-      description: 'Emotionale Tiefe und schwere Entscheidungen...',
+      id: 'decision_01',
+      name: 'Entscheidungs-Profil',
+      description: 'Wie du Entscheidungen triffst und warum',
       isFree: false,
-      isCompleted: progressData['dra_01']?.progress === 100,
-      progress: progressData['dra_01']?.progress || 0,
-      category: 'Drama',
+      isCompleted: progressData['decision_01']?.progress === 100,
+      progress: progressData['decision_01']?.progress || 0,
+      category: 'Entscheidungsmacher',
       gradientColors: ['#4b6cb7', '#182848'],
-      icon: 'water',
-      totalSubEpisodes: 30,
-      unlockedSubEpisodes: 30,
+      icon: 'git-branch',
+      totalSubEpisodes: 18,
+      unlockedSubEpisodes: 18,
     },
 
-    // CRIME
+    // Konfliktlösung
     {
-      id: 'cri_01',
-      name: 'Der Fall',
-      description: 'Ein Verbrechen, das gelÃ¶st werden muss...',
+      id: 'conflict_01',
+      name: 'Konflikt-Strategie-Test',
+      description: 'Dein Verhalten in Konfliktsituationen',
       isFree: false,
-      isCompleted: progressData['cri_01']?.progress === 100,
-      progress: progressData['cri_01']?.progress || 0,
-      category: 'Crime',
+      isCompleted: progressData['conflict_01']?.progress === 100,
+      progress: progressData['conflict_01']?.progress || 0,
+      category: 'Konfliktlösung',
       gradientColors: ['#2c3e50', '#fd746c'],
-      icon: 'finger-print',
-      totalSubEpisodes: 30,
-      unlockedSubEpisodes: 30,
+      icon: 'shield',
+      totalSubEpisodes: 16,
+      unlockedSubEpisodes: 16,
     },
 
-    // SUPERNATURAL
+    // Intuitions-Score
     {
-      id: 'sup_01',
-      name: 'Die Gabe',
-      description: 'ÃœbernatÃ¼rliche KrÃ¤fte erwachen...',
+      id: 'intuition_01',
+      name: 'Intuitions-Test',
+      description: 'Wie stark ist dein Bauchgefühl wirklich?',
       isFree: false,
-      isCompleted: progressData['sup_01']?.progress === 100,
-      progress: progressData['sup_01']?.progress || 0,
-      category: 'Supernatural',
+      isCompleted: progressData['intuition_01']?.progress === 100,
+      progress: progressData['intuition_01']?.progress || 0,
+      category: 'Intuitions-Score',
       gradientColors: ['#5f2c82', '#49a09d'],
-      icon: 'prism',
-      totalSubEpisodes: 30,
-      unlockedSubEpisodes: 30,
+      icon: 'eye',
+      totalSubEpisodes: 15,
+      unlockedSubEpisodes: 15,
     },
   ];
 
   // Filter episodes by selected category
   const filteredEpisodes = episodes.filter((ep) => {
-    // Filter by story category first
+    // Filter by test category first
     if (ep.category !== selectedCategory) return false;
 
     // Then apply free/premium filter
@@ -321,10 +321,8 @@ const EpisodeSelectionScreen: React.FC<EpisodeSelectionScreenProps> = ({
             <Ionicons name="arrow-back" size={28} color="#fff" />
           </TouchableOpacity>
           <View style={styles.headerTextContainer}>
-            <Text style={styles.welcomeText}>
-              Kategorie: {selectedCategory}
-            </Text>
-            <Text style={styles.subText}>WÃ¤hle dein Abenteuer</Text>
+            <Text style={styles.welcomeText}>{selectedCategory}</Text>
+            <Text style={styles.subText}>Wähle eine Test-Variante</Text>
           </View>
         </View>
 
@@ -385,7 +383,7 @@ const EpisodeSelectionScreen: React.FC<EpisodeSelectionScreenProps> = ({
                   filterMode !== 'gratis' && styles.categoryTextInactive,
                 ]}
               >
-                FÃ¼r Neugierige
+                Kostenlos
               </Text>
             </LinearGradient>
           </TouchableOpacity>
@@ -405,7 +403,7 @@ const EpisodeSelectionScreen: React.FC<EpisodeSelectionScreenProps> = ({
               style={styles.categoryBadge}
             >
               <Ionicons
-                name="lock-closed"
+                name="star"
                 size={14}
                 color={filterMode === 'premium' ? '#FFD700' : '#888'}
               />
@@ -415,7 +413,7 @@ const EpisodeSelectionScreen: React.FC<EpisodeSelectionScreenProps> = ({
                   filterMode !== 'premium' && styles.categoryTextInactive,
                 ]}
               >
-                Nur fÃ¼r Leseratten
+                Premium
               </Text>
             </LinearGradient>
           </TouchableOpacity>
@@ -464,7 +462,7 @@ const EpisodeSelectionScreen: React.FC<EpisodeSelectionScreenProps> = ({
                     <Ionicons name={episode.icon} size={20} color="#FFFFFF" />
                   </View>
 
-                  {/* Zeige "Bald verfügbar" Badge rechts, wenn nicht frei */}
+                  {/* Zeige "Premium" Badge rechts, wenn nicht frei */}
                   {!episode.isFree ? (
                     <View
                       style={[
@@ -474,10 +472,8 @@ const EpisodeSelectionScreen: React.FC<EpisodeSelectionScreenProps> = ({
                         },
                       ]}
                     >
-                      <Ionicons name="lock-closed" size={12} color="#FFD700" />
-                      <Text style={styles.comingSoonTextTop}>
-                        Bald verfügbar
-                      </Text>
+                      <Ionicons name="star" size={12} color="#FFD700" />
+                      <Text style={styles.comingSoonTextTop}>Premium</Text>
                     </View>
                   ) : (
                     <View
@@ -498,9 +494,9 @@ const EpisodeSelectionScreen: React.FC<EpisodeSelectionScreenProps> = ({
                 {/* Episode Header */}
                 <View style={styles.episodeHeader}>
                   <View style={styles.episodeTitleRow}>
-                    <Text style={styles.episodeNumber}>Story {index + 1}</Text>
+                    <Text style={styles.episodeNumber}>Test #{index + 1}</Text>
                     {!episode.isFree && (
-                      <Ionicons name="lock-closed" size={16} color="#FFD700" />
+                      <Ionicons name="star" size={16} color="#FFD700" />
                     )}
                   </View>
                   <Text
@@ -536,9 +532,9 @@ const EpisodeSelectionScreen: React.FC<EpisodeSelectionScreenProps> = ({
                         },
                       ]}
                     >
-                      <Ionicons name="layers" size={14} color="#FFFFFF" />
+                      <Ionicons name="help-circle" size={14} color="#FFFFFF" />
                       <Text style={styles.subEpisodeText}>
-                        {episode.totalSubEpisodes} Phasen
+                        {episode.totalSubEpisodes} Fragen
                       </Text>
                     </View>
                   </View>
@@ -564,23 +560,27 @@ const EpisodeSelectionScreen: React.FC<EpisodeSelectionScreenProps> = ({
                   </View>
                 )}
 
-                {/* Bald verfügbar Badge (bei gesperrten Episodes) */}
+                {/* Premium Badge (bei gesperrten Tests) */}
                 {!episode.isFree && episode.progress === 0 && (
                   <View style={styles.comingSoonBadge}>
-                    <Ionicons name="lock-closed" size={16} color="#FFD700" />
-                    <Text style={styles.comingSoonText}>Bald verfügbar</Text>
+                    <Ionicons name="star" size={16} color="#FFD700" />
+                    <Text style={styles.comingSoonText}>
+                      Premium freischalten
+                    </Text>
                   </View>
                 )}
 
-                {/* Play Button */}
+                {/* Start Button */}
                 <View style={styles.playButtonContainer}>
                   <Ionicons
-                    name={episode.progress > 0 ? 'play-circle' : 'play-circle'}
+                    name={
+                      episode.progress > 0 ? 'checkmark-circle' : 'play-circle'
+                    }
                     size={32}
                     color="#5de0e6"
                   />
                   <Text style={styles.playButtonText}>
-                    {episode.progress > 0 ? 'Fortsetzen' : 'Starten'}
+                    {episode.progress > 0 ? 'Fortsetzen' : 'Test starten'}
                   </Text>
                 </View>
               </LinearGradient>

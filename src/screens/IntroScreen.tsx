@@ -328,10 +328,10 @@ const IntroScreen: React.FC<IntroScreenProps> = ({ onStart }) => {
           ]}
         >
           <Typewriter typing={1} style={styles.welcomeText}>
-            Bist du bereit?
+            Bereit für Selbsterkenntnis?
           </Typewriter>
           <Typewriter typing={1} style={styles.subText}>
-            Deine Reise durch mystische Welten beginnt hier
+            Deine Persönlichkeit wartet darauf, entdeckt zu werden
           </Typewriter>
         </Animated.View>
 
@@ -356,7 +356,7 @@ const IntroScreen: React.FC<IntroScreenProps> = ({ onStart }) => {
           <View style={styles.inputWrapper}>
             <TextInput
               style={styles.input}
-              placeholder="Gib deinen Namen ein..."
+              placeholder="Dein Name für authentische Ergebnisse..."
               placeholderTextColor="rgba(255, 255, 255, 0.4)"
               value={playerName}
               onChangeText={setPlayerName}
@@ -428,9 +428,7 @@ const IntroScreen: React.FC<IntroScreenProps> = ({ onStart }) => {
                         <View style={styles.spinnerCircle} />
                       </Animated.View>
                     )}
-                    <Text style={styles.startButtonText}>
-                      Beginne deine Reise
-                    </Text>
+                    <Text style={styles.startButtonText}>Tests starten</Text>
                   </View>
                 </LinearGradient>
               </TouchableOpacity>
@@ -447,13 +445,13 @@ const IntroScreen: React.FC<IntroScreenProps> = ({ onStart }) => {
             ]}
           >
             <Ionicons
-              name="headset"
-              size={20}
+              name="bulb"
+              size={16}
               color="#5de0e6"
               style={styles.headphonesIcon}
             />
             <Text style={styles.headphonesText}>
-              Kopfhörer empfohlen für das volle Erlebnis
+              Tipp: Sei ehrlich für präzise Ergebnisse
             </Text>
           </Animated.View>
         </Animated.View>

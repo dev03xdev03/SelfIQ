@@ -4,7 +4,8 @@ import { createStackNavigator } from '@react-navigation/stack';
 import IntroScreen from '../screens/IntroScreen';
 import CategorySelectionScreen from '../screens/CategorySelectionScreen';
 import EpisodeSelectionScreen from '../screens/EpisodeSelectionScreen';
-import StoryScreen from '../screens/StoryScreen';
+import TestScreen from '../screens/TestScreen';
+import ResultScreen from '../screens/ResultScreen';
 import PreorderScreen from '../screens/PreorderScreen';
 import type { StoryCategory } from '../screens/CategorySelectionScreen';
 
@@ -14,7 +15,8 @@ type NavigationState =
   | 'intro'
   | 'categories'
   | 'episodes'
-  | 'story'
+  | 'test'
+  | 'results'
   | 'preorder';
 
 interface AppNavigatorProps {
@@ -28,8 +30,9 @@ const AppNavigator = ({ isLoggedIn, userName }: AppNavigatorProps) => {
   );
   const [playerName, setPlayerName] = useState<string>(userName || '');
   const [selectedCategory, setSelectedCategory] =
-    useState<StoryCategory>('Albtraum');
-  const [selectedEpisodeId, setSelectedEpisodeId] = useState<string>('');
+    useState<StoryCategory>('Persönlichkeitstyp');
+  const [selectedTestId, setSelectedTestId] = useState<string>('');
+  const [testResults, setTestResults] = useState<any>(null);
   const [preorderStoryId, setPreorderStoryId] = useState<string>('');
   const [preorderStoryName, setPreorderStoryName] = useState<string>('');
   const [preorderGradientColors, setPreorderGradientColors] = useState<
@@ -58,42 +61,51 @@ const AppNavigator = ({ isLoggedIn, userName }: AppNavigatorProps) => {
 
   const handleCategorySelect = (category: StoryCategory) => {
     setSelectedCategory(category);
-    // Direkt zur Story springen - Episode-ID basierend auf Kategorie
-    const episodeId =
-      category === 'Albtraum'
-        ? 'alb_01'
-        : category === 'Mystery'
-        ? 'mys_01'
-        : category === 'Fantasy'
-        ? 'fan_01'
-        : category === 'Horror'
-        ? 'hor_01'
-        : category === 'Thriller'
-        ? 'thr_01'
-        : category === 'Romance'
-        ? 'rom_01'
-        : category === 'Sci-Fi'
-        ? 'sci_01'
-        : category === 'Adventure'
-        ? 'adv_01'
-        : category === 'Dark Fantasy'
-        ? 'daf_01'
-        : category === 'Psycho'
-        ? 'psy_01'
-        : category === 'Comedy'
-        ? 'com_01'
-        : category === 'Drama'
-        ? 'dra_01'
-        : category === 'Crime'
-        ? 'cri_01'
-        : 'sup_01';
-    setSelectedEpisodeId(episodeId);
-    setNavigationState('story');
+    // Direkt zum Test springen - Test-ID basierend auf Kategorie
+    const testId =
+      category === 'Persönlichkeitstyp'
+        ? 'pers_01'
+        : category === 'Emotionale Intelligenz'
+        ? 'eq_01'
+        : category === 'Führungsqualitäten'
+        ? 'lead_01'
+        : category === 'Stressresistenz'
+        ? 'stress_01'
+        : category === 'Kommunikationsstil'
+        ? 'komm_01'
+        : category === 'Beziehungspersönlichkeit'
+        ? 'bez_01'
+        : category === 'Berufungsfinder'
+        ? 'beruf_01'
+        : category === 'Kreativitätsindex'
+        ? 'krea_01'
+        : category === 'Dark Triad'
+        ? 'dark_01'
+        : category === 'Growth vs Fixed Mindset'
+        ? 'mind_01'
+        : category === 'Soziale Kompetenz'
+        ? 'soz_01'
+        : category === 'Entscheidungsmacher'
+        ? 'ent_01'
+        : category === 'Konfliktlösung'
+        ? 'konf_01'
+        : 'int_01';
+    setSelectedTestId(testId);
+    setNavigationState('test');
   };
 
-  const handleEpisodeSelect = (episodeId: string) => {
-    setSelectedEpisodeId(episodeId);
-    setNavigationState('story');
+  const handleTestSelect = (testId: string) => {
+    setSelectedTestId(testId);
+    setNavigationState('test');
+  };
+
+  const handleTestComplete = (results: any) => {
+    setTestResults(results);
+    setNavigationState('results');
+  };
+
+  const handleRetakeTest = () => {
+    setNavigationState('test');
   };
 
   const handleBackToCategories = () => {
@@ -181,19 +193,44 @@ const AppNavigator = ({ isLoggedIn, userName }: AppNavigatorProps) => {
                 {...props}
                 playerName={playerName}
                 selectedCategory={selectedCategory}
-                onEpisodeSelect={handleEpisodeSelect}
+                onEpisodeSelect={handleTestSelect}
                 onBack={handleBackToCategories}
+              />
+            )}
+          </Stack.Screen>
+        ) : navigationState === 'test' ? (
+          <Stack.Screen name="Test">
+            {(props) => (
+              <TestScreen
+                {...props}
+                playerName={playerName}
+                testId={selectedTestId}
+                onBack={handleBackToCategories}
+                onComplete={handleTestComplete}
+              />
+            )}
+          </Stack.Screen>
+        ) : navigationState === 'results' ? (
+          <Stack.Screen name="Results">
+            {(props) => (
+              <ResultScreen
+                {...props}
+                testResults={testResults}
+                playerName={playerName}
+                onRetake={handleRetakeTest}
+                onBackToMenu={handleBackToCategories}
               />
             )}
           </Stack.Screen>
         ) : (
           <Stack.Screen name="Story">
             {(props) => (
-              <StoryScreen
+              <TestScreen
                 {...props}
                 playerName={playerName}
-                episodeId={selectedEpisodeId}
+                testId={selectedTestId}
                 onBack={handleBackToCategories}
+                onComplete={handleTestComplete}
               />
             )}
           </Stack.Screen>
