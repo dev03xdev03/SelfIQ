@@ -31,11 +31,18 @@ yarn-error.*
 *.pem
 
 # local env files
+.env
 .env*.local
 
 # typescript
 *.tsbuildinfo
 
-# generated native folders
+# generated native folders (created by EAS build)
 /ios
 /android
+
+# Docker & Deployment (not needed for EAS)
+.dockerignore
+Dockerfile
+.railwayignore
+render.yaml

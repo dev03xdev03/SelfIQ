@@ -1,0 +1,3026 @@
+{
+  "tests": [
+    {
+      "testId": "pers_01",
+      "testName": "Big Five Persönlichkeitsanalyse",
+      "category": "Persönlichkeitstyp",
+      "scoringCategories": [
+        "extraversion",
+        "agreeableness",
+        "conscientiousness",
+        "neuroticism",
+        "openness"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "question": "In sozialen Situationen fühle ich mich am wohlsten, wenn...",
+          "answers": [
+            {
+              "id": "a1",
+              "text": "ich im Mittelpunkt stehe und viele Menschen um mich habe",
+              "score": {
+                "extraversion": 3,
+                "openness": 1
+              }
+            },
+            {
+              "id": "a2",
+              "text": "ich aktiv am Gespräch teilnehme, aber nicht im Zentrum stehe",
+              "score": {
+                "extraversion": 1,
+                "agreeableness": 1
+              }
+            },
+            {
+              "id": "a3",
+              "text": "ich in kleinen Gruppen bin und tiefgründige Gespräche führe",
+              "score": {
+                "extraversion": -1,
+                "openness": 2
+              }
+            },
+            {
+              "id": "a4",
+              "text": "ich beobachten und zuhören kann, ohne selbst viel reden zu müssen",
+              "score": {
+                "extraversion": -3,
+                "conscientiousness": 1
+              }
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "question": "Wenn jemand mich um Hilfe bittet, reagiere ich...",
+          "answers": [
+            {
+              "id": "a1",
+              "text": "sofort und stelle meine eigenen Bedürfnisse zurück",
+              "score": {
+                "agreeableness": 3,
+                "conscientiousness": -1
+              }
+            },
+            {
+              "id": "a2",
+              "text": "hilfsbereit, aber achte darauf, dass ich mich nicht überfordere",
+              "score": {
+                "agreeableness": 2,
+                "conscientiousness": 2
+              }
+            },
+            {
+              "id": "a3",
+              "text": "erst nach Abwägung, ob ich Zeit und Ressourcen habe",
+              "score": {
+                "agreeableness": -1,
+                "conscientiousness": 3
+              }
+            },
+            {
+              "id": "a4",
+              "text": "zurückhaltend, da ich ungern in fremde Angelegenheiten einbezogen werde",
+              "score": {
+                "agreeableness": -3,
+                "openness": -1
+              }
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "question": "Mein Arbeitsplatz bzw. mein Zimmer ist normalerweise...",
+          "answers": [
+            {
+              "id": "a1",
+              "text": "perfekt organisiert - jedes Ding hat seinen festen Platz",
+              "score": {
+                "conscientiousness": 3,
+                "neuroticism": 1
+              }
+            },
+            {
+              "id": "a2",
+              "text": "aufgeräumt mit einem funktionalen System",
+              "score": {
+                "conscientiousness": 2
+              }
+            },
+            {
+              "id": "a3",
+              "text": "kreativ chaotisch - ich finde trotzdem alles",
+              "score": {
+                "conscientiousness": -2,
+                "openness": 3
+              }
+            },
+            {
+              "id": "a4",
+              "text": "unordentlich - Ordnung ist nicht meine Priorität",
+              "score": {
+                "conscientiousness": -3,
+                "openness": 1
+              }
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "question": "Wenn etwas Unerwartetes passiert, bin ich...",
+          "answers": [
+            {
+              "id": "a1",
+              "text": "schnell beunruhigt und mache mir viele Gedanken",
+              "score": {
+                "neuroticism": 3,
+                "conscientiousness": 1
+              }
+            },
+            {
+              "id": "a2",
+              "text": "erst überrascht, dann plane ich die nächsten Schritte",
+              "score": {
+                "neuroticism": 1,
+                "conscientiousness": 2
+              }
+            },
+            {
+              "id": "a3",
+              "text": "gelassen und suche pragmatische Lösungen",
+              "score": {
+                "neuroticism": -2,
+                "openness": 1
+              }
+            },
+            {
+              "id": "a4",
+              "text": "aufgeregt im positiven Sinne - ich mag spontane Wendungen",
+              "score": {
+                "neuroticism": -3,
+                "openness": 3,
+                "extraversion": 1
+              }
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "question": "Neue Ideen und Konzepte...",
+          "answers": [
+            {
+              "id": "a1",
+              "text": "faszinieren mich sofort - ich will alles darüber erfahren",
+              "score": {
+                "openness": 3,
+                "extraversion": 1
+              }
+            },
+            {
+              "id": "a2",
+              "text": "interessieren mich, wenn sie praktischen Nutzen haben",
+              "score": {
+                "openness": 1,
+                "conscientiousness": 2
+              }
+            },
+            {
+              "id": "a3",
+              "text": "betrachte ich kritisch und bewerte sie erst",
+              "score": {
+                "openness": -1,
+                "conscientiousness": 2
+              }
+            },
+            {
+              "id": "a4",
+              "text": "sind mir eher suspekt - Bewährtes ist mir lieber",
+              "score": {
+                "openness": -3,
+                "neuroticism": 1
+              }
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "question": "In Gruppenprojekten übernehme ich meist...",
+          "answers": [
+            {
+              "id": "a1",
+              "text": "die Führung und koordiniere alle Aufgaben",
+              "score": {
+                "extraversion": 3,
+                "conscientiousness": 2
+              }
+            },
+            {
+              "id": "a2",
+              "text": "eine unterstützende Rolle und helfe wo nötig",
+              "score": {
+                "agreeableness": 3,
+                "extraversion": -1
+              }
+            },
+            {
+              "id": "a3",
+              "text": "spezifische Aufgaben, die ich alleine erledigen kann",
+              "score": {
+                "conscientiousness": 2,
+                "extraversion": -2
+              }
+            },
+            {
+              "id": "a4",
+              "text": "die kreative Ideengebung und Innovation",
+              "score": {
+                "openness": 3,
+                "extraversion": 1
+              }
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "question": "Wenn ich einen Fehler mache...",
+          "answers": [
+            {
+              "id": "a1",
+              "text": "grüble ich lange darüber nach und fühle mich schuldig",
+              "score": {
+                "neuroticism": 3,
+                "conscientiousness": 1
+              }
+            },
+            {
+              "id": "a2",
+              "text": "analysiere ich was schiefging und lerne daraus",
+              "score": {
+                "conscientiousness": 3,
+                "openness": 1
+              }
+            },
+            {
+              "id": "a3",
+              "text": "entschuldige ich mich und versuche es wiedergutzumachen",
+              "score": {
+                "agreeableness": 3,
+                "neuroticism": 1
+              }
+            },
+            {
+              "id": "a4",
+              "text": "akzeptiere ich es schnell und gehe weiter",
+              "score": {
+                "neuroticism": -3,
+                "openness": 1
+              }
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "question": "Mein idealer Urlaub wäre...",
+          "answers": [
+            {
+              "id": "a1",
+              "text": "ein Abenteuertrip an einen unbekannten Ort",
+              "score": {
+                "openness": 3,
+                "extraversion": 2
+              }
+            },
+            {
+              "id": "a2",
+              "text": "eine kulturelle Städtereise mit Museen und Kultur",
+              "score": {
+                "openness": 2,
+                "conscientiousness": 1
+              }
+            },
+            {
+              "id": "a3",
+              "text": "Entspannung am Strand mit einem guten Buch",
+              "score": {
+                "extraversion": -2,
+                "neuroticism": -1
+              }
+            },
+            {
+              "id": "a4",
+              "text": "Zeit mit Familie/Freunden an einem vertrauten Ort",
+              "score": {
+                "agreeableness": 2,
+                "openness": -1
+              }
+            }
+          ]
+        },
+        {
+          "id": "q9",
+          "question": "Bei Diskussionen bin ich eher jemand, der...",
+          "answers": [
+            {
+              "id": "a1",
+              "text": "leidenschaftlich seine Meinung verteidigt",
+              "score": {
+                "extraversion": 3,
+                "neuroticism": 1
+              }
+            },
+            {
+              "id": "a2",
+              "text": "sachlich argumentiert und Kompromisse sucht",
+              "score": {
+                "agreeableness": 2,
+                "conscientiousness": 2
+              }
+            },
+            {
+              "id": "a3",
+              "text": "verschiedene Perspektiven aufzeigt",
+              "score": {
+                "openness": 3,
+                "agreeableness": 1
+              }
+            },
+            {
+              "id": "a4",
+              "text": "Konflikten aus dem Weg geht",
+              "score": {
+                "agreeableness": -1,
+                "neuroticism": 2,
+                "extraversion": -2
+              }
+            }
+          ]
+        },
+        {
+          "id": "q10",
+          "question": "Wenn ich ein großes Ziel habe...",
+          "answers": [
+            {
+              "id": "a1",
+              "text": "erstelle ich einen detaillierten Plan mit Meilensteinen",
+              "score": {
+                "conscientiousness": 3,
+                "openness": -1
+              }
+            },
+            {
+              "id": "a2",
+              "text": "arbeite ich konstant daran, aber bleibe flexibel",
+              "score": {
+                "conscientiousness": 2,
+                "openness": 2
+              }
+            },
+            {
+              "id": "a3",
+              "text": "starte ich motiviert, verliere aber manchmal den Fokus",
+              "score": {
+                "conscientiousness": -1,
+                "extraversion": 1
+              }
+            },
+            {
+              "id": "a4",
+              "text": "zweifle ich oft, ob ich es schaffen kann",
+              "score": {
+                "neuroticism": 3,
+                "conscientiousness": -1
+              }
+            }
+          ]
+        },
+        {
+          "id": "q11",
+          "question": "Auf einer Skala: Wie wichtig ist dir die Meinung anderer?",
+          "answers": [
+            {
+              "id": "a1",
+              "text": "Sehr wichtig - ich orientiere mich stark daran",
+              "score": {
+                "agreeableness": 3,
+                "neuroticism": 2
+              }
+            },
+            {
+              "id": "a2",
+              "text": "Wichtig, aber ich treffe meine eigenen Entscheidungen",
+              "score": {
+                "agreeableness": 1,
+                "conscientiousness": 1
+              }
+            },
+            {
+              "id": "a3",
+              "text": "Wenig wichtig - ich folge meinem eigenen Weg",
+              "score": {
+                "openness": 2,
+                "extraversion": -1
+              }
+            },
+            {
+              "id": "a4",
+              "text": "Unwichtig - ich bin völlig unabhängig",
+              "score": {
+                "agreeableness": -3,
+                "openness": 1
+              }
+            }
+          ]
+        },
+        {
+          "id": "q12",
+          "question": "Meine Emotionen...",
+          "answers": [
+            {
+              "id": "a1",
+              "text": "sind intensiv und wechseln schnell",
+              "score": {
+                "neuroticism": 3,
+                "openness": 1
+              }
+            },
+            {
+              "id": "a2",
+              "text": "zeige ich offen und teile sie mit anderen",
+              "score": {
+                "extraversion": 2,
+                "agreeableness": 2
+              }
+            },
+            {
+              "id": "a3",
+              "text": "behalte ich meist für mich",
+              "score": {
+                "extraversion": -2,
+                "neuroticism": 1
+              }
+            },
+            {
+              "id": "a4",
+              "text": "sind stabil und ausgeglichen",
+              "score": {
+                "neuroticism": -3,
+                "conscientiousness": 1
+              }
+            }
+          ]
+        },
+        {
+          "id": "q13",
+          "question": "Kreativität bedeutet für mich...",
+          "answers": [
+            {
+              "id": "a1",
+              "text": "völlig neue Wege zu gehen und Konventionen zu brechen",
+              "score": {
+                "openness": 3,
+                "conscientiousness": -1
+              }
+            },
+            {
+              "id": "a2",
+              "text": "bestehende Dinge zu verbessern und zu optimieren",
+              "score": {
+                "openness": 1,
+                "conscientiousness": 2
+              }
+            },
+            {
+              "id": "a3",
+              "text": "in Kunst, Musik oder Hobbys zum Ausdruck zu kommen",
+              "score": {
+                "openness": 2,
+                "agreeableness": 1
+              }
+            },
+            {
+              "id": "a4",
+              "text": "ist nicht so wichtig - Funktionalität zählt",
+              "score": {
+                "openness": -3,
+                "conscientiousness": 2
+              }
+            }
+          ]
+        },
+        {
+          "id": "q14",
+          "question": "In Stresssituationen...",
+          "answers": [
+            {
+              "id": "a1",
+              "text": "werde ich hektisch und fühle mich überfordert",
+              "score": {
+                "neuroticism": 3,
+                "conscientiousness": -1
+              }
+            },
+            {
+              "id": "a2",
+              "text": "arbeite ich strukturiert meine To-Do-Liste ab",
+              "score": {
+                "conscientiousness": 3,
+                "neuroticism": -1
+              }
+            },
+            {
+              "id": "a3",
+              "text": "suche ich Unterstützung bei anderen",
+              "score": {
+                "agreeableness": 2,
+                "extraversion": 1
+              }
+            },
+            {
+              "id": "a4",
+              "text": "bleibe ich ruhig und finde kreative Lösungen",
+              "score": {
+                "neuroticism": -3,
+                "openness": 2
+              }
+            }
+          ]
+        },
+        {
+          "id": "q15",
+          "question": "Spontane Einladungen oder Planänderungen...",
+          "answers": [
+            {
+              "id": "a1",
+              "text": "begeistern mich - ich liebe Spontanität",
+              "score": {
+                "openness": 3,
+                "extraversion": 2
+              }
+            },
+            {
+              "id": "a2",
+              "text": "sind ok, wenn sie nicht zu oft vorkommen",
+              "score": {
+                "conscientiousness": 1,
+                "agreeableness": 1
+              }
+            },
+            {
+              "id": "a3",
+              "text": "mag ich nicht - ich brauche Planungssicherheit",
+              "score": {
+                "conscientiousness": 2,
+                "neuroticism": 2
+              }
+            },
+            {
+              "id": "a4",
+              "text": "stressen mich und bringen mich aus dem Konzept",
+              "score": {
+                "conscientiousness": 3,
+                "neuroticism": 3
+              }
+            }
+          ]
+        },
+        {
+          "id": "q16",
+          "question": "Wenn ich vor einer schwierigen Aufgabe stehe...",
+          "answers": [
+            {
+              "id": "a1",
+              "text": "sehe ich sie als spannende Herausforderung",
+              "score": {
+                "openness": 2,
+                "conscientiousness": 2
+              }
+            },
+            {
+              "id": "a2",
+              "text": "teile ich sie in kleinere, machbare Schritte auf",
+              "score": {
+                "conscientiousness": 3
+              }
+            },
+            {
+              "id": "a3",
+              "text": "suche ich nach alternativen, einfacheren Lösungen",
+              "score": {
+                "openness": 1,
+                "conscientiousness": -1
+              }
+            },
+            {
+              "id": "a4",
+              "text": "zweifle ich, ob ich es schaffen kann",
+              "score": {
+                "neuroticism": 3,
+                "conscientiousness": -2
+              }
+            }
+          ]
+        },
+        {
+          "id": "q17",
+          "question": "In Beziehungen (Freundschaft/Partnerschaft) bin ich...",
+          "answers": [
+            {
+              "id": "a1",
+              "text": "sehr fürsorglich und stelle die Bedürfnisse anderer vor meine",
+              "score": {
+                "agreeableness": 3,
+                "neuroticism": 1
+              }
+            },
+            {
+              "id": "a2",
+              "text": "ausgeglichen zwischen geben und nehmen",
+              "score": {
+                "agreeableness": 2,
+                "conscientiousness": 1
+              }
+            },
+            {
+              "id": "a3",
+              "text": "unabhängig und brauche viel persönlichen Freiraum",
+              "score": {
+                "extraversion": -2,
+                "openness": 1
+              }
+            },
+            {
+              "id": "a4",
+              "text": "intensiv und erwarte volle Aufmerksamkeit",
+              "score": {
+                "neuroticism": 2,
+                "extraversion": 1
+              }
+            }
+          ]
+        },
+        {
+          "id": "q18",
+          "question": "Regeln und Vorschriften sind für mich...",
+          "answers": [
+            {
+              "id": "a1",
+              "text": "wichtig und sollten eingehalten werden",
+              "score": {
+                "conscientiousness": 3,
+                "openness": -2
+              }
+            },
+            {
+              "id": "a2",
+              "text": "sinnvoll, wenn sie einen guten Zweck erfüllen",
+              "score": {
+                "conscientiousness": 1,
+                "openness": 1
+              }
+            },
+            {
+              "id": "a3",
+              "text": "einschränkend - ich hinterfrage sie oft",
+              "score": {
+                "openness": 3,
+                "conscientiousness": -1
+              }
+            },
+            {
+              "id": "a4",
+              "text": "überholt - ich folge meinen eigenen Prinzipien",
+              "score": {
+                "openness": 2,
+                "conscientiousness": -3
+              }
+            }
+          ]
+        },
+        {
+          "id": "q19",
+          "question": "Nach einem anstrengenden Tag brauche ich...",
+          "answers": [
+            {
+              "id": "a1",
+              "text": "Zeit mit Freunden um abzuschalten",
+              "score": {
+                "extraversion": 3,
+                "agreeableness": 1
+              }
+            },
+            {
+              "id": "a2",
+              "text": "eine Mischung aus Gesellschaft und Ruhe",
+              "score": {
+                "extraversion": 0
+              }
+            },
+            {
+              "id": "a3",
+              "text": "absolute Ruhe und Zeit für mich allein",
+              "score": {
+                "extraversion": -3,
+                "openness": 1
+              }
+            },
+            {
+              "id": "a4",
+              "text": "eine feste Routine um runterzukommen",
+              "score": {
+                "conscientiousness": 2,
+                "neuroticism": 1
+              }
+            }
+          ]
+        },
+        {
+          "id": "q20",
+          "question": "Mein Umgang mit Kritik ist...",
+          "answers": [
+            {
+              "id": "a1",
+              "text": "schwierig - ich nehme sie sehr persönlich",
+              "score": {
+                "neuroticism": 3,
+                "agreeableness": 1
+              }
+            },
+            {
+              "id": "a2",
+              "text": "konstruktiv - ich sehe sie als Chance zu lernen",
+              "score": {
+                "openness": 2,
+                "conscientiousness": 2
+              }
+            },
+            {
+              "id": "a3",
+              "text": "gelassen - ich lasse sie nicht an mich ran",
+              "score": {
+                "neuroticism": -2,
+                "openness": 1
+              }
+            },
+            {
+              "id": "a4",
+              "text": "defensiv - ich verteidige meine Position",
+              "score": {
+                "agreeableness": -2,
+                "extraversion": 1
+              }
+            }
+          ]
+        },
+        {
+          "id": "q21",
+          "question": "Wenn ich ein Buch/Film wähle, bevorzuge ich...",
+          "answers": [
+            {
+              "id": "a1",
+              "text": "experimentelle, ungewöhnliche Geschichten",
+              "score": {
+                "openness": 3
+              }
+            },
+            {
+              "id": "a2",
+              "text": "anspruchsvolle, zum Nachdenken anregende Inhalte",
+              "score": {
+                "openness": 2,
+                "conscientiousness": 1
+              }
+            },
+            {
+              "id": "a3",
+              "text": "emotionale Geschichten über Beziehungen",
+              "score": {
+                "agreeableness": 2,
+                "neuroticism": 1
+              }
+            },
+            {
+              "id": "a4",
+              "text": "bewährte Klassiker oder bekannte Formate",
+              "score": {
+                "openness": -2,
+                "conscientiousness": 1
+              }
+            }
+          ]
+        },
+        {
+          "id": "q22",
+          "question": "In meinem Leben lege ich den größten Wert auf...",
+          "answers": [
+            {
+              "id": "a1",
+              "text": "persönliches Wachstum und Selbstverwirklichung",
+              "score": {
+                "openness": 3,
+                "conscientiousness": 1
+              }
+            },
+            {
+              "id": "a2",
+              "text": "starke Beziehungen und soziale Verbindungen",
+              "score": {
+                "agreeableness": 3,
+                "extraversion": 2
+              }
+            },
+            {
+              "id": "a3",
+              "text": "Stabilität, Sicherheit und Struktur",
+              "score": {
+                "conscientiousness": 3,
+                "neuroticism": 1
+              }
+            },
+            {
+              "id": "a4",
+              "text": "Freiheit und Unabhängigkeit",
+              "score": {
+                "openness": 2,
+                "extraversion": -1
+              }
+            }
+          ]
+        },
+        {
+          "id": "q23",
+          "question": "Wenn etwas nicht nach Plan läuft...",
+          "answers": [
+            {
+              "id": "a1",
+              "text": "frustriert mich das sehr und ich bin enttäuscht",
+              "score": {
+                "neuroticism": 3,
+                "conscientiousness": 2
+              }
+            },
+            {
+              "id": "a2",
+              "text": "passe ich meinen Plan an und mache weiter",
+              "score": {
+                "conscientiousness": 2,
+                "openness": 1
+              }
+            },
+            {
+              "id": "a3",
+              "text": "sehe ich es als Chance für etwas Neues",
+              "score": {
+                "openness": 3,
+                "neuroticism": -2
+              }
+            },
+            {
+              "id": "a4",
+              "text": "ist mir relativ egal - ich hatte eh keinen festen Plan",
+              "score": {
+                "conscientiousness": -3,
+                "openness": 1
+              }
+            }
+          ]
+        },
+        {
+          "id": "q24",
+          "question": "Meine Herangehensweise an Probleme ist...",
+          "answers": [
+            {
+              "id": "a1",
+              "text": "analytisch und systematisch",
+              "score": {
+                "conscientiousness": 3,
+                "openness": -1
+              }
+            },
+            {
+              "id": "a2",
+              "text": "kreativ und außerhalb der Box denkend",
+              "score": {
+                "openness": 3,
+                "conscientiousness": -1
+              }
+            },
+            {
+              "id": "a3",
+              "text": "kooperativ - ich hole mir Input von anderen",
+              "score": {
+                "agreeableness": 3,
+                "extraversion": 1
+              }
+            },
+            {
+              "id": "a4",
+              "text": "emotional - ich lasse mich von Gefühlen leiten",
+              "score": {
+                "neuroticism": 2,
+                "agreeableness": 1
+              }
+            }
+          ]
+        },
+        {
+          "id": "q25",
+          "question": "Wenn ich an meine Zukunft denke, bin ich...",
+          "answers": [
+            {
+              "id": "a1",
+              "text": "optimistisch und voller Vorfreude",
+              "score": {
+                "neuroticism": -3,
+                "extraversion": 2,
+                "openness": 2
+              }
+            },
+            {
+              "id": "a2",
+              "text": "realistisch und plane vorausschauend",
+              "score": {
+                "conscientiousness": 3,
+                "neuroticism": -1
+              }
+            },
+            {
+              "id": "a3",
+              "text": "unsicher und mache mir Sorgen",
+              "score": {
+                "neuroticism": 3,
+                "conscientiousness": 1
+              }
+            },
+            {
+              "id": "a4",
+              "text": "offen für alles was kommt",
+              "score": {
+                "openness": 3,
+                "conscientiousness": -1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "testId": "eq_01",
+      "testName": "Emotionale Intelligenz Test",
+      "category": "Emotionale Intelligenz",
+      "scoringCategories": [
+        "selfAwareness",
+        "selfManagement",
+        "socialAwareness",
+        "relationshipManagement"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "question": "Wenn ich wütend bin, kann ich normalerweise...",
+          "answers": [
+            {
+              "id": "a1",
+              "text": "genau benennen, was mich wütend macht und warum",
+              "score": {
+                "selfAwareness": 3,
+                "selfManagement": 2
+              }
+            },
+            {
+              "id": "a2",
+              "text": "spüren, dass ich wütend bin, brauche aber Zeit um die Gründe zu verstehen",
+              "score": {
+                "selfAwareness": 1,
+                "selfManagement": 1
+              }
+            },
+            {
+              "id": "a3",
+              "text": "meine Wut schwer einordnen und reagiere impulsiv",
+              "score": {
+                "selfAwareness": -2,
+                "selfManagement": -2
+              }
+            },
+            {
+              "id": "a4",
+              "text": "meine Gefühle unterdrücken bis sie irgendwann explodieren",
+              "score": {
+                "selfAwareness": -1,
+                "selfManagement": -3
+              }
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "question": "In einem wichtigen Meeting kritisiert mich jemand unfair. Ich...",
+          "answers": [
+            {
+              "id": "a1",
+              "text": "bleibe ruhig, atme tief durch und antworte sachlich nach einer Pause",
+              "score": {
+                "selfManagement": 3,
+                "relationshipManagement": 2
+              }
+            },
+            {
+              "id": "a2",
+              "text": "fühle mich verletzt, kann aber professionell bleiben",
+              "score": {
+                "selfManagement": 1,
+                "selfAwareness": 2
+              }
+            },
+            {
+              "id": "a3",
+              "text": "verteidige mich sofort emotional und konfrontativ",
+              "score": {
+                "selfManagement": -2,
+                "relationshipManagement": -1
+              }
+            },
+            {
+              "id": "a4",
+              "text": "sage nichts, grübel aber tagelang darüber nach",
+              "score": {
+                "selfManagement": -3,
+                "selfAwareness": -1
+              }
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "question": "Wenn ein Freund bedrückt wirkt, ohne etwas zu sagen...",
+          "answers": [
+            {
+              "id": "a1",
+              "text": "merke ich es sofort und spreche ihn einfühlsam darauf an",
+              "score": {
+                "socialAwareness": 3,
+                "relationshipManagement": 2
+              }
+            },
+            {
+              "id": "a2",
+              "text": "bemerke ich es meist, bin aber unsicher wie ich reagieren soll",
+              "score": {
+                "socialAwareness": 2,
+                "relationshipManagement": -1
+              }
+            },
+            {
+              "id": "a3",
+              "text": "bemerke ich es manchmal, aber gehe nicht darauf ein",
+              "score": {
+                "socialAwareness": -1,
+                "relationshipManagement": -2
+              }
+            },
+            {
+              "id": "a4",
+              "text": "bemerke ich selten, außer er sagt es mir direkt",
+              "score": {
+                "socialAwareness": -3,
+                "selfAwareness": -1
+              }
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "question": "Wenn ich einen Fehler mache, der anderen schadet...",
+          "answers": [
+            {
+              "id": "a1",
+              "text": "erkenne ich meine Verantwortung sofort an und entschuldige mich aufrichtig",
+              "score": {
+                "selfAwareness": 3,
+                "relationshipManagement": 3
+              }
+            },
+            {
+              "id": "a2",
+              "text": "fällt es mir schwer, aber ich entschuldige mich letztendlich",
+              "score": {
+                "selfAwareness": 1,
+                "relationshipManagement": 1
+              }
+            },
+            {
+              "id": "a3",
+              "text": "suche ich oft nach Ausreden oder relativiere den Fehler",
+              "score": {
+                "selfAwareness": -2,
+                "relationshipManagement": -2
+              }
+            },
+            {
+              "id": "a4",
+              "text": "gebe ich die Schuld lieber anderen oder äußeren Umständen",
+              "score": {
+                "selfAwareness": -3,
+                "relationshipManagement": -3
+              }
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "question": "Bei einer Gruppenarbeit entsteht ein Konflikt. Ich...",
+          "answers": [
+            {
+              "id": "a1",
+              "text": "vermittle zwischen den Parteien und suche nach Win-Win-Lösungen",
+              "score": {
+                "relationshipManagement": 3,
+                "socialAwareness": 2
+              }
+            },
+            {
+              "id": "a2",
+              "text": "versuche zu helfen, aber fühle mich unwohl in der Vermittlerrolle",
+              "score": {
+                "relationshipManagement": 1,
+                "socialAwareness": 1
+              }
+            },
+            {
+              "id": "a3",
+              "text": "ziehe mich zurück und hoffe, dass andere es lösen",
+              "score": {
+                "relationshipManagement": -2,
+                "selfManagement": -1
+              }
+            },
+            {
+              "id": "a4",
+              "text": "nehme eindeutig Partei und verschärfe den Konflikt möglicherweise",
+              "score": {
+                "relationshipManagement": -3,
+                "socialAwareness": -2
+              }
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "question": "Wenn ich gestresst bin und wichtige Entscheidungen treffen muss...",
+          "answers": [
+            {
+              "id": "a1",
+              "text": "nehme ich mir bewusst Zeit zum Durchatmen und entscheide dann klar",
+              "score": {
+                "selfManagement": 3,
+                "selfAwareness": 2
+              }
+            },
+            {
+              "id": "a2",
+              "text": "merke ich den Stress, versuche aber trotzdem rational zu bleiben",
+              "score": {
+                "selfManagement": 1,
+                "selfAwareness": 1
+              }
+            },
+            {
+              "id": "a3",
+              "text": "treffe ich oft impulsive Entscheidungen, die ich später bereue",
+              "score": {
+                "selfManagement": -2,
+                "selfAwareness": -1
+              }
+            },
+            {
+              "id": "a4",
+              "text": "bin ich blockiert und kann gar nicht entscheiden",
+              "score": {
+                "selfManagement": -3,
+                "selfAwareness": 1
+              }
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "question": "Wenn jemand mir von einem Problem erzählt...",
+          "answers": [
+            {
+              "id": "a1",
+              "text": "höre ich aktiv zu, stelle Fragen und validiere die Gefühle der Person",
+              "score": {
+                "socialAwareness": 3,
+                "relationshipManagement": 3
+              }
+            },
+            {
+              "id": "a2",
+              "text": "versuche ich zuzuhören, biete aber schnell Lösungen an",
+              "score": {
+                "socialAwareness": 1,
+                "relationshipManagement": -1
+              }
+            },
+            {
+              "id": "a3",
+              "text": "höre ich halb zu und schweife oft gedanklich ab",
+              "score": {
+                "socialAwareness": -2,
+                "relationshipManagement": -2
+              }
+            },
+            {
+              "id": "a4",
+              "text": "fühle ich mich unwohl und versuche das Thema zu wechseln",
+              "score": {
+                "socialAwareness": -3,
+                "selfAwareness": 1
+              }
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "question": "Meine eigenen emotionalen Trigger (was mich besonders aufregt)...",
+          "answers": [
+            {
+              "id": "a1",
+              "text": "kenne ich genau und kann sie anderen auch erklären",
+              "score": {
+                "selfAwareness": 3,
+                "selfManagement": 2
+              }
+            },
+            {
+              "id": "a2",
+              "text": "erkenne ich manchmal im Nachhinein",
+              "score": {
+                "selfAwareness": 1,
+                "selfManagement": 0
+              }
+            },
+            {
+              "id": "a3",
+              "text": "sind mir weitgehend unklar",
+              "score": {
+                "selfAwareness": -2,
+                "selfManagement": -1
+              }
+            },
+            {
+              "id": "a4",
+              "text": "interessieren mich nicht, ich reagiere einfach wie ich bin",
+              "score": {
+                "selfAwareness": -3,
+                "selfManagement": -2
+              }
+            }
+          ]
+        },
+        {
+          "id": "q9",
+          "question": "In einem Raum voller Menschen kann ich...",
+          "answers": [
+            {
+              "id": "a1",
+              "text": "die Stimmung und Gruppendynamik intuitiv erfassen",
+              "score": {
+                "socialAwareness": 3,
+                "selfAwareness": 1
+              }
+            },
+            {
+              "id": "a2",
+              "text": "die offensichtlichen Emotionen erkennen",
+              "score": {
+                "socialAwareness": 1,
+                "selfAwareness": 0
+              }
+            },
+            {
+              "id": "a3",
+              "text": "mich nur auf meine eigenen Gefühle konzentrieren",
+              "score": {
+                "socialAwareness": -2,
+                "selfAwareness": 1
+              }
+            },
+            {
+              "id": "a4",
+              "text": "weder meine noch fremde Emotionen gut wahrnehmen",
+              "score": {
+                "socialAwareness": -3,
+                "selfAwareness": -2
+              }
+            }
+          ]
+        },
+        {
+          "id": "q10",
+          "question": "Wenn ich jemandem negatives Feedback geben muss...",
+          "answers": [
+            {
+              "id": "a1",
+              "text": "formuliere ich es konstruktiv, zur richtigen Zeit und mit Empathie",
+              "score": {
+                "relationshipManagement": 3,
+                "socialAwareness": 2
+              }
+            },
+            {
+              "id": "a2",
+              "text": "sage ich es direkt, achte aber auf einen respektvollen Ton",
+              "score": {
+                "relationshipManagement": 1,
+                "socialAwareness": 1
+              }
+            },
+            {
+              "id": "a3",
+              "text": "vermeide ich es so lange wie möglich",
+              "score": {
+                "relationshipManagement": -2,
+                "selfManagement": -1
+              }
+            },
+            {
+              "id": "a4",
+              "text": "sage ich es sehr direkt ohne auf Gefühle Rücksicht zu nehmen",
+              "score": {
+                "relationshipManagement": -3,
+                "socialAwareness": -2
+              }
+            }
+          ]
+        },
+        {
+          "id": "q11",
+          "question": "Nach einem emotionalen Ereignis...",
+          "answers": [
+            {
+              "id": "a1",
+              "text": "reflektiere ich bewusst: Was habe ich gefühlt? Warum? Was kann ich daraus lernen?",
+              "score": {
+                "selfAwareness": 3,
+                "selfManagement": 2
+              }
+            },
+            {
+              "id": "a2",
+              "text": "denke ich manchmal darüber nach, aber nicht systematisch",
+              "score": {
+                "selfAwareness": 1,
+                "selfManagement": 0
+              }
+            },
+            {
+              "id": "a3",
+              "text": "versuche ich es schnell zu vergessen und weiterzumachen",
+              "score": {
+                "selfAwareness": -2,
+                "selfManagement": -1
+              }
+            },
+            {
+              "id": "a4",
+              "text": "grübele ich darüber nach ohne zu Erkenntnissen zu kommen",
+              "score": {
+                "selfAwareness": -1,
+                "selfManagement": -3
+              }
+            }
+          ]
+        },
+        {
+          "id": "q12",
+          "question": "Wenn ich merke, dass jemand sich in meiner Gegenwart unwohl fühlt...",
+          "answers": [
+            {
+              "id": "a1",
+              "text": "spreche ich es taktvoll an und versuche die Situation zu entspannen",
+              "score": {
+                "socialAwareness": 3,
+                "relationshipManagement": 3
+              }
+            },
+            {
+              "id": "a2",
+              "text": "bemerke ich es, weiß aber nicht genau wie ich reagieren soll",
+              "score": {
+                "socialAwareness": 2,
+                "relationshipManagement": -1
+              }
+            },
+            {
+              "id": "a3",
+              "text": "bemerke ich es oft gar nicht",
+              "score": {
+                "socialAwareness": -2,
+                "selfAwareness": -1
+              }
+            },
+            {
+              "id": "a4",
+              "text": "ignoriere ich es und erwarte, dass die Person es selbst anspricht",
+              "score": {
+                "socialAwareness": -3,
+                "relationshipManagement": -2
+              }
+            }
+          ]
+        },
+        {
+          "id": "q13",
+          "question": "Meine Stimmungen...",
+          "answers": [
+            {
+              "id": "a1",
+              "text": "kann ich gut regulieren und passe sie der Situation an",
+              "score": {
+                "selfManagement": 3,
+                "selfAwareness": 2
+              }
+            },
+            {
+              "id": "a2",
+              "text": "versuche ich zu kontrollieren, was mal besser mal schlechter klappt",
+              "score": {
+                "selfManagement": 1,
+                "selfAwareness": 1
+              }
+            },
+            {
+              "id": "a3",
+              "text": "schwanken stark und beeinflussen mein Verhalten deutlich",
+              "score": {
+                "selfManagement": -2,
+                "selfAwareness": 1
+              }
+            },
+            {
+              "id": "a4",
+              "text": "kontrollieren mich, nicht ich sie",
+              "score": {
+                "selfManagement": -3,
+                "selfAwareness": -1
+              }
+            }
+          ]
+        },
+        {
+          "id": "q14",
+          "question": "Wenn ich ein Team motivieren möchte...",
+          "answers": [
+            {
+              "id": "a1",
+              "text": "spreche ich gezielt verschiedene emotionale Bedürfnisse an",
+              "score": {
+                "relationshipManagement": 3,
+                "socialAwareness": 2
+              }
+            },
+            {
+              "id": "a2",
+              "text": "versuche ich alle gleich zu behandeln und positiv zu sein",
+              "score": {
+                "relationshipManagement": 1,
+                "socialAwareness": 0
+              }
+            },
+            {
+              "id": "a3",
+              "text": "fokussiere ich mich auf Fakten und Argumente, weniger auf Emotionen",
+              "score": {
+                "relationshipManagement": -1,
+                "socialAwareness": -2
+              }
+            },
+            {
+              "id": "a4",
+              "text": "fühle ich mich unwohl und vermeide die Motivationsrolle",
+              "score": {
+                "relationshipManagement": -3,
+                "selfAwareness": 1
+              }
+            }
+          ]
+        },
+        {
+          "id": "q15",
+          "question": "Wenn ich traurig oder enttäuscht bin...",
+          "answers": [
+            {
+              "id": "a1",
+              "text": "erkenne ich es, akzeptiere das Gefühl und verarbeite es gesund",
+              "score": {
+                "selfAwareness": 3,
+                "selfManagement": 3
+              }
+            },
+            {
+              "id": "a2",
+              "text": "merke ich es, tue mich aber schwer damit umzugehen",
+              "score": {
+                "selfAwareness": 2,
+                "selfManagement": -1
+              }
+            },
+            {
+              "id": "a3",
+              "text": "lenke ich mich ab oder verdränge die Gefühle",
+              "score": {
+                "selfAwareness": -2,
+                "selfManagement": -2
+              }
+            },
+            {
+              "id": "a4",
+              "text": "bemerke ich es kaum oder ordne es falsch ein",
+              "score": {
+                "selfAwareness": -3,
+                "selfManagement": -1
+              }
+            }
+          ]
+        },
+        {
+          "id": "q16",
+          "question": "In Diskussionen mit verschiedenen Meinungen...",
+          "answers": [
+            {
+              "id": "a1",
+              "text": "verstehe ich verschiedene Perspektiven und vermittle zwischen ihnen",
+              "score": {
+                "socialAwareness": 3,
+                "relationshipManagement": 2
+              }
+            },
+            {
+              "id": "a2",
+              "text": "höre ich zu, bleibe aber fest bei meiner Meinung",
+              "score": {
+                "socialAwareness": 1,
+                "selfManagement": 1
+              }
+            },
+            {
+              "id": "a3",
+              "text": "werde ich emotional wenn jemand anderer Meinung ist",
+              "score": {
+                "socialAwareness": -2,
+                "selfManagement": -2
+              }
+            },
+            {
+              "id": "a4",
+              "text": "schalte ich ab und beteilige mich nicht mehr",
+              "score": {
+                "socialAwareness": -3,
+                "relationshipManagement": -2
+              }
+            }
+          ]
+        },
+        {
+          "id": "q17",
+          "question": "Meine Körpersprache und nonverbale Signale...",
+          "answers": [
+            {
+              "id": "a1",
+              "text": "bin ich mir bewusst und setze sie gezielt ein",
+              "score": {
+                "selfAwareness": 3,
+                "relationshipManagement": 2
+              }
+            },
+            {
+              "id": "a2",
+              "text": "nehme ich manchmal wahr",
+              "score": {
+                "selfAwareness": 1,
+                "socialAwareness": 0
+              }
+            },
+            {
+              "id": "a3",
+              "text": "sind mir meist nicht bewusst",
+              "score": {
+                "selfAwareness": -2,
+                "socialAwareness": -1
+              }
+            },
+            {
+              "id": "a4",
+              "text": "interessieren mich nicht, ich achte nur auf Worte",
+              "score": {
+                "selfAwareness": -3,
+                "socialAwareness": -2
+              }
+            }
+          ]
+        },
+        {
+          "id": "q18",
+          "question": "Wenn ich eine langfristige Beziehung (Freundschaft/Partnerschaft) pflegen möchte...",
+          "answers": [
+            {
+              "id": "a1",
+              "text": "investiere ich bewusst Zeit, zeige Interesse und arbeite an der Verbindung",
+              "score": {
+                "relationshipManagement": 3,
+                "socialAwareness": 2
+              }
+            },
+            {
+              "id": "a2",
+              "text": "bin ich da, wenn die Person mich braucht",
+              "score": {
+                "relationshipManagement": 1,
+                "socialAwareness": 1
+              }
+            },
+            {
+              "id": "a3",
+              "text": "erwarte ich, dass Beziehungen von selbst funktionieren",
+              "score": {
+                "relationshipManagement": -2,
+                "socialAwareness": -1
+              }
+            },
+            {
+              "id": "a4",
+              "text": "fällt mir schwer, ich verliere oft den Kontakt",
+              "score": {
+                "relationshipManagement": -3,
+                "selfAwareness": 1
+              }
+            }
+          ]
+        },
+        {
+          "id": "q19",
+          "question": "Wenn ich stolz auf eine Leistung bin...",
+          "answers": [
+            {
+              "id": "a1",
+              "text": "erkenne ich das Gefühl, feiere es angemessen und teile es mit anderen",
+              "score": {
+                "selfAwareness": 3,
+                "relationshipManagement": 2
+              }
+            },
+            {
+              "id": "a2",
+              "text": "freue ich mich, tue mich aber schwer es zu zeigen",
+              "score": {
+                "selfAwareness": 2,
+                "selfManagement": -1
+              }
+            },
+            {
+              "id": "a3",
+              "text": "spiele ich es herunter oder ignoriere es",
+              "score": {
+                "selfAwareness": -2,
+                "selfManagement": -1
+              }
+            },
+            {
+              "id": "a4",
+              "text": "bemerke ich das Gefühl kaum",
+              "score": {
+                "selfAwareness": -3,
+                "selfManagement": 0
+              }
+            }
+          ]
+        },
+        {
+          "id": "q20",
+          "question": "Wenn ich bemerke, dass mein Verhalten jemanden verletzt hat...",
+          "answers": [
+            {
+              "id": "a1",
+              "text": "reflektiere ich mein Verhalten, entschuldige mich und ändere es",
+              "score": {
+                "selfAwareness": 3,
+                "relationshipManagement": 3,
+                "selfManagement": 2
+              }
+            },
+            {
+              "id": "a2",
+              "text": "entschuldige ich mich, finde es aber schwer mein Verhalten zu ändern",
+              "score": {
+                "selfAwareness": 1,
+                "relationshipManagement": 1,
+                "selfManagement": -1
+              }
+            },
+            {
+              "id": "a3",
+              "text": "rechtfertige ich mein Verhalten oder erkläre es weg",
+              "score": {
+                "selfAwareness": -2,
+                "relationshipManagement": -2,
+                "socialAwareness": -1
+              }
+            },
+            {
+              "id": "a4",
+              "text": "bemerke ich es meist gar nicht",
+              "score": {
+                "selfAwareness": -3,
+                "socialAwareness": -3,
+                "relationshipManagement": -1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "testId": "lead_01",
+      "testName": "Führungsqualitäten Test",
+      "category": "Führungsqualitäten",
+      "scoringCategories": [
+        "visionaryLeadership",
+        "teamEmpowerment",
+        "decisionMaking",
+        "adaptability"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "question": "Wenn ich ein Team leite und eine wichtige Entscheidung treffen muss...",
+          "answers": [
+            {
+              "id": "a1",
+              "text": "hole ich Input von allen, entscheide dann aber selbst klar und kommuniziere die Gründe",
+              "score": {
+                "decisionMaking": 3,
+                "teamEmpowerment": 2
+              }
+            },
+            {
+              "id": "a2",
+              "text": "entscheide ich gemeinsam im Konsens mit dem Team",
+              "score": {
+                "teamEmpowerment": 3,
+                "decisionMaking": 1
+              }
+            },
+            {
+              "id": "a3",
+              "text": "entscheide ich schnell alleine basierend auf meiner Expertise",
+              "score": {
+                "decisionMaking": 2,
+                "teamEmpowerment": -2
+              }
+            },
+            {
+              "id": "a4",
+              "text": "fällt es mir schwer zu entscheiden und ich zögere lange",
+              "score": {
+                "decisionMaking": -3,
+                "adaptability": -1
+              }
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "question": "Meine Vision für ein Projekt...",
+          "answers": [
+            {
+              "id": "a1",
+              "text": "entwickle ich klar, kommuniziere sie inspirierend und begeistere andere dafür",
+              "score": {
+                "visionaryLeadership": 3,
+                "teamEmpowerment": 2
+              }
+            },
+            {
+              "id": "a2",
+              "text": "entwickle ich zusammen mit dem Team kollaborativ",
+              "score": {
+                "teamEmpowerment": 3,
+                "visionaryLeadership": 1
+              }
+            },
+            {
+              "id": "a3",
+              "text": "habe ich meist, finde es aber schwer sie zu vermitteln",
+              "score": {
+                "visionaryLeadership": -1,
+                "teamEmpowerment": -1
+              }
+            },
+            {
+              "id": "a4",
+              "text": "brauche ich nicht, ich fokussiere mich auf konkrete Aufgaben",
+              "score": {
+                "visionaryLeadership": -3,
+                "decisionMaking": 1
+              }
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "question": "Wenn ein Teammitglied Fehler macht...",
+          "answers": [
+            {
+              "id": "a1",
+              "text": "nutze ich es als Lernchance, gebe konstruktives Feedback und unterstütze Entwicklung",
+              "score": {
+                "teamEmpowerment": 3,
+                "adaptability": 2
+              }
+            },
+            {
+              "id": "a2",
+              "text": "spreche ich es direkt an und erwarte sofortige Verbesserung",
+              "score": {
+                "decisionMaking": 2,
+                "teamEmpowerment": -1
+              }
+            },
+            {
+              "id": "a3",
+              "text": "übernehme ich die Aufgabe lieber selbst beim nächsten Mal",
+              "score": {
+                "teamEmpowerment": -3,
+                "decisionMaking": 1
+              }
+            },
+            {
+              "id": "a4",
+              "text": "vermeide ich die Konfrontation und hoffe es bessert sich von selbst",
+              "score": {
+                "decisionMaking": -3,
+                "teamEmpowerment": -2
+              }
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "question": "In Krisensituationen...",
+          "answers": [
+            {
+              "id": "a1",
+              "text": "bleibe ich ruhig, übernehme Verantwortung und führe das Team klar durch die Krise",
+              "score": {
+                "decisionMaking": 3,
+                "adaptability": 3
+              }
+            },
+            {
+              "id": "a2",
+              "text": "delegiere ich Verantwortung und koordiniere die Bemühungen",
+              "score": {
+                "teamEmpowerment": 2,
+                "adaptability": 2
+              }
+            },
+            {
+              "id": "a3",
+              "text": "werde ich gestresst, kann aber noch funktionieren",
+              "score": {
+                "adaptability": -1,
+                "decisionMaking": 1
+              }
+            },
+            {
+              "id": "a4",
+              "text": "fühle ich mich überfordert und vermeide Führungsverantwortung",
+              "score": {
+                "decisionMaking": -3,
+                "adaptability": -2
+              }
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "question": "Wenn das Team demotiviert ist...",
+          "answers": [
+            {
+              "id": "a1",
+              "text": "erkenne ich die Gründe, adressiere sie und inspiriere das Team zu neuer Energie",
+              "score": {
+                "visionaryLeadership": 3,
+                "teamEmpowerment": 3
+              }
+            },
+            {
+              "id": "a2",
+              "text": "versuche ich durch positive Ansprachen die Stimmung zu heben",
+              "score": {
+                "visionaryLeadership": 1,
+                "teamEmpowerment": 1
+              }
+            },
+            {
+              "id": "a3",
+              "text": "erwarte ich, dass Profis motiviert bleiben ohne Extra-Effort",
+              "score": {
+                "teamEmpowerment": -2,
+                "visionaryLeadership": -1
+              }
+            },
+            {
+              "id": "a4",
+              "text": "fühle ich mich hilflos und weiß nicht was tun",
+              "score": {
+                "visionaryLeadership": -3,
+                "teamEmpowerment": -2
+              }
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "question": "Bei der Delegation von Aufgaben...",
+          "answers": [
+            {
+              "id": "a1",
+              "text": "gebe ich klare Ziele, vertraue dem Team und biete Unterstützung bei Bedarf",
+              "score": {
+                "teamEmpowerment": 3,
+                "decisionMaking": 2
+              }
+            },
+            {
+              "id": "a2",
+              "text": "delegiere ich, kontrolliere aber engmaschig den Fortschritt",
+              "score": {
+                "decisionMaking": 2,
+                "teamEmpowerment": -1
+              }
+            },
+            {
+              "id": "a3",
+              "text": "mache ich lieber selbst, um sicher zu gehen dass es richtig wird",
+              "score": {
+                "teamEmpowerment": -3,
+                "decisionMaking": -1
+              }
+            },
+            {
+              "id": "a4",
+              "text": "delegiere ich unklar und bin dann enttäuscht vom Ergebnis",
+              "score": {
+                "teamEmpowerment": -2,
+                "decisionMaking": -2
+              }
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "question": "Wenn neue Technologien oder Methoden auftauchen...",
+          "answers": [
+            {
+              "id": "a1",
+              "text": "evaluiere ich sie proaktiv und führe sinnvolle Innovationen ein",
+              "score": {
+                "adaptability": 3,
+                "visionaryLeadership": 2
+              }
+            },
+            {
+              "id": "a2",
+              "text": "bin ich offen dafür, warte aber erstmal ab wie andere damit umgehen",
+              "score": {
+                "adaptability": 1,
+                "visionaryLeadership": -1
+              }
+            },
+            {
+              "id": "a3",
+              "text": "bleibe ich lieber bei bewährten Methoden",
+              "score": {
+                "adaptability": -2,
+                "visionaryLeadership": -2
+              }
+            },
+            {
+              "id": "a4",
+              "text": "sträube ich mich gegen Veränderung",
+              "score": {
+                "adaptability": -3,
+                "visionaryLeadership": -1
+              }
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "question": "Mein Führungsstil ist...",
+          "answers": [
+            {
+              "id": "a1",
+              "text": "situativ - ich passe mich an Team und Kontext an",
+              "score": {
+                "adaptability": 3,
+                "teamEmpowerment": 2
+              }
+            },
+            {
+              "id": "a2",
+              "text": "partizipativ - ich beziehe das Team in Entscheidungen ein",
+              "score": {
+                "teamEmpowerment": 3,
+                "visionaryLeadership": 1
+              }
+            },
+            {
+              "id": "a3",
+              "text": "direktiv - ich gebe klare Anweisungen und erwarte Umsetzung",
+              "score": {
+                "decisionMaking": 2,
+                "teamEmpowerment": -2
+              }
+            },
+            {
+              "id": "a4",
+              "text": "unsicher - ich weiß oft nicht wie ich führen soll",
+              "score": {
+                "decisionMaking": -3,
+                "visionaryLeadership": -2
+              }
+            }
+          ]
+        },
+        {
+          "id": "q9",
+          "question": "Wenn zwei Teammitglieder Konflikte haben...",
+          "answers": [
+            {
+              "id": "a1",
+              "text": "moderiere ich einen konstruktiven Dialog und finde Win-Win-Lösungen",
+              "score": {
+                "teamEmpowerment": 3,
+                "decisionMaking": 2
+              }
+            },
+            {
+              "id": "a2",
+              "text": "höre beide Seiten an und entscheide dann autoritativ",
+              "score": {
+                "decisionMaking": 2,
+                "teamEmpowerment": -1
+              }
+            },
+            {
+              "id": "a3",
+              "text": "erwarte ich, dass sie es selbst klären",
+              "score": {
+                "teamEmpowerment": -2,
+                "decisionMaking": -1
+              }
+            },
+            {
+              "id": "a4",
+              "text": "fühle ich mich unwohl und vermeide Einmischung",
+              "score": {
+                "decisionMaking": -3,
+                "teamEmpowerment": -2
+              }
+            }
+          ]
+        },
+        {
+          "id": "q10",
+          "question": "Bei langfristiger Planung...",
+          "answers": [
+            {
+              "id": "a1",
+              "text": "entwickle ich klare strategische Visionen und kommuniziere den Weg dorthin",
+              "score": {
+                "visionaryLeadership": 3,
+                "decisionMaking": 2
+              }
+            },
+            {
+              "id": "a2",
+              "text": "plane ich strukturiert und detailliert",
+              "score": {
+                "decisionMaking": 2,
+                "visionaryLeadership": 1
+              }
+            },
+            {
+              "id": "a3",
+              "text": "fokussiere ich mich lieber auf kurzfristige Ziele",
+              "score": {
+                "visionaryLeadership": -2,
+                "adaptability": 1
+              }
+            },
+            {
+              "id": "a4",
+              "text": "fällt es mir schwer weit vorauszudenken",
+              "score": {
+                "visionaryLeadership": -3,
+                "decisionMaking": -1
+              }
+            }
+          ]
+        },
+        {
+          "id": "q11",
+          "question": "Wenn jemand im Team bessere Ideen hat als ich...",
+          "answers": [
+            {
+              "id": "a1",
+              "text": "freue ich mich, würdige die Idee und setze sie um",
+              "score": {
+                "teamEmpowerment": 3,
+                "adaptability": 2
+              }
+            },
+            {
+              "id": "a2",
+              "text": "höre ich zu und entscheide dann ob sie umgesetzt wird",
+              "score": {
+                "teamEmpowerment": 1,
+                "decisionMaking": 1
+              }
+            },
+            {
+              "id": "a3",
+              "text": "fühle ich mich in meiner Autorität bedroht",
+              "score": {
+                "teamEmpowerment": -2,
+                "adaptability": -2
+              }
+            },
+            {
+              "id": "a4",
+              "text": "lehne ich sie ab, um meine Position zu wahren",
+              "score": {
+                "teamEmpowerment": -3,
+                "visionaryLeadership": -2
+              }
+            }
+          ]
+        },
+        {
+          "id": "q12",
+          "question": "Meine Rolle als Führungskraft sehe ich als...",
+          "answers": [
+            {
+              "id": "a1",
+              "text": "Enabler - ich befähige mein Team zu Höchstleistungen",
+              "score": {
+                "teamEmpowerment": 3,
+                "visionaryLeadership": 2
+              }
+            },
+            {
+              "id": "a2",
+              "text": "Visionär - ich zeige die Richtung und inspiriere",
+              "score": {
+                "visionaryLeadership": 3,
+                "decisionMaking": 1
+              }
+            },
+            {
+              "id": "a3",
+              "text": "Entscheider - ich treffe die wichtigen Entscheidungen",
+              "score": {
+                "decisionMaking": 3,
+                "teamEmpowerment": -1
+              }
+            },
+            {
+              "id": "a4",
+              "text": "Administrator - ich organisiere und koordiniere",
+              "score": {
+                "decisionMaking": 1,
+                "visionaryLeadership": -2
+              }
+            }
+          ]
+        },
+        {
+          "id": "q13",
+          "question": "Bei unerwarteten Rückschlägen...",
+          "answers": [
+            {
+              "id": "a1",
+              "text": "analysiere ich schnell, passe die Strategie an und kommuniziere transparent",
+              "score": {
+                "adaptability": 3,
+                "decisionMaking": 2
+              }
+            },
+            {
+              "id": "a2",
+              "text": "bleibe ich beim Plan und versuche durchzuziehen",
+              "score": {
+                "decisionMaking": 1,
+                "adaptability": -2
+              }
+            },
+            {
+              "id": "a3",
+              "text": "bin ich frustriert und brauche Zeit zum Verarbeiten",
+              "score": {
+                "adaptability": -1,
+                "decisionMaking": -1
+              }
+            },
+            {
+              "id": "a4",
+              "text": "gebe ich schnell auf oder suche nach Schuldigen",
+              "score": {
+                "adaptability": -3,
+                "visionaryLeadership": -2
+              }
+            }
+          ]
+        },
+        {
+          "id": "q14",
+          "question": "Feedback an mein Team gebe ich...",
+          "answers": [
+            {
+              "id": "a1",
+              "text": "regelmäßig, konstruktiv und entwicklungsorientiert",
+              "score": {
+                "teamEmpowerment": 3,
+                "decisionMaking": 2
+              }
+            },
+            {
+              "id": "a2",
+              "text": "vor allem wenn etwas gut läuft (positives Feedback)",
+              "score": {
+                "teamEmpowerment": 2,
+                "visionaryLeadership": 1
+              }
+            },
+            {
+              "id": "a3",
+              "text": "hauptsächlich wenn Probleme auftreten",
+              "score": {
+                "teamEmpowerment": -1,
+                "decisionMaking": 1
+              }
+            },
+            {
+              "id": "a4",
+              "text": "selten, ich vermeide schwierige Gespräche",
+              "score": {
+                "teamEmpowerment": -3,
+                "decisionMaking": -2
+              }
+            }
+          ]
+        },
+        {
+          "id": "q15",
+          "question": "Wenn ich auf Widerstand gegen meine Ideen stoße...",
+          "answers": [
+            {
+              "id": "a1",
+              "text": "höre ich die Bedenken, passe ggf. an und hole alle mit ins Boot",
+              "score": {
+                "adaptability": 3,
+                "teamEmpowerment": 3
+              }
+            },
+            {
+              "id": "a2",
+              "text": "erkläre ich überzeugender warum meine Idee richtig ist",
+              "score": {
+                "visionaryLeadership": 2,
+                "decisionMaking": 1
+              }
+            },
+            {
+              "id": "a3",
+              "text": "setze ich sie trotzdem durch, ich bin schließlich der Chef",
+              "score": {
+                "decisionMaking": 1,
+                "teamEmpowerment": -3
+              }
+            },
+            {
+              "id": "a4",
+              "text": "ziehe ich meine Idee zurück um Konflikte zu vermeiden",
+              "score": {
+                "decisionMaking": -3,
+                "visionaryLeadership": -2
+              }
+            }
+          ]
+        },
+        {
+          "id": "q16",
+          "question": "Die persönliche Entwicklung meines Teams...",
+          "answers": [
+            {
+              "id": "a1",
+              "text": "ist mir sehr wichtig, ich investiere Zeit in Coaching und Mentoring",
+              "score": {
+                "teamEmpowerment": 3,
+                "visionaryLeadership": 2
+              }
+            },
+            {
+              "id": "a2",
+              "text": "unterstütze ich wenn Zeit ist und es passt",
+              "score": {
+                "teamEmpowerment": 1,
+                "decisionMaking": 0
+              }
+            },
+            {
+              "id": "a3",
+              "text": "ist ihre eigene Verantwortung",
+              "score": {
+                "teamEmpowerment": -2,
+                "visionaryLeadership": -1
+              }
+            },
+            {
+              "id": "a4",
+              "text": "interessiert mich wenig, ich fokussiere auf Ergebnisse",
+              "score": {
+                "teamEmpowerment": -3,
+                "visionaryLeadership": -2
+              }
+            }
+          ]
+        },
+        {
+          "id": "q17",
+          "question": "In unsicheren, mehrdeutigen Situationen...",
+          "answers": [
+            {
+              "id": "a1",
+              "text": "navigiere ich sicher, treffe Entscheidungen mit unvollständiger Info",
+              "score": {
+                "adaptability": 3,
+                "decisionMaking": 3
+              }
+            },
+            {
+              "id": "a2",
+              "text": "sammle ich erstmal mehr Informationen bevor ich entscheide",
+              "score": {
+                "decisionMaking": 1,
+                "adaptability": -1
+              }
+            },
+            {
+              "id": "a3",
+              "text": "fühle ich mich unwohl und zögere mit Entscheidungen",
+              "score": {
+                "adaptability": -2,
+                "decisionMaking": -2
+              }
+            },
+            {
+              "id": "a4",
+              "text": "vermeide ich Verantwortung und warte ab",
+              "score": {
+                "decisionMaking": -3,
+                "adaptability": -2
+              }
+            }
+          ]
+        },
+        {
+          "id": "q18",
+          "question": "Erfolge des Teams...",
+          "answers": [
+            {
+              "id": "a1",
+              "text": "feiere ich und würdige die Leistungen jedes Einzelnen öffentlich",
+              "score": {
+                "teamEmpowerment": 3,
+                "visionaryLeadership": 2
+              }
+            },
+            {
+              "id": "a2",
+              "text": "anerkenne ich, fokussiere dann aber schnell auf die nächsten Ziele",
+              "score": {
+                "visionaryLeadership": 1,
+                "teamEmpowerment": 1
+              }
+            },
+            {
+              "id": "a3",
+              "text": "sehe ich als selbstverständlich an, wofür werden sie schließlich bezahlt",
+              "score": {
+                "teamEmpowerment": -2,
+                "visionaryLeadership": -1
+              }
+            },
+            {
+              "id": "a4",
+              "text": "nutze ich gerne um meine eigene Führungsleistung hervorzuheben",
+              "score": {
+                "teamEmpowerment": -3,
+                "adaptability": -1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "testId": "stress_01",
+      "testName": "Stressresistenz Test",
+      "category": "Stressresistenz",
+      "scoringCategories": [
+        "emotionalStability",
+        "problemSolving",
+        "resilience"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "question": "Wenn ich vor einer wichtigen Deadline stehe und noch viel zu tun ist...",
+          "answers": [
+            {
+              "id": "a1",
+              "text": "bleibe ich ruhig, priorisiere klar und arbeite fokussiert",
+              "score": {
+                "emotionalStability": 3,
+                "problemSolving": 3
+              }
+            },
+            {
+              "id": "a2",
+              "text": "spüre ich Druck, schaffe es aber durchzuziehen",
+              "score": {
+                "emotionalStability": 1,
+                "resilience": 2
+              }
+            },
+            {
+              "id": "a3",
+              "text": "werde ich nervös und beginne hektisch zu werden",
+              "score": {
+                "emotionalStability": -2,
+                "problemSolving": -1
+              }
+            },
+            {
+              "id": "a4",
+              "text": "gerate ich in Panik und verliere den Überblick",
+              "score": {
+                "emotionalStability": -3,
+                "resilience": -2
+              }
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "question": "Wenn mehrere Probleme gleichzeitig auf mich zukommen...",
+          "answers": [
+            {
+              "id": "a1",
+              "text": "analysiere ich systematisch und löse eines nach dem anderen",
+              "score": {
+                "problemSolving": 3,
+                "emotionalStability": 2
+              }
+            },
+            {
+              "id": "a2",
+              "text": "versuche ich alles parallel zu managen",
+              "score": {
+                "problemSolving": 1,
+                "resilience": 1
+              }
+            },
+            {
+              "id": "a3",
+              "text": "fühle ich mich überfordert und weiß nicht wo anfangen",
+              "score": {
+                "emotionalStability": -2,
+                "problemSolving": -2
+              }
+            },
+            {
+              "id": "a4",
+              "text": "blockiere ich und kann mich kaum entscheiden",
+              "score": {
+                "emotionalStability": -3,
+                "resilience": -2
+              }
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "question": "Nach einem besonders stressigen Tag...",
+          "answers": [
+            {
+              "id": "a1",
+              "text": "kann ich gut abschalten und regeneriere schnell",
+              "score": {
+                "resilience": 3,
+                "emotionalStability": 2
+              }
+            },
+            {
+              "id": "a2",
+              "text": "brauche ich ein paar Stunden, dann geht es mir wieder gut",
+              "score": {
+                "resilience": 1,
+                "emotionalStability": 1
+              }
+            },
+            {
+              "id": "a3",
+              "text": "grübele ich noch lange über die Ereignisse nach",
+              "score": {
+                "emotionalStability": -2,
+                "resilience": -1
+              }
+            },
+            {
+              "id": "a4",
+              "text": "bin ich emotional erschöpft und brauche Tage zur Erholung",
+              "score": {
+                "resilience": -3,
+                "emotionalStability": -2
+              }
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "question": "Wenn ich unerwartet kritisiert werde...",
+          "answers": [
+            {
+              "id": "a1",
+              "text": "bleibe ich sachlich, höre zu und überlege konstruktiv",
+              "score": {
+                "emotionalStability": 3,
+                "resilience": 2
+              }
+            },
+            {
+              "id": "a2",
+              "text": "bin ich zunächst verletzt, fange mich aber schnell wieder",
+              "score": {
+                "resilience": 2,
+                "emotionalStability": 1
+              }
+            },
+            {
+              "id": "a3",
+              "text": "nehme ich es sehr persönlich und bin lange gekränkt",
+              "score": {
+                "emotionalStability": -2,
+                "resilience": -1
+              }
+            },
+            {
+              "id": "a4",
+              "text": "fühle ich mich angegriffen und reagiere emotional",
+              "score": {
+                "emotionalStability": -3,
+                "problemSolving": -1
+              }
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "question": "In konfliktreichen Situationen...",
+          "answers": [
+            {
+              "id": "a1",
+              "text": "bleibe ich ruhig und suche sachlich nach Lösungen",
+              "score": {
+                "emotionalStability": 3,
+                "problemSolving": 2
+              }
+            },
+            {
+              "id": "a2",
+              "text": "spüre ich Anspannung, kann aber rational bleiben",
+              "score": {
+                "emotionalStability": 1,
+                "resilience": 2
+              }
+            },
+            {
+              "id": "a3",
+              "text": "werde ich nervös und vermeide Konfrontation",
+              "score": {
+                "emotionalStability": -2,
+                "problemSolving": -2
+              }
+            },
+            {
+              "id": "a4",
+              "text": "werde ich emotional und kann mich kaum kontrollieren",
+              "score": {
+                "emotionalStability": -3,
+                "resilience": -1
+              }
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "question": "Wenn Pläne kurzfristig geändert werden müssen...",
+          "answers": [
+            {
+              "id": "a1",
+              "text": "passe ich mich flexibel an und finde schnell neue Lösungen",
+              "score": {
+                "resilience": 3,
+                "problemSolving": 2
+              }
+            },
+            {
+              "id": "a2",
+              "text": "ist es unangenehm, aber ich arrangiere mich",
+              "score": {
+                "resilience": 1,
+                "emotionalStability": 1
+              }
+            },
+            {
+              "id": "a3",
+              "text": "frustriert mich das sehr und ich brauche Zeit zur Neuorientierung",
+              "score": {
+                "emotionalStability": -2,
+                "resilience": -1
+              }
+            },
+            {
+              "id": "a4",
+              "text": "bringt mich das völlig aus der Bahn",
+              "score": {
+                "resilience": -3,
+                "emotionalStability": -2
+              }
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "question": "Bei wichtigen Präsentationen oder Prüfungen...",
+          "answers": [
+            {
+              "id": "a1",
+              "text": "bin ich fokussiert und nutze die Energie positiv",
+              "score": {
+                "emotionalStability": 3,
+                "resilience": 2
+              }
+            },
+            {
+              "id": "a2",
+              "text": "bin ich aufgeregt, aber es motiviert mich",
+              "score": {
+                "emotionalStability": 1,
+                "resilience": 2
+              }
+            },
+            {
+              "id": "a3",
+              "text": "bin ich sehr nervös und das beeinträchtigt meine Leistung",
+              "score": {
+                "emotionalStability": -2,
+                "resilience": -1
+              }
+            },
+            {
+              "id": "a4",
+              "text": "bin ich so gestresst, dass ich kaum klar denken kann",
+              "score": {
+                "emotionalStability": -3,
+                "problemSolving": -2
+              }
+            }
+          ]
+        },
+        {
+          "id": "q8",
+          "question": "Wenn ich einen großen Fehler gemacht habe...",
+          "answers": [
+            {
+              "id": "a1",
+              "text": "analysiere ich sachlich, lerne daraus und mache weiter",
+              "score": {
+                "resilience": 3,
+                "problemSolving": 2
+              }
+            },
+            {
+              "id": "a2",
+              "text": "ärgere ich mich kurz, aber verarbeite es schnell",
+              "score": {
+                "resilience": 2,
+                "emotionalStability": 1
+              }
+            },
+            {
+              "id": "a3",
+              "text": "mache ich mir lange Vorwürfe und zweifle an mir",
+              "score": {
+                "emotionalStability": -2,
+                "resilience": -2
+              }
+            },
+            {
+              "id": "a4",
+              "text": "belastet mich das emotional sehr stark und lange",
+              "score": {
+                "resilience": -3,
+                "emotionalStability": -2
+              }
+            }
+          ]
+        },
+        {
+          "id": "q9",
+          "question": "Bei unvorhersehbaren Krisen...",
+          "answers": [
+            {
+              "id": "a1",
+              "text": "bleibe ich ruhig, übernehme Verantwortung und handle lösungsorientiert",
+              "score": {
+                "emotionalStability": 3,
+                "problemSolving": 3,
+                "resilience": 2
+              }
+            },
+            {
+              "id": "a2",
+              "text": "bin ich angespannt, kann aber noch funktionieren",
+              "score": {
+                "emotionalStability": 1,
+                "resilience": 1
+              }
+            },
+            {
+              "id": "a3",
+              "text": "fühle ich mich überfordert und orientierungslos",
+              "score": {
+                "emotionalStability": -2,
+                "problemSolving": -2
+              }
+            },
+            {
+              "id": "a4",
+              "text": "gerate ich in Panik und kann kaum noch rational handeln",
+              "score": {
+                "emotionalStability": -3,
+                "resilience": -2,
+                "problemSolving": -2
+              }
+            }
+          ]
+        },
+        {
+          "id": "q10",
+          "question": "Mein Schlaf bei Stress...",
+          "answers": [
+            {
+              "id": "a1",
+              "text": "ist kaum beeinträchtigt, ich schlafe auch unter Stress gut",
+              "score": {
+                "emotionalStability": 3,
+                "resilience": 2
+              }
+            },
+            {
+              "id": "a2",
+              "text": "ist manchmal etwas unruhiger, aber im Großen und Ganzen ok",
+              "score": {
+                "emotionalStability": 1,
+                "resilience": 1
+              }
+            },
+            {
+              "id": "a3",
+              "text": "leidet deutlich, ich liege oft wach und grübele",
+              "score": {
+                "emotionalStability": -2,
+                "resilience": -1
+              }
+            },
+            {
+              "id": "a4",
+              "text": "ist massiv gestört, ich finde kaum Ruhe",
+              "score": {
+                "emotionalStability": -3,
+                "resilience": -2
+              }
+            }
+          ]
+        },
+        {
+          "id": "q11",
+          "question": "Wenn ich mit Zeitdruck arbeite...",
+          "answers": [
+            {
+              "id": "a1",
+              "text": "arbeite ich besonders effizient und fokussiert",
+              "score": {
+                "problemSolving": 3,
+                "emotionalStability": 2
+              }
+            },
+            {
+              "id": "a2",
+              "text": "schaffe ich es, auch wenn es anstrengend ist",
+              "score": {
+                "resilience": 2,
+                "problemSolving": 1
+              }
+            },
+            {
+              "id": "a3",
+              "text": "bin ich nervös und mache mehr Fehler",
+              "score": {
+                "emotionalStability": -2,
+                "problemSolving": -1
+              }
+            },
+            {
+              "id": "a4",
+              "text": "blockiere ich und kann nicht produktiv arbeiten",
+              "score": {
+                "emotionalStability": -3,
+                "resilience": -2
+              }
+            }
+          ]
+        },
+        {
+          "id": "q12",
+          "question": "Nach Rückschlägen...",
+          "answers": [
+            {
+              "id": "a1",
+              "text": "stehe ich schnell wieder auf und mache motiviert weiter",
+              "score": {
+                "resilience": 3,
+                "emotionalStability": 2
+              }
+            },
+            {
+              "id": "a2",
+              "text": "brauche ich kurz Zeit, finde dann aber wieder zu meiner Motivation",
+              "score": {
+                "resilience": 2,
+                "emotionalStability": 1
+              }
+            },
+            {
+              "id": "a3",
+              "text": "bin ich lange demotiviert und zweifle an meinen Zielen",
+              "score": {
+                "resilience": -2,
+                "emotionalStability": -1
+              }
+            },
+            {
+              "id": "a4",
+              "text": "fühle ich mich hoffnungslos und gebe oft auf",
+              "score": {
+                "resilience": -3,
+                "emotionalStability": -2
+              }
+            }
+          ]
+        },
+        {
+          "id": "q13",
+          "question": "Bei Überlastung und zu vielen Anforderungen...",
+          "answers": [
+            {
+              "id": "a1",
+              "text": "setze ich klare Grenzen und kommuniziere Prioritäten",
+              "score": {
+                "problemSolving": 3,
+                "emotionalStability": 2
+              }
+            },
+            {
+              "id": "a2",
+              "text": "versuche ich irgendwie alles zu schaffen",
+              "score": {
+                "resilience": 1,
+                "problemSolving": -1
+              }
+            },
+            {
+              "id": "a3",
+              "text": "fühle ich mich überfordert, schaffe es aber nicht Nein zu sagen",
+              "score": {
+                "emotionalStability": -2,
+                "problemSolving": -1
+              }
+            },
+            {
+              "id": "a4",
+              "text": "bin ich völlig überfordert und drohe zusammenzubrechen",
+              "score": {
+                "emotionalStability": -3,
+                "resilience": -2
+              }
+            }
+          ]
+        },
+        {
+          "id": "q14",
+          "question": "Körperliche Stresssymptome (Kopfschmerzen, Verspannungen, Magenbeschwerden)...",
+          "answers": [
+            {
+              "id": "a1",
+              "text": "habe ich so gut wie nie, auch nicht bei Stress",
+              "score": {
+                "emotionalStability": 3,
+                "resilience": 2
+              }
+            },
+            {
+              "id": "a2",
+              "text": "treten gelegentlich auf, sind aber mild",
+              "score": {
+                "emotionalStability": 1,
+                "resilience": 1
+              }
+            },
+            {
+              "id": "a3",
+              "text": "habe ich häufig bei Stress",
+              "score": {
+                "emotionalStability": -2,
+                "resilience": -1
+              }
+            },
+            {
+              "id": "a4",
+              "text": "sind bei mir stark ausgeprägt und beeinträchtigen meinen Alltag",
+              "score": {
+                "emotionalStability": -3,
+                "resilience": -2
+              }
+            }
+          ]
+        },
+        {
+          "id": "q15",
+          "question": "Meine generelle Einstellung zu Herausforderungen ist...",
+          "answers": [
+            {
+              "id": "a1",
+              "text": "ich sehe sie als Chance zu wachsen und stärker zu werden",
+              "score": {
+                "resilience": 3,
+                "emotionalStability": 2,
+                "problemSolving": 2
+              }
+            },
+            {
+              "id": "a2",
+              "text": "ich nehme sie an und gebe mein Bestes",
+              "score": {
+                "resilience": 2,
+                "problemSolving": 1
+              }
+            },
+            {
+              "id": "a3",
+              "text": "ich finde sie anstrengend und würde sie lieber vermeiden",
+              "score": {
+                "emotionalStability": -1,
+                "resilience": -2
+              }
+            },
+            {
+              "id": "a4",
+              "text": "ich fühle mich von ihnen bedroht und überwältigt",
+              "score": {
+                "resilience": -3,
+                "emotionalStability": -2
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

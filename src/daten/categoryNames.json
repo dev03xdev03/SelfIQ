@@ -1,0 +1,21 @@
+{
+  "categoryNames": {
+    "extraversion": "Extraversion",
+    "agreeableness": "Verträglichkeit",
+    "conscientiousness": "Gewissenhaftigkeit",
+    "neuroticism": "Neurotizismus",
+    "openness": "Offenheit",
+    "selfAwareness": "Selbstwahrnehmung",
+    "selfManagement": "Selbstmanagement",
+    "socialAwareness": "Soziale Wahrnehmung",
+    "relationshipManagement": "Beziehungsmanagement",
+    "visionaryLeadership": "Visionäre Führung",
+    "teamEmpowerment": "Team-Empowerment",
+    "decisionMaking": "Entscheidungsfindung",
+    "adaptability": "Anpassungsfähigkeit",
+    "analyticalThinking": "Analytisches Denken",
+    "creativity": "Kreativität",
+    "problemSolving": "Problemlösung",
+    "criticalThinking": "Kritisches Denken"
+  }
+}

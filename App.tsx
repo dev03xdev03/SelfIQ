@@ -1,6 +1,6 @@
 /**
- * Dreamz - Choice-Based Story App (Expo Version)
- * Ein interaktives Story-Erlebnis mit Lottie-Animationen
+ * SelfIQ - Personality Test App (Expo Version)
+ * Eine interaktive Persönlichkeitstest-App
  */
 
 import React, { useEffect, useState } from 'react';
@@ -12,7 +12,7 @@ import AppNavigator from './src/navigation/AppNavigator';
 import {
   autoLoginWithDevice,
   syncProgressFromCloud,
-} from './src/services/deviceSyncService';
+} from './src/dienste/geraeteSyncDienst';
 
 export default function App() {
   const [fontsLoaded, setFontsLoaded] = useState(true); // Starte sofort
@@ -25,7 +25,7 @@ export default function App() {
       try {
         // Lade Fonts
         await Font.loadAsync({
-          momstypewriter: require('./assets/fonts/momstypewriter.ttf'),
+          neosans: require('./assets/fonts/neosans.otf'),
         });
         setFontsLoaded(true);
 

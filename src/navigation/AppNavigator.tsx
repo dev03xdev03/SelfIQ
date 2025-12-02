@@ -1,23 +1,31 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
-import IntroScreen from '../screens/IntroScreen';
-import CategorySelectionScreen from '../screens/CategorySelectionScreen';
-import EpisodeSelectionScreen from '../screens/EpisodeSelectionScreen';
-import TestScreen from '../screens/TestScreen';
-import ResultScreen from '../screens/ResultScreen';
-import PreorderScreen from '../screens/PreorderScreen';
-import type { StoryCategory } from '../screens/CategorySelectionScreen';
+import AsyncStorage from '@react-native-async-storage/async-storage';
+import EinstiegsBildschirm from '../bildschirme/EinstiegsBildschirm';
+import NamenEingabeBildschirm from '../bildschirme/NamenEingabeBildschirm';
+import HauptmenueBildschirm from '../bildschirme/HauptmenueBildschirm';
+import KategorieUebersichtBildschirm from '../bildschirme/KategorieUebersichtBildschirm';
+import KategorieAuswahlBildschirm from '../bildschirme/KategorieAuswahlBildschirm';
+import TestBildschirm from '../bildschirme/TestBildschirm';
+import ErgebnisBildschirm from '../bildschirme/ErgebnisBildschirm';
+import InfoBildschirm from '../bildschirme/InfoBildschirm';
+import GuestExpirationModal from '../components/GuestExpirationModal';
+import { getSubscriptionInfo } from '../hilfsmittel/abonnementSpeicher';
+import { checkGuestExpiration } from '../dienste/authentifizierungDienst';
+import { signInWithApple } from '../dienste/appleAuthDienst';
 
 const Stack = createStackNavigator();
 
 type NavigationState =
   | 'intro'
+  | 'nameinput'
+  | 'mainmenu'
+  | 'categoryoverview'
   | 'categories'
-  | 'episodes'
   | 'test'
   | 'results'
-  | 'preorder';
+  | 'info';
 
 interface AppNavigatorProps {
   isLoggedIn: boolean;
@@ -26,76 +34,85 @@ interface AppNavigatorProps {
 
 const AppNavigator = ({ isLoggedIn, userName }: AppNavigatorProps) => {
   const [navigationState, setNavigationState] = useState<NavigationState>(
-    isLoggedIn ? 'categories' : 'intro',
+    isLoggedIn ? 'categoryoverview' : 'intro',
   );
   const [playerName, setPlayerName] = useState<string>(userName || '');
-  const [selectedCategory, setSelectedCategory] =
-    useState<StoryCategory>('Persönlichkeitstyp');
+  const [selectedCategoryId, setSelectedCategoryId] = useState<string>('');
   const [selectedTestId, setSelectedTestId] = useState<string>('');
-  const [testResults, setTestResults] = useState<any>(null);
-  const [preorderStoryId, setPreorderStoryId] = useState<string>('');
-  const [preorderStoryName, setPreorderStoryName] = useState<string>('');
-  const [preorderGradientColors, setPreorderGradientColors] = useState<
+  const [selectedTestName, setSelectedTestName] = useState<string>('');
+  const [selectedTestGradient, setSelectedTestGradient] = useState<
     [string, string]
-  >(['#5de0e6', '#2dd4bf']);
+  >(['#ff3131', '#ff914d']);
+  const [testResults, setTestResults] = useState<any>(null);
+  const [showGuestExpirationModal, setShowGuestExpirationModal] =
+    useState(false);
+
+  // Check für Gast-Expiration beim Start und bei Screen-Wechseln
+  useEffect(() => {
+    const checkExpiration = async () => {
+      try {
+        // Hole User ID aus AsyncStorage
+        const userDataString = await AsyncStorage.getItem('@selfiq_user');
+        if (!userDataString) return;
+
+        const userData = JSON.parse(userDataString);
+
+        // Prüfe nur wenn User ein Gast ist
+        if (userData.id && userData.id.startsWith('guest_')) {
+          const isExpired = await checkGuestExpiration(userData.id);
+          if (isExpired) {
+            setShowGuestExpirationModal(true);
+          }
+        }
+      } catch (error) {
+        console.error('[AppNavigator] Error checking guest expiration:', error);
+      }
+    };
+
+    checkExpiration();
+    // Prüfe alle 5 Minuten
+    const interval = setInterval(checkExpiration, 5 * 60 * 1000);
+    return () => clearInterval(interval);
+  }, [navigationState]);
 
   const handleStartJourney = (name: string) => {
-    setPlayerName(name);
+    console.log('[AppNavigator] handleStartJourney called with name:', name);
+    if (name === '') {
+      // Gast ohne Namen - zeige Namenseingabe
+      console.log('[AppNavigator] Navigating to nameinput');
+      setNavigationState('nameinput');
+    } else {
+      console.log(
+        '[AppNavigator] Navigating to categoryoverview with name:',
+        name,
+      );
+      setPlayerName(name);
+      setNavigationState('categoryoverview');
+    }
+  };
+
+  const handleNameInputComplete = (name: string) => {
+    console.log(
+      '[AppNavigator] handleNameInputComplete called with name:',
+      name,
+    );
+    setPlayerName(name || 'Gast');
+    setNavigationState('categoryoverview');
+  };
+
+  const handleCategoryOverviewSelect = (categoryId: string) => {
+    setSelectedCategoryId(categoryId);
     setNavigationState('categories');
   };
 
-  const handleShowPreorder = (
-    storyId: string,
-    storyName: string,
+  const handleCategorySelect = (
+    testId: string,
+    testName: string,
     gradientColors: [string, string],
   ) => {
-    setPreorderStoryId(storyId);
-    setPreorderStoryName(storyName);
-    setPreorderGradientColors(gradientColors);
-    setNavigationState('preorder');
-  };
-
-  const handleClosePreorder = () => {
-    setNavigationState('categories');
-  };
-
-  const handleCategorySelect = (category: StoryCategory) => {
-    setSelectedCategory(category);
-    // Direkt zum Test springen - Test-ID basierend auf Kategorie
-    const testId =
-      category === 'Persönlichkeitstyp'
-        ? 'pers_01'
-        : category === 'Emotionale Intelligenz'
-        ? 'eq_01'
-        : category === 'Führungsqualitäten'
-        ? 'lead_01'
-        : category === 'Stressresistenz'
-        ? 'stress_01'
-        : category === 'Kommunikationsstil'
-        ? 'komm_01'
-        : category === 'Beziehungspersönlichkeit'
-        ? 'bez_01'
-        : category === 'Berufungsfinder'
-        ? 'beruf_01'
-        : category === 'Kreativitätsindex'
-        ? 'krea_01'
-        : category === 'Dark Triad'
-        ? 'dark_01'
-        : category === 'Growth vs Fixed Mindset'
-        ? 'mind_01'
-        : category === 'Soziale Kompetenz'
-        ? 'soz_01'
-        : category === 'Entscheidungsmacher'
-        ? 'ent_01'
-        : category === 'Konfliktlösung'
-        ? 'konf_01'
-        : 'int_01';
     setSelectedTestId(testId);
-    setNavigationState('test');
-  };
-
-  const handleTestSelect = (testId: string) => {
-    setSelectedTestId(testId);
+    setSelectedTestName(testName);
+    setSelectedTestGradient(gradientColors);
     setNavigationState('test');
   };
 
@@ -104,16 +121,47 @@ const AppNavigator = ({ isLoggedIn, userName }: AppNavigatorProps) => {
     setNavigationState('results');
   };
 
-  const handleRetakeTest = () => {
+  const handleStartTest = () => {
     setNavigationState('test');
   };
 
+  const handleShowInfo = () => {
+    setNavigationState('info');
+  };
+
+  const handleMainMenuNavigate = (
+    screen: 'categoryoverview' | 'info' | 'results',
+  ) => {
+    setNavigationState(screen);
+  };
+
+  const handleCloseInfo = () => {
+    setNavigationState('mainmenu');
+  };
+
   const handleBackToCategories = () => {
-    setNavigationState('categories');
+    setNavigationState('categoryoverview');
+  };
+
+  const handleBackToCategoryOverview = () => {
+    setNavigationState('categoryoverview');
   };
 
   const handleBackToIntro = () => {
     setNavigationState('intro');
+  };
+
+  const handleSignInWithApple = async () => {
+    try {
+      const result = await signInWithApple();
+      if (result.user) {
+        setShowGuestExpirationModal(false);
+        // Optional: Navigiere zu Hauptmenü oder reload
+        setNavigationState('categoryoverview');
+      }
+    } catch (error) {
+      console.error('[AppNavigator] Apple Sign-In failed:', error);
+    }
   };
 
   return (
@@ -121,21 +169,30 @@ const AppNavigator = ({ isLoggedIn, userName }: AppNavigatorProps) => {
       <Stack.Navigator
         screenOptions={{
           headerShown: false,
-          gestureEnabled: false,
+          gestureEnabled: true,
+          gestureDirection: 'horizontal',
           cardStyle: { backgroundColor: 'transparent' },
-          cardStyleInterpolator: ({ current }) => {
+          cardStyleInterpolator: ({ current, next }) => {
             return {
               cardStyle: {
                 opacity: current.progress.interpolate({
-                  inputRange: [0, 0.5, 1],
-                  outputRange: [0, 0, 1],
+                  inputRange: [0, 1],
+                  outputRange: [0, 1],
                 }),
                 transform: [
                   {
-                    scale: current.progress.interpolate({
+                    translateX: current.progress.interpolate({
                       inputRange: [0, 1],
-                      outputRange: [1.5, 1],
+                      outputRange: [50, 0],
                     }),
+                  },
+                  {
+                    scale: next
+                      ? next.progress.interpolate({
+                          inputRange: [0, 1],
+                          outputRange: [1, 0.95],
+                        })
+                      : 1,
                   },
                 ],
               },
@@ -143,16 +200,19 @@ const AppNavigator = ({ isLoggedIn, userName }: AppNavigatorProps) => {
           },
           transitionSpec: {
             open: {
-              animation: 'timing',
+              animation: 'spring',
               config: {
-                duration: 2000,
-                easing: (t: number) => t * t * (3 - 2 * t), // Smooth easing
+                stiffness: 300,
+                damping: 30,
+                mass: 0.8,
               },
             },
             close: {
-              animation: 'timing',
+              animation: 'spring',
               config: {
-                duration: 1000,
+                stiffness: 300,
+                damping: 30,
+                mass: 0.8,
               },
             },
           },
@@ -160,48 +220,62 @@ const AppNavigator = ({ isLoggedIn, userName }: AppNavigatorProps) => {
       >
         {navigationState === 'intro' ? (
           <Stack.Screen name="Intro">
-            {(props) => <IntroScreen {...props} onStart={handleStartJourney} />}
+            {(props) => (
+              <EinstiegsBildschirm
+                {...props}
+                onStart={handleStartJourney}
+                onShowInfo={handleShowInfo}
+              />
+            )}
+          </Stack.Screen>
+        ) : navigationState === 'nameinput' ? (
+          <Stack.Screen name="NameInput">
+            {(props) => (
+              <NamenEingabeBildschirm
+                {...props}
+                onComplete={handleNameInputComplete}
+              />
+            )}
+          </Stack.Screen>
+        ) : navigationState === 'mainmenu' ? (
+          <Stack.Screen name="MainMenu">
+            {(props) => (
+              <HauptmenueBildschirm
+                {...props}
+                playerName={playerName}
+                onNavigate={handleMainMenuNavigate}
+              />
+            )}
+          </Stack.Screen>
+        ) : navigationState === 'categoryoverview' ? (
+          <Stack.Screen name="CategoryOverview">
+            {(props) => (
+              <KategorieUebersichtBildschirm
+                {...props}
+                playerName={playerName}
+                onCategorySelect={handleCategoryOverviewSelect}
+                onBack={handleBackToIntro}
+                onShowInfo={handleShowInfo}
+              />
+            )}
           </Stack.Screen>
         ) : navigationState === 'categories' ? (
           <Stack.Screen name="CategorySelection">
             {(props) => (
-              <CategorySelectionScreen
+              <KategorieAuswahlBildschirm
                 {...props}
                 playerName={playerName}
+                categoryId={selectedCategoryId}
                 onCategorySelect={handleCategorySelect}
-                onBack={handleBackToIntro}
-                onShowPreorder={handleShowPreorder}
-              />
-            )}
-          </Stack.Screen>
-        ) : navigationState === 'preorder' ? (
-          <Stack.Screen name="Preorder">
-            {(props) => (
-              <PreorderScreen
-                {...props}
-                storyId={preorderStoryId}
-                storyName={preorderStoryName}
-                gradientColors={preorderGradientColors}
-                onClose={handleClosePreorder}
-              />
-            )}
-          </Stack.Screen>
-        ) : navigationState === 'episodes' ? (
-          <Stack.Screen name="EpisodeSelection">
-            {(props) => (
-              <EpisodeSelectionScreen
-                {...props}
-                playerName={playerName}
-                selectedCategory={selectedCategory}
-                onEpisodeSelect={handleTestSelect}
-                onBack={handleBackToCategories}
+                onBack={handleBackToCategoryOverview}
+                onShowInfo={handleShowInfo}
               />
             )}
           </Stack.Screen>
         ) : navigationState === 'test' ? (
           <Stack.Screen name="Test">
             {(props) => (
-              <TestScreen
+              <TestBildschirm
                 {...props}
                 playerName={playerName}
                 testId={selectedTestId}
@@ -213,19 +287,25 @@ const AppNavigator = ({ isLoggedIn, userName }: AppNavigatorProps) => {
         ) : navigationState === 'results' ? (
           <Stack.Screen name="Results">
             {(props) => (
-              <ResultScreen
+              <ErgebnisBildschirm
                 {...props}
                 testResults={testResults}
                 playerName={playerName}
-                onRetake={handleRetakeTest}
+                onRetake={() => {
+                  setNavigationState('test');
+                }}
                 onBackToMenu={handleBackToCategories}
               />
             )}
           </Stack.Screen>
+        ) : navigationState === 'info' ? (
+          <Stack.Screen name="Info">
+            {(props) => <InfoBildschirm {...props} onClose={handleCloseInfo} />}
+          </Stack.Screen>
         ) : (
           <Stack.Screen name="Story">
             {(props) => (
-              <TestScreen
+              <TestBildschirm
                 {...props}
                 playerName={playerName}
                 testId={selectedTestId}
@@ -236,6 +316,13 @@ const AppNavigator = ({ isLoggedIn, userName }: AppNavigatorProps) => {
           </Stack.Screen>
         )}
       </Stack.Navigator>
+
+      {/* Guest Expiration Modal */}
+      <GuestExpirationModal
+        visible={showGuestExpirationModal}
+        onSignInWithApple={handleSignInWithApple}
+        onClose={() => setShowGuestExpirationModal(false)}
+      />
     </NavigationContainer>
   );
 };

@@ -1,0 +1,1996 @@
+﻿{
+  "scoringRanges": {
+    "veryLow": { "min": 0, "max": 20 },
+    "low": { "min": 21, "max": 40 },
+    "medium": { "min": 41, "max": 60 },
+    "high": { "min": 61, "max": 80 },
+    "veryHigh": { "min": 81, "max": 100 }
+  },
+  "dimensions": {
+    "extraversion": {
+      "name": "Extraversion",
+      "description": "Soziale Energie und Interaktionsfreude",
+      "profiles": {
+        "veryLow": {
+          "title": "Der Introvertierte Denker",
+          "shortDescription": "Du bist stark introvertiert und bevorzugst Ruhe und Alleinsein.",
+          "detailedDescription": "Du gewinnst Energie aus der Stille und dem Rückzug. Große Gruppen und oberflächliche Gespräche erschöpfen dich schnell. Stattdessen schätzt du tiefgründige Gespräche mit wenigen vertrauten Menschen. Deine besten Ideen entstehen in ruhigen Momenten der Reflexion.",
+          "strengths": [
+            "Exzellente Konzentrationsfähigkeit",
+            "Tiefgründiges Denken und Analysieren",
+            "Unabhängiges Arbeiten",
+            "Guter Zuhörer in Einzelgesprächen",
+            "Kreativität in Stille"
+          ],
+          "challenges": [
+            "Networking kann anstrengend sein",
+            "Spontane soziale Situationen",
+            "Smalltalk wird als oberflächlich empfunden",
+            "Kann als distanziert wirken"
+          ],
+          "professionalSuitability": "Perfekt für Forschung, Programmierung, Schreiben, Datenanalyse, Archivwesen, technische Berufe und alle Tätigkeiten mit hoher Konzentration und wenig Kundenkontakt.",
+          "keywords": [
+            "Analytisch",
+            "Fokussiert",
+            "Unabhängig",
+            "Tiefgründig",
+            "Reflektiert"
+          ],
+          "developmentTips": [
+            "Baue kurze soziale Pausen ein, um nicht zu isoliert zu werden",
+            "Nutze schriftliche Kommunikation, wo es passt",
+            "Plane soziale Aktivitäten bewusst ein und setze Grenzen"
+          ]
+        },
+        "low": {
+          "title": "Der Zurückhaltende Beobachter",
+          "shortDescription": "Du bist eher introvertiert und bevorzugst kleinere soziale Kreise.",
+          "detailedDescription": "Du fühlst dich in vertrauten, kleineren Gruppen am wohlsten. Während du durchaus gesellig sein kannst, benötigst du danach Zeit für dich zur Regeneration. Du beobachtest gerne erst, bevor du dich einbringst, und schätzt bedeutungsvolle über oberflächliche Interaktionen.",
+          "strengths": [
+            "Gutes Gleichgewicht zwischen Sozialleben und Ruhe",
+            "Sorgfältige Beobachtungsgabe",
+            "Qualität vor Quantität bei Beziehungen",
+            "Durchdachte Kommunikation",
+            "Kann gut allein oder im Team arbeiten"
+          ],
+          "challenges": [
+            "Große Events können ermüdend sein",
+            "Spontanes Networking fällt schwer",
+            "Braucht Erholungsphasen nach sozialen Aktivitäten"
+          ],
+          "professionalSuitability": "Ideal für Buchhaltung, IT-Support, Grafik-Design, Labor, Bibliothek, kleinere Teams und Rollen mit ausgewogenem Sozial- und Einzelarbeitsanteil.",
+          "keywords": [
+            "Bedacht",
+            "Beobachtend",
+            "Ausgewogen",
+            "Loyal",
+            "Nachdenklich"
+          ],
+          "developmentTips": [
+            "Kommuniziere deine Bedürfnisse nach Ruhezeiten",
+            "Suche Rollen, die selbstständiges Arbeiten erlauben",
+            "Plane soziale Interaktionen strategisch"
+          ]
+        },
+        "medium": {
+          "title": "Der Flexible Kommunikator",
+          "shortDescription": "Du bist ein Ambivert - flexibel zwischen intro- und extravertiert.",
+          "detailedDescription": "Du besitzt die seltene Fähigkeit, je nach Situation sozial aktiv oder zurückgezogen zu sein. Du kannst sowohl in großen Gruppen glänzen als auch produktiv alleine arbeiten. Diese Flexibilität macht dich zu einem vielseitig einsetzbaren Teamplayer, der verschiedene Rollen einnehmen kann.",
+          "strengths": [
+            "Hohe Anpassungsfähigkeit an soziale Kontexte",
+            "Kann vermitteln zwischen introvertierten und extrovertierten Kollegen",
+            "Vielseitige Arbeitsmodi möglich",
+            "Empathie für verschiedene Persönlichkeitstypen",
+            "Ausgeglichene Work-Life-Balance"
+          ],
+          "challenges": [
+            "Muss eigene Bedürfnisse gut kennen und kommunizieren",
+            "Gefahr der Selbstüberforderung durch zu viele Rollen"
+          ],
+          "professionalSuitability": "Universell einsetzbar - besonders gut für Projektmanagement, Consulting, Account Management, Teamleitung und hybride Rollen mit Social- und Analyse-Anteil.",
+          "keywords": [
+            "Anpassungsfähig",
+            "Vielseitig",
+            "Ausgewogen",
+            "Flexibel",
+            "Diplomatisch"
+          ],
+          "developmentTips": [
+            "Finde heraus, in welchen Situationen du welche Energie brauchst",
+            "Nutze deine Flexibilität als Stärke in verschiedenen Kontexten",
+            "Achte auf Balance, damit keine Seite zu kurz kommt"
+          ]
+        },
+        "high": {
+          "title": "Der Aktive Netzwerker",
+          "shortDescription": "Du bist extravertiert und genießt soziale Interaktionen.",
+          "detailedDescription": "Du blühst in der Gesellschaft anderer auf. Soziale Aktivitäten geben dir Energie, und du fühlst dich in Gruppen wohl. Du baust schnell Kontakte auf, bist kommunikativ und magst es, im Austausch mit anderen zu stehen. Lange Phasen allein können dich unruhig machen.",
+          "strengths": [
+            "Exzellente Networking-Fähigkeiten",
+            "Motivierend und inspirierend für andere",
+            "Schnelle Beziehungsbildung",
+            "Teamspirit fördern",
+            "Kommunikationsstärke"
+          ],
+          "challenges": [
+            "Alleinarbeit kann herausfordernd sein",
+            "Gefahr der Überplanung des Soziallebens",
+            "Reflexion braucht bewusste Zeit"
+          ],
+          "professionalSuitability": "Perfekt für Vertrieb, Marketing, Event-Management, HR, PR, Teamleitung, Kundenberatung und alle Rollen mit hohem Menschenkontakt.",
+          "keywords": [
+            "Kontaktfreudig",
+            "Energetisch",
+            "Kommunikativ",
+            "Teamorientiert",
+            "Motivierend"
+          ],
+          "developmentTips": [
+            "Plane bewusst Ruhezeiten für Reflexion ein",
+            "Entwickle Strategien für fokussiertes Alleinarbeiten",
+            "Nutze deine Energie, um andere mitzureißen"
+          ]
+        },
+        "veryHigh": {
+          "title": "Der Charismatische Mittelpunkt",
+          "shortDescription": "Du bist sehr stark extravertiert und liebst es, im Zentrum zu stehen.",
+          "detailedDescription": "Du bist der Inbegriff von Extraversion. Menschen fühlen sich magnetisch zu dir hingezogen. Du liebst es, im Mittelpunkt zu stehen, große Gruppen zu unterhalten und Energie in sozialen Situationen zu tanken. Alleinsein empfindest du als belastend. Du bist oft der Initiator von Aktivitäten und bringst Menschen zusammen.",
+          "strengths": [
+            "Natürliche Führungspersönlichkeit",
+            "Außergewöhnliche Präsentationsfähigkeiten",
+            "Schnelle Begeisterungsfähigkeit anderer",
+            "Große soziale Netzwerke",
+            "Konfliktlösung durch Kommunikation",
+            "Teambuilding-Talent"
+          ],
+          "challenges": [
+            "Schwierigkeiten mit Einzelarbeit",
+            "Kann andere unbeabsichtigt dominieren",
+            "Braucht ständig soziale Stimulation",
+            "Reflexion und Innenschau können zu kurz kommen"
+          ],
+          "professionalSuitability": "Herausragend für Sales Leadership, Public Speaking, Entertainment, Influencer, Community Management, Business Development und alle hochsozialen, öffentlichen Rollen.",
+          "keywords": [
+            "Charismatisch",
+            "Inspirierend",
+            "Führungsstark",
+            "Gesellig",
+            "Redegewandt"
+          ],
+          "developmentTips": [
+            "Lerne, auch andere Raum zu geben",
+            "Entwickle Techniken für fokussierte Einzelarbeit",
+            "Kultiviere tiefe, nicht nur breite Beziehungen",
+            "Nutze deine Energie für positive Führung"
+          ]
+        }
+      }
+    },
+    "agreeableness": {
+      "name": "Verträglichkeit",
+      "description": "Kooperationsbereitschaft und Empathie",
+      "profiles": {
+        "veryLow": {
+          "title": "Der Direkte Pragmatiker",
+          "shortDescription": "Du bist sehr direkt und stellst Effizienz über Harmonie.",
+          "detailedDescription": "Du sagst klar, was du denkst, ohne Umschweife. Harmonie ist dir weniger wichtig als Ehrlichkeit und Ergebnisse. Du hast wenig Geduld für emotionale Befindlichkeiten und konzentrierst dich auf das Wesentliche. Deine Direktheit kann andere vor den Kopf stoßen, aber du schätzt diese Klarheit auch bei anderen.",
+          "strengths": [
+            "Ehrliche, direkte Kommunikation",
+            "Schnelle Entscheidungen ohne emotionale Hemmung",
+            "Klare Prioritätensetzung",
+            "Nicht manipulierbar",
+            "Fokus auf Ergebnisse"
+          ],
+          "challenges": [
+            "Kann als rücksichtslos wahrgenommen werden",
+            "Teamkonflikte durch Direktheit",
+            "Schwierigkeiten in konsensorientierten Kulturen",
+            "Empathie muss bewusst entwickelt werden"
+          ],
+          "professionalSuitability": "Geeignet für Krisenmanagement, Verhandlungsführung, Chirurgie, Rechtswesen, Unternehmensberatung und Positionen, wo klare Entscheidungen wichtiger als Harmonie sind.",
+          "keywords": [
+            "Direkt",
+            "Pragmatisch",
+            "Ergebnisorientiert",
+            "Ehrlich",
+            "Entschieden"
+          ],
+          "developmentTips": [
+            "Übe, Feedback diplomatischer zu formulieren",
+            "Erkenne den Wert von Teamharmonie für Produktivität",
+            "Entwickle emotionale Intelligenz als strategisches Tool"
+          ]
+        },
+        "low": {
+          "title": "Der Unabhängige Realist",
+          "shortDescription": "Du bist eher direkt und unabhängig in deinem Denken.",
+          "detailedDescription": "Du bist selbstständig und lässt dich nicht leicht beeinflussen. Während du nicht absichtlich konfrontativ bist, stellst du deine eigenen Interessen nicht automatisch zurück. Du schätzt Ehrlichkeit und klare Kommunikation über höfliche Umschreibungen. Kompromisse gehst du nur ein, wenn sie für alle Sinn machen.",
+          "strengths": [
+            "Kritisches, unabhängiges Denken",
+            "Authentische Kommunikation",
+            "Setzt gesunde Grenzen",
+            "Nicht anfällig für Gruppendruck",
+            "Rationale Problemlösung"
+          ],
+          "challenges": [
+            "Kann als wenig kooperativ wirken",
+            "Team-Harmonie manchmal vernachlässigt",
+            "Kompromisse fallen schwer"
+          ],
+          "professionalSuitability": "Ideal für Einzelunternehmertum, Forschung, Analyse, Produktentwicklung, strategische Planung und Rollen mit hoher Autonomie.",
+          "keywords": [
+            "Unabhängig",
+            "Realistisch",
+            "Selbstständig",
+            "Kritisch",
+            "Authentisch"
+          ],
+          "developmentTips": [
+            "Erkenne den Wert von Teamarbeit in manchen Kontexten",
+            "Übe aktives Zuhören",
+            "Kommuniziere deine Gründe, nicht nur deine Position"
+          ]
+        },
+        "medium": {
+          "title": "Der Ausgewogene Teamplayer",
+          "shortDescription": "Du balancierst zwischen eigenen Interessen und Teamharmonie.",
+          "detailedDescription": "Du findest eine gute Balance zwischen Kooperation und Selbstbehauptung. Du bist hilfsbereit, wenn es angemessen ist, aber opferst dich nicht auf. Du kannst sowohl konfliktfrei zusammenarbeiten als auch deine Meinung vertreten, wenn es wichtig ist. Diese Balance macht dich zu einem geschätzten Teammitglied.",
+          "strengths": [
+            "Gesunde Balance zwischen Geben und Nehmen",
+            "Kann Konflikte konstruktiv angehen",
+            "Team- und selbstorientiert zugleich",
+            "Authentische Hilfsbereitschaft",
+            "Diplomatisches Geschick"
+          ],
+          "challenges": [
+            "Muss situativ entscheiden, wann kooperieren und wann durchsetzen"
+          ],
+          "professionalSuitability": "Universell einsetzbar - besonders gut für mittleres Management, Projektleitung, Account Management und alle Rollen mit Balance zwischen Durchsetzung und Kooperation.",
+          "keywords": [
+            "Ausgewogen",
+            "Diplomatisch",
+            "Teamfähig",
+            "Selbstbewusst",
+            "Kooperativ"
+          ],
+          "developmentTips": [
+            "Nutze deine Balance als Vermittler",
+            "Erkenne, wann welcher Modus gefragt ist",
+            "Bleibe authentisch in deiner Hilfsbereitschaft"
+          ]
+        },
+        "high": {
+          "title": "Der Empathische Unterstützer",
+          "shortDescription": "Du bist sehr hilfsbereit und harmoniebedürftig.",
+          "detailedDescription": "Du bist von Natur aus hilfsbereit und empathisch. Das Wohl anderer liegt dir am Herzen, und du gehst oft auf andere zu, um Konflikte zu vermeiden oder zu lösen. Du bist ein geschätzter Teammitglied, weil du für gute Stimmung sorgst und andere unterstützt. Manchmal stellst du die Bedürfnisse anderer vor deine eigenen.",
+          "strengths": [
+            "Hohe emotionale Intelligenz",
+            "Exzellente Teamharmonie-Förderung",
+            "Konfliktlösung und Mediation",
+            "Verlässlicher Support für Kollegen",
+            "Empathisches Zuhören"
+          ],
+          "challenges": [
+            "Eigene Bedürfnisse können zu kurz kommen",
+            "Schwierigkeiten, Nein zu sagen",
+            "Kann ausgenutzt werden",
+            "Konfliktvermeidung statt -lösung"
+          ],
+          "professionalSuitability": "Perfekt für HR, Coaching, Sozialarbeit, Pflege, Kundenservice, Teamassistenz und alle unterstützenden, zwischenmenschlichen Rollen.",
+          "keywords": [
+            "Empathisch",
+            "Hilfsbereit",
+            "Harmonisch",
+            "Unterstützend",
+            "Einfühlsam"
+          ],
+          "developmentTips": [
+            "Lerne, auch Nein zu sagen ohne Schuldgefühle",
+            "Setze klare Grenzen für deine Energie",
+            "Erkenne, dass auch Konfrontation manchmal hilfreich ist"
+          ]
+        },
+        "veryHigh": {
+          "title": "Der Selbstlose Vermittler",
+          "shortDescription": "Du bist extrem altruistisch und stellst andere oft vor dich selbst.",
+          "detailedDescription": "Du bist außergewöhnlich empathisch und hilfsbereit. Das Wohl anderer ist dir fast wichtiger als dein eigenes. Du gehst weit aus deinem Weg, um anderen zu helfen, Konflikte zu vermeiden und Harmonie zu schaffen. Menschen suchen bei dir Rat und Unterstützung, weil du immer ein offenes Ohr hast. Die Gefahr der Selbstaufgabe ist real.",
+          "strengths": [
+            "Außergewöhnliche Empathie und Fürsorge",
+            "Natürliche Mediationsfähigkeit",
+            "Schafft tiefe, vertrauensvolle Beziehungen",
+            "Teamgeist und Zusammenhalt fördern",
+            "Hohe soziale Akzeptanz",
+            "Konfliktentschärfung"
+          ],
+          "challenges": [
+            "Selbstvernachlässigung und Burnout-Gefahr",
+            "Schwierigkeiten mit notwendigen Konflikten",
+            "Kann von anderen ausgenutzt werden",
+            "Eigene Ziele werden zurückgestellt",
+            "Schwer, Grenzen zu setzen"
+          ],
+          "professionalSuitability": "Herausragend für therapeutische Berufe, Seelsorge, Mediation, humanitäre Arbeit, Betreuung und alle Helferberufe mit starker emotionaler Komponente.",
+          "keywords": [
+            "Altruistisch",
+            "Fürsorglich",
+            "Mediativ",
+            "Selbstlos",
+            "Harmoniesuchend"
+          ],
+          "developmentTips": [
+            "Selbstfürsorge muss Priorität werden",
+            "Lerne, konstruktiv zu konfrontieren",
+            "Erkenne: Anderen zu helfen bedeutet nicht, dich aufzugeben",
+            "Setze klare Grenzen, um nachhaltig helfen zu können"
+          ]
+        }
+      }
+    },
+    "conscientiousness": {
+      "name": "Gewissenhaftigkeit",
+      "description": "Organisation, Zuverlässigkeit und Selbstdisziplin",
+      "profiles": {
+        "veryLow": {
+          "title": "Der Spontane Freigeist",
+          "shortDescription": "Du bist sehr spontan und lebst im Moment ohne viel Planung.",
+          "detailedDescription": "Du lässt dich vom Leben treiben und magst keine Struktur oder langfristige Pläne. Spontaneität ist deine Stärke - du kannst flexibel auf neue Situationen reagieren. Deadlines und Regeln empfindest du als einengend. Du arbeitest am besten unter Druck oder wenn dich etwas wirklich interessiert, ansonsten fällt dir Selbstdisziplin schwer.",
+          "strengths": [
+            "Hohe Flexibilität und Anpassungsfähigkeit",
+            "Kreativität durch Unstrukturiertheit",
+            "Spontane Problemlösung",
+            "Keine Angst vor Veränderung",
+            "Entspannte Lebenseinstellung"
+          ],
+          "challenges": [
+            "Deadlines werden oft verpasst",
+            "Unorganisiertes Arbeiten",
+            "Schwierigkeiten mit Routinen",
+            "Prokrastination",
+            "Als unzuverlässig wahrgenommen"
+          ],
+          "professionalSuitability": "Geeignet für kreative Freelance-Arbeit, Künstler, Performer, Startups mit flacher Hierarchie, Rollen mit hoher Autonomie und wenig Struktur.",
+          "keywords": [
+            "Spontan",
+            "Flexibel",
+            "Kreativ",
+            "Unkonventionell",
+            "Anpassungsfähig"
+          ],
+          "developmentTips": [
+            "Nutze Tools wie Kalender oder Reminders",
+            "Finde Strukturen, die zu dir passen (nicht gegen dich)",
+            "Arbeite in Umgebungen mit externer Struktur",
+            "Entwickle Mindest-Routinen für wichtige Bereiche"
+          ]
+        },
+        "low": {
+          "title": "Der Flexible Improvisierer",
+          "shortDescription": "Du bevorzugst Flexibilität und spontane Entscheidungen.",
+          "detailedDescription": "Du arbeitest gerne spontan und improvisierst lieber, als detailliert zu planen. Während du wichtige Deadlines einhalten kannst, magst du keine übermäßige Struktur. Du bist flexibel und kannst dich gut an veränderte Umstände anpassen. Zu viel Organisation empfindest du als kreativitätshemmend.",
+          "strengths": [
+            "Gute Anpassung an Veränderungen",
+            "Kreative Problemlösung",
+            "Kann unter Druck arbeiten",
+            "Lockere Arbeitsweise",
+            "Flexibilität bei Prioritäten"
+          ],
+          "challenges": [
+            "Manchmal zu spontan für strukturierte Umgebungen",
+            "Planung fällt schwer",
+            "Details können übersehen werden"
+          ],
+          "professionalSuitability": "Ideal für kreative Agenturen, Startups, Event-Organisation, Journalismus, agile Projektarbeit und Rollen mit variablen Anforderungen.",
+          "keywords": [
+            "Flexibel",
+            "Spontan",
+            "Anpassungsfähig",
+            "Improvisierend",
+            "Locker"
+          ],
+          "developmentTips": [
+            "Kombiniere Struktur mit Flexibilität",
+            "Plane das Wichtigste, bleib spontan beim Rest",
+            "Arbeite mit visuellen Boards statt starren Listen"
+          ]
+        },
+        "medium": {
+          "title": "Der Pragmatische Organisierer",
+          "shortDescription": "Du findest eine gute Balance zwischen Planung und Flexibilität.",
+          "detailedDescription": "Du bist organisiert, wo es nötig ist, aber nicht zwanghaft. Du kannst strukturiert arbeiten, lässt aber auch Raum für Spontaneität. Wichtige Aufgaben erledigst du zuverlässig, während du bei weniger kritischen Dingen entspannter bist. Diese Balance macht dich effektiv, ohne starr zu sein.",
+          "strengths": [
+            "Gute Balance zwischen Struktur und Flexibilität",
+            "Zuverlässig bei wichtigen Aufgaben",
+            "Kann priorisieren",
+            "Anpassungsfähig bei Veränderungen",
+            "Pragmatischer Arbeitsstil"
+          ],
+          "challenges": ["Muss bewusst entscheiden, was Struktur braucht"],
+          "professionalSuitability": "Universell einsetzbar - ideal für Projektmanagement, Marketing, Operations, mittleres Management und alle Rollen mit wechselnden Anforderungen.",
+          "keywords": [
+            "Pragmatisch",
+            "Ausgewogen",
+            "Zuverlässig",
+            "Anpassungsfähig",
+            "Effizient"
+          ],
+          "developmentTips": [
+            "Nutze deine Flexibilität als Stärke",
+            "Entwickle Systeme für Wichtiges, entspanne beim Rest",
+            "Bleibe offen für verschiedene Arbeitsstile"
+          ]
+        },
+        "high": {
+          "title": "Der Strukturierte Planer",
+          "shortDescription": "Du bist sehr organisiert und zuverlässig.",
+          "detailedDescription": "Du liebst Struktur, Planung und klare Prozesse. To-Do-Listen und Zeitpläne geben dir Sicherheit. Du erledigst Aufgaben gewissenhaft und pünktlich. Deine Zuverlässigkeit macht dich zu einem geschätzten Teammitglied. Spontaneität ist weniger dein Ding - du bevorzugst es, vorbereitet zu sein.",
+          "strengths": [
+            "Hohe Zuverlässigkeit und Pünktlichkeit",
+            "Exzellente Planungsfähigkeit",
+            "Detailorientiertes Arbeiten",
+            "Strukturierte Problemlösung",
+            "Langfristige Zielerreichung"
+          ],
+          "challenges": [
+            "Schwierigkeiten mit ungeplanten Änderungen",
+            "Kann als zu rigid wahrgenommen werden",
+            "Perfektionismus kann bremsen"
+          ],
+          "professionalSuitability": "Perfekt für Projektmanagement, Finanzen, Controlling, Qualitätssicherung, Compliance, Administration und alle prozessorientierten Bereiche.",
+          "keywords": [
+            "Organisiert",
+            "Zuverlässig",
+            "Strukturiert",
+            "Gewissenhaft",
+            "Planvoll"
+          ],
+          "developmentTips": [
+            "Übe, mit ungeplanten Situationen umzugehen",
+            "Erkenne, wann 'gut genug' ausreicht",
+            "Kombiniere Struktur mit kreativen Freiräumen"
+          ]
+        },
+        "veryHigh": {
+          "title": "Der Perfektionistische Stratege",
+          "shortDescription": "Du bist extrem organisiert und detailorientiert bis zur Perfektion.",
+          "detailedDescription": "Du bist der Inbegriff von Gewissenhaftigkeit. Jedes Detail ist durchdacht, jeder Plan ausgearbeitet. Du hast höchste Ansprüche an dich selbst und deine Arbeit. Deadlines hältst du nicht nur ein - du bist oft früher fertig. Deine Zuverlässigkeit ist legendär, aber dein Perfektionismus kann auch belastend sein.",
+          "strengths": [
+            "Außergewöhnliche Detailgenauigkeit",
+            "Höchste Qualitätsstandards",
+            "Perfekte Planung und Vorbereitung",
+            "Absolute Zuverlässigkeit",
+            "Exzellentes Zeitmanagement",
+            "Langfristiger strategischer Fokus"
+          ],
+          "challenges": [
+            "Perfektionismus kann lähmend wirken",
+            "Schwierigkeiten mit Unvorhergesehenem",
+            "Kann andere mit hohen Standards überfordern",
+            "Flexibilität leidet",
+            "Burnout-Gefahr durch Überarbeitung"
+          ],
+          "professionalSuitability": "Herausragend für Chirurgie, Luftfahrt, Finanzprüfung, wissenschaftliche Forschung, Architektur, Rechtswesen und alle Bereiche, wo Fehler gravierende Folgen haben.",
+          "keywords": [
+            "Perfektionistisch",
+            "Detailgenau",
+            "Strategisch",
+            "Hochzuverlässig",
+            "Akribisch"
+          ],
+          "developmentTips": [
+            "Lerne, 'gut genug' zu akzeptieren bei nicht-kritischen Aufgaben",
+            "Delegiere und vertraue anderen",
+            "Plane bewusst Freiräume ohne Struktur ein",
+            "Erkenne: Perfektion ist nicht immer notwendig"
+          ]
+        }
+      }
+    },
+    "neuroticism": {
+      "name": "Neurotizismus (Emotionale Stabilität)",
+      "description": "Umgang mit Stress und emotionale Ausgeglichenheit",
+      "profiles": {
+        "veryLow": {
+          "title": "Der Unerschütterliche Pragmatiker",
+          "shortDescription": "Du bist extrem emotional stabil und lässt dich durch fast nichts aus der Ruhe bringen.",
+          "detailedDescription": "Du bist bemerkenswert gelassen und emotional stabil. Stress, Druck oder Krisen bringen dich nicht aus der Fassung. Du reagierst rational und besonnen, auch in hektischen Situationen. Deine emotionale Stabilität ist eine Stärke, aber manchmal kann es so wirken, als würdest du Emotionen unterdrücken oder nicht ernst nehmen.",
+          "strengths": [
+            "Außergewöhnliche Stressresistenz",
+            "Rationale Entscheidungen unter Druck",
+            "Beruhigender Einfluss auf andere",
+            "Krisenmanagement",
+            "Emotionale Unabhängigkeit",
+            "Klarer Kopf in Extremsituationen"
+          ],
+          "challenges": [
+            "Kann als emotional distanziert wirken",
+            "Eigene Emotionen werden möglicherweise unterdrückt",
+            "Schwierigkeiten, emotionale Bedürfnisse anderer zu verstehen"
+          ],
+          "professionalSuitability": "Ideal für Notfallmedizin, Katastrophenmanagement, Militär, Sicherheitsdienste, Börsenhandel, Krisenintervention und alle hochstressigen Berufe.",
+          "keywords": [
+            "Unerschütterlich",
+            "Stabil",
+            "Gelassen",
+            "Rational",
+            "Stressresistent"
+          ],
+          "developmentTips": [
+            "Erkenne den Wert von Emotionen bei anderen",
+            "Entwickle emotionale Intelligenz, nicht nur Kontrolle",
+            "Zeige gelegentlich Verletzlichkeit, um Nähe zu schaffen"
+          ]
+        },
+        "low": {
+          "title": "Der Gelassene Optimist",
+          "shortDescription": "Du bist emotional stabil und lässt dich selten stressen.",
+          "detailedDescription": "Du gehst das Leben mit einer entspannten Grundhaltung an. Stress und Rückschläge nimmst du gelassen hin und siehst meist das Positive. Du bist emotional ausgeglichen und brauchst wenig Zeit, um dich von negativen Ereignissen zu erholen. Deine Stabilität hilft dir, klar zu denken und andere zu beruhigen.",
+          "strengths": [
+            "Hohe Stresstoleranz",
+            "Positive Grundeinstellung",
+            "Schnelle Erholung von Rückschlägen",
+            "Emotionale Ausgeglichenheit",
+            "Beruhigende Präsenz"
+          ],
+          "challenges": [
+            "Könnte wichtige Warnsignale übersehen",
+            "Manchmal zu entspannt bei echten Problemen"
+          ],
+          "professionalSuitability": "Perfekt für Kundenservice, Lehre, Coaching, Teamleitung, Healthcare und alle Bereiche mit moderatem Stresslevel.",
+          "keywords": [
+            "Gelassen",
+            "Optimistisch",
+            "Ausgeglichen",
+            "Belastbar",
+            "Positiv"
+          ],
+          "developmentTips": [
+            "Bleibe aufmerksam für ernste Probleme",
+            "Nutze deine Ruhe, um andere zu stärken",
+            "Erkenne, wann Besorgnis angebracht ist"
+          ]
+        },
+        "medium": {
+          "title": "Der Realistische Empath",
+          "shortDescription": "Du hast eine ausgewogene emotionale Reaktion auf Stress.",
+          "detailedDescription": "Du erlebst Emotionen in einem gesunden Maß. Du kannst gestresst sein, erholst dich aber gut. Du nimmst Probleme ernst, ohne davon überwältigt zu werden. Diese Balance ermöglicht dir, sowohl rational als auch emotional angemessen zu reagieren. Du verstehst emotionale Belastungen bei dir und anderen.",
+          "strengths": [
+            "Ausgewogene emotionale Reaktionen",
+            "Empathie für emotionale Zustände",
+            "Gesundes Stressmanagement",
+            "Kann zwischen Emotion und Ratio vermitteln",
+            "Realistische Risikoeinschätzung"
+          ],
+          "challenges": ["Muss aktiv Stressmanagement betreiben"],
+          "professionalSuitability": "Universell einsetzbar - ideal für Beratung, Mediation, mittleres Management, kreative Berufe und alle Rollen mit emotionalen und rationalen Anforderungen.",
+          "keywords": [
+            "Ausgewogen",
+            "Empathisch",
+            "Realistisch",
+            "Stressmanagement",
+            "Emotional intelligent"
+          ],
+          "developmentTips": [
+            "Entwickle persönliche Stressbewältigungsstrategien",
+            "Nutze deine Balance als Vermittler",
+            "Bleibe achtsam für deine emotionalen Grenzen"
+          ]
+        },
+        "high": {
+          "title": "Der Sensible Reflektor",
+          "shortDescription": "Du bist emotional sensibel und reagierst intensiv auf Stress.",
+          "detailedDescription": "Du nimmst emotionale Nuancen wahr, die anderen entgehen. Du reagierst stärker auf Stress und negative Ereignisse, was sowohl Vor- als auch Nachteile hat. Deine Sensibilität ermöglicht dir tiefe Empathie, aber du brauchst auch bewusste Strategien zur Stressbewältigung. Du neigst dazu, über Dinge nachzugrübeln.",
+          "strengths": [
+            "Hohe emotionale Sensibilität",
+            "Tiefe Empathie für Leidende",
+            "Erkennt emotionale Probleme früh",
+            "Sorgfältige Risikoabwägung",
+            "Tiefe zwischenmenschliche Verbindungen"
+          ],
+          "challenges": [
+            "Höhere Stressanfälligkeit",
+            "Grübeln und Sorgen",
+            "Kann von negativen Emotionen überwältigt werden",
+            "Braucht mehr Erholungszeit"
+          ],
+          "professionalSuitability": "Geeignet für Therapie, Beratung, kreative Berufe, Kunst, Schreiben, empathische Pflege und Rollen mit emotional unterstützender Funktion.",
+          "keywords": [
+            "Sensibel",
+            "Empathisch",
+            "Reflektiert",
+            "Aufmerksam",
+            "Tiefgründig"
+          ],
+          "developmentTips": [
+            "Entwickle aktive Stressbewältigungstechniken",
+            "Setze emotionale Grenzen",
+            "Nutze deine Sensibilität als Stärke, nicht Schwäche",
+            "Suche unterstützende Umgebungen"
+          ]
+        },
+        "veryHigh": {
+          "title": "Der Hochsensible Beobachter",
+          "shortDescription": "Du bist sehr emotional sensibel und stark von Stress betroffen.",
+          "detailedDescription": "Du bist hochsensibel und erlebst Emotionen sehr intensiv. Stress und negative Ereignisse belasten dich stark und länger als andere. Du machst dir oft Sorgen und grübelst über Probleme. Gleichzeitig ermöglicht dir diese Sensibilität außergewöhnliche Empathie und kreative Tiefe. Du brauchst bewusste Selbstfürsorge.",
+          "strengths": [
+            "Außergewöhnliche Empathie und Einfühlungsvermögen",
+            "Erkennt subtile emotionale Signale",
+            "Tiefe emotionale Intelligenz",
+            "Kreative und künstlerische Sensibilität",
+            "Gewissenhaftigkeit aus Sorge um Qualität",
+            "Starke intuitive Fähigkeiten"
+          ],
+          "challenges": [
+            "Hohe Stressanfälligkeit",
+            "Neigung zu Ängsten und Sorgen",
+            "Überwältigende emotionale Reaktionen",
+            "Burnout-Risiko",
+            "Schwierigkeiten in hektischen Umgebungen",
+            "Negative Gedankenspiralen"
+          ],
+          "professionalSuitability": "Ideal für Psychotherapie, künstlerische Berufe, Schreiben, Musik, empathische Pflege, Tiermedizin und ruhige, unterstützende Arbeitsumgebungen.",
+          "keywords": [
+            "Hochsensibel",
+            "Empathisch",
+            "Intuitiv",
+            "Sorgfältig",
+            "Tiefgründig"
+          ],
+          "developmentTips": [
+            "Professionelle Unterstützung für Stressmanagement suchen",
+            "Klare Selbstfürsorge-Routinen etablieren",
+            "Arbeitsumgebung mit wenig Stressoren wählen",
+            "Lerne Abgrenzungstechniken",
+            "Nutze deine Sensibilität als besondere Gabe",
+            "Meditation und Achtsamkeit praktizieren"
+          ]
+        }
+      }
+    },
+    "openness": {
+      "name": "Offenheit",
+      "description": "Neugier, Kreativität und Offenheit für Neues",
+      "profiles": {
+        "veryLow": {
+          "title": "Der Traditionelle Bewahrer",
+          "shortDescription": "Du schätzt Tradition, Routine und bewährte Methoden.",
+          "detailedDescription": "Du bevorzugst das Bewährte und Vertraute. Veränderungen begegnest du skeptisch - warum etwas ändern, das funktioniert? Du schätzt Routine, Traditionen und klare Strukturen. Abstrakte oder theoretische Konzepte interessieren dich wenig - du bist praktisch orientiert. Deine Stärke liegt in der Beständigkeit.",
+          "strengths": [
+            "Zuverlässigkeit durch bewährte Methoden",
+            "Praktische Problemlösung",
+            "Respekt für Traditionen und Erfahrung",
+            "Fokus auf das Machbare",
+            "Stabilität und Beständigkeit"
+          ],
+          "challenges": [
+            "Schwierigkeiten mit Veränderungen",
+            "Kann Innovation blockieren",
+            "Verpasst neue Chancen durch Skepsis",
+            "Wirkt unflexibel"
+          ],
+          "professionalSuitability": "Ideal für Handwerk, Verwaltung, Produktion, Qualitätskontrolle, traditionelle Branchen und alle Bereiche mit bewährten Prozessen.",
+          "keywords": [
+            "Traditionell",
+            "Praktisch",
+            "Bewährt",
+            "Stabil",
+            "Erfahrungsorientiert"
+          ],
+          "developmentTips": [
+            "Öffne dich schrittweise für Neues",
+            "Erkenne den Wert von Innovation neben Tradition",
+            "Teste neue Methoden in kleinem Rahmen"
+          ]
+        },
+        "low": {
+          "title": "Der Pragmatische Realist",
+          "shortDescription": "Du bevorzugst praktische, bewährte Ansätze gegenüber Experimenten.",
+          "detailedDescription": "Du bist praktisch orientiert und bevorzugst erprobte Lösungen. Während du nicht komplett verschlossen für Neues bist, brauchst du konkrete Gründe für Veränderungen. Abstrakte Theorien interessieren dich weniger als anwendbare Fakten. Du schätzt Routine und Struktur in deinem Arbeitsalltag.",
+          "strengths": [
+            "Fokus auf praktische Umsetzung",
+            "Realistische Einschätzungen",
+            "Effizienz durch Routine",
+            "Bodenständigkeit",
+            "Kritisches Hinterfragen von Trends"
+          ],
+          "challenges": [
+            "Kann Innovationschancen verpassen",
+            "Wenig Interesse an abstrakten Konzepten",
+            "Veränderungen fallen schwer"
+          ],
+          "professionalSuitability": "Geeignet für Operations, Logistik, Produktion, technische Berufe, Administration und alle prozessorientierten Bereiche.",
+          "keywords": [
+            "Pragmatisch",
+            "Realistisch",
+            "Praktisch",
+            "Bodenständig",
+            "Effizient"
+          ],
+          "developmentTips": [
+            "Bleibe offen für verbesserte Prozesse",
+            "Kombiniere Bewährtes mit selektiven Innovationen",
+            "Erkenne, wann Veränderung nötig ist"
+          ]
+        },
+        "medium": {
+          "title": "Der Ausgewogene Explorer",
+          "shortDescription": "Du balancierst zwischen Neugierde und Pragmatismus.",
+          "detailedDescription": "Du bist offen für Neues, aber nicht um jeden Preis. Du kannst sowohl kreativ denken als auch praktisch umsetzen. Neue Ideen interessieren dich, aber du bewertest sie kritisch. Diese Balance macht dich zu einem guten Brückenbauer zwischen Innovation und Umsetzung.",
+          "strengths": [
+            "Balance zwischen Innovation und Pragmatismus",
+            "Selektive Offenheit für Neues",
+            "Kann kreativ und praktisch denken",
+            "Vermittelt zwischen Visionären und Praktikern",
+            "Realistische Innovationsbewertung"
+          ],
+          "challenges": [
+            "Muss bewusst entscheiden, wann explorieren und wann optimieren"
+          ],
+          "professionalSuitability": "Universell einsetzbar - ideal für Produktmanagement, Business Development, angewandte Forschung, Innovation Management und Schnittstellen-Rollen.",
+          "keywords": [
+            "Ausgewogen",
+            "Selektiv offen",
+            "Praktisch-kreativ",
+            "Realistisch",
+            "Vermittelnd"
+          ],
+          "developmentTips": [
+            "Nutze deine Balance als strategischen Vorteil",
+            "Fördere Innovation, aber bleibe umsetzungsorientiert",
+            "Sei Brücke zwischen verschiedenen Denkweisen"
+          ]
+        },
+        "high": {
+          "title": "Der Kreative Innovator",
+          "shortDescription": "Du bist sehr neugierig, kreativ und offen für neue Erfahrungen.",
+          "detailedDescription": "Du liebst Neues - neue Ideen, Erfahrungen, Perspektiven. Du bist kreativ, intellektuell neugierig und magst es, gewohnte Bahnen zu verlassen. Routine langweilt dich, Abwechslung belebt dich. Du denkst gerne über abstrakte Konzepte nach und hinterfragst etablierte Methoden. Innovation ist dir wichtig.",
+          "strengths": [
+            "Hohe Kreativität und Innovation",
+            "Intellektuelle Neugier",
+            "Offenheit für verschiedene Perspektiven",
+            "Schnelle Anpassung an Neues",
+            "Inspirierende Ideengeber"
+          ],
+          "challenges": [
+            "Routine kann frustrierend sein",
+            "Details und Umsetzung werden vernachlässigt",
+            "Zu viele Projekte gleichzeitig"
+          ],
+          "professionalSuitability": "Perfekt für Innovation, Design, Marketing, Forschung, Strategie, Startups, kreative Branchen und alle zukunftsorientierten Bereiche.",
+          "keywords": [
+            "Kreativ",
+            "Innovativ",
+            "Neugierig",
+            "Visionär",
+            "Experimentierfreudig"
+          ],
+          "developmentTips": [
+            "Finde Partner für die Umsetzung deiner Ideen",
+            "Balance zwischen Ideenfindung und Umsetzung",
+            "Nutze deine Kreativität gezielt"
+          ]
+        },
+        "veryHigh": {
+          "title": "Der Visionäre Querdenker",
+          "shortDescription": "Du bist extrem kreativ, neugierig und ständig auf der Suche nach Neuem.",
+          "detailedDescription": "Du bist ein geborener Innovator und Visionär. Alles Neue fasziniert dich - Ideen, Kunst, Philosophie, Technologie. Du denkst außerhalb aller Kategorien und siehst Verbindungen, die anderen verborgen bleiben. Routine ist dein Feind, Veränderung dein Element. Du bist oft deiner Zeit voraus.",
+          "strengths": [
+            "Außergewöhnliche Kreativität und Originalität",
+            "Visionäres, zukunftsorientiertes Denken",
+            "Interdisziplinäres Vernetzen von Ideen",
+            "Inspiration für andere",
+            "Paradigmenwechsel anstoßen",
+            "Kulturelle und intellektuelle Weite"
+          ],
+          "challenges": [
+            "Schwierigkeiten mit Routineaufgaben",
+            "Praktische Umsetzung fällt schwer",
+            "Zu viele Ideen, zu wenig Fokus",
+            "Kann als zu abstrakt wahrgenommen werden",
+            "Ungeduld mit langsamen Prozessen"
+          ],
+          "professionalSuitability": "Herausragend für Forschung, Produktinnovation, Design Thinking, Kunst, Philosophie, Zukunftsforschung, Startup-Gründung und alle disruptiven Bereiche.",
+          "keywords": [
+            "Visionär",
+            "Revolutionär",
+            "Kreativ",
+            "Zukunftsorientiert",
+            "Grenzüberschreitend"
+          ],
+          "developmentTips": [
+            "Suche Co-Founder oder Partner für Umsetzung",
+            "Lerne, Ideen zu priorisieren und zu Ende zu führen",
+            "Finde Umgebungen, die deine Visionen schätzen",
+            "Akzeptiere, dass nicht alle sofort folgen können",
+            "Nutze deine Gabe, um echte Innovation voranzutreiben"
+          ]
+        }
+      }
+    },
+    "selfAwareness": {
+      "name": "Selbstwahrnehmung",
+      "description": "Bewusstsein für eigene Emotionen und deren Auswirkungen",
+      "profiles": {
+        "veryLow": {
+          "title": "Der Unbewusste",
+          "shortDescription": "Du hast wenig Zugang zu deinen eigenen Emotionen.",
+          "detailedDescription": "Deine eigenen Gefühle sind dir oft ein Rätsel. Du reagierst, ohne zu verstehen warum. Emotionale Zustände werden selten bewusst wahrgenommen oder benannt. Dies kann zu impulsivem Verhalten und Schwierigkeiten in Beziehungen führen.",
+          "strengths": [
+            "Wenig von Emotionen gelähmt",
+            "Pragmatisches Handeln ohne emotionale Hemmung"
+          ],
+          "challenges": [
+            "Impulsive, unerklärliche Reaktionen",
+            "Schwierigkeiten, eigenes Verhalten zu verstehen",
+            "Kann emotionale Bedürfnisse nicht artikulieren",
+            "Andere verstehen dich schwer",
+            "Wiederkehrende zwischenmenschliche Probleme"
+          ],
+          "professionalSuitability": "Rein mechanische oder analytische Tätigkeiten ohne zwischenmenschliche Komponente. Entwicklung von Selbstwahrnehmung ist jedoch für die meisten Berufe wertvoll.",
+          "keywords": ["Unbewusst", "Impulsiv", "Emotional distanziert"],
+          "developmentTips": [
+            "Beginne ein Emotionstagebuch",
+            "Frage andere, wie sie dich wahrnehmen",
+            "Lerne Basisemotionen zu benennen",
+            "Erwäge Therapie oder Coaching",
+            "Übe Achtsamkeitsmeditation"
+          ]
+        },
+        "low": {
+          "title": "Der Suchende",
+          "shortDescription": "Du beginnst, deine Emotionen wahrzunehmen, aber es fällt schwer.",
+          "detailedDescription": "Du merkst, dass Emotionen da sind, kannst sie aber oft nicht genau benennen oder verstehen. Im Nachhinein erkennst du manchmal, was du gefühlt hast. Du bist auf dem Weg zu mehr Selbstwahrnehmung, brauchst aber noch Entwicklung.",
+          "strengths": [
+            "Erste Ansätze von Selbstreflexion",
+            "Offenheit für emotionales Wachstum",
+            "Erkennst manchmal Muster im Nachhinein"
+          ],
+          "challenges": [
+            "Emotionale Klarheit fehlt oft",
+            "Schwer, in Echtzeit Gefühle zu benennen",
+            "Unsicherheit über eigene Bedürfnisse",
+            "Reaktionen überraschen dich selbst"
+          ],
+          "professionalSuitability": "Geeignet für Rollen mit klaren Strukturen und wenig emotionaler Komplexität. Entwicklungsbedarf für Führung oder beratende Tätigkeiten.",
+          "keywords": ["Entwickelnd", "Suchend", "Lernbereit"],
+          "developmentTips": [
+            "Stoppe mehrmals täglich und frage: Was fühle ich gerade?",
+            "Lerne das Gefühls-Vokabular erweitern",
+            "Suche Feedback von vertrauten Personen",
+            "Journaling als tägliche Praxis",
+            "Emotionale Intelligenz-Trainings"
+          ]
+        },
+        "medium": {
+          "title": "Der Bewusste",
+          "shortDescription": "Du hast gutes Bewusstsein für deine Emotionen.",
+          "detailedDescription": "Du erkennst deine Emotionen meist zuverlässig und verstehst, woher sie kommen. Du kannst über deine Gefühle sprechen und weißt, wie sie dein Verhalten beeinflussen. Dies ermöglicht dir gute Selbststeuerung und authentische Kommunikation.",
+          "strengths": [
+            "Gute emotionale Selbstwahrnehmung",
+            "Kannst Gefühle benennen und artikulieren",
+            "Verstehst Trigger und Muster",
+            "Authentische Selbstdarstellung",
+            "Basis für gute Selbststeuerung"
+          ],
+          "challenges": [
+            "In stressigen Situationen kann Klarheit verloren gehen",
+            "Subtile emotionale Nuancen können übersehen werden"
+          ],
+          "professionalSuitability": "Gut für die meisten Berufe, besonders mit Kundenkontakt, Teamarbeit oder moderater Führungsverantwortung.",
+          "keywords": ["Selbstbewusst", "Reflektiert", "Authentisch"],
+          "developmentTips": [
+            "Verfeinere dein emotionales Vokabular",
+            "Übe Selbstwahrnehmung auch unter Stress",
+            "Erkunde tiefere emotionale Schichten",
+            "Teile deine Erkenntnisse mit anderen"
+          ]
+        },
+        "high": {
+          "title": "Der Selbstkenner",
+          "shortDescription": "Du hast sehr gutes Bewusstsein für deine innere Welt.",
+          "detailedDescription": "Du erkennst nicht nur deine Emotionen, sondern auch deren Nuancen, Ursprünge und Auswirkungen. Du kannst in Echtzeit wahrnehmen, was in dir vorgeht, und dies klar kommunizieren. Diese Selbstkenntnis ist eine Grundlage für exzellente emotionale Intelligenz.",
+          "strengths": [
+            "Exzellente Selbstwahrnehmung in Echtzeit",
+            "Verstehst komplexe emotionale Muster",
+            "Kannst eigene Bedürfnisse klar artikulieren",
+            "Hohe Authentizität",
+            "Erkennst Trigger sofort",
+            "Basis für starke Selbstführung"
+          ],
+          "challenges": [
+            "Kann zu viel Zeit mit Selbstanalyse verbringen",
+            "Muss aufpassen, nicht selbstabsorbiert zu wirken"
+          ],
+          "professionalSuitability": "Exzellent für Führung, Coaching, Beratung, Therapie, komplexes Stakeholder-Management und alle Rollen mit hoher emotionaler Komplexität.",
+          "keywords": ["Selbstbewusst", "Reflektiert", "Klar", "Authentisch"],
+          "developmentTips": [
+            "Nutze deine Selbstkenntnis, um andere zu unterstützen",
+            "Balance zwischen Selbstreflexion und Aktion",
+            "Teile deine Fähigkeit durch Mentoring"
+          ]
+        },
+        "veryHigh": {
+          "title": "Der Emotionale Meister",
+          "shortDescription": "Du besitzt außergewöhnliche Selbstwahrnehmung.",
+          "detailedDescription": "Deine Selbstwahrnehmung ist so ausgeprägt, dass du selbst subtilste emotionale Regungen sofort erkennst und einordnen kannst. Du verstehst die komplexen Zusammenhänge zwischen Gefühlen, Gedanken und Verhalten auf einer tiefen Ebene. Diese Gabe ist selten und wertvoll.",
+          "strengths": [
+            "Außergewöhnliche emotionale Klarheit",
+            "Sofortige Erkennung subtilster Gefühle",
+            "Tiefes Verständnis emotionaler Dynamiken",
+            "Kann komplexe innere Konflikte navigieren",
+            "Vorbild für andere in Selbstreflexion",
+            "Hohe emotionale Reife"
+          ],
+          "challenges": [
+            "Kann andere überfordern mit eigener Tiefe",
+            "Gefahr der Über-Analyse",
+            "Muss lernen, auch mal nicht zu reflektieren",
+            "Kann isolierend sein, wenn andere nicht mithalten"
+          ],
+          "professionalSuitability": "Herausragend für Psychotherapie, Executive Coaching, spirituelle Führung, emotionale Intelligenz-Training, Meditation und alle Bereiche, wo emotionale Meisterschaft gefragt ist.",
+          "keywords": [
+            "Meisterhaft",
+            "Tiefgründig",
+            "Selbstbewusst",
+            "Weise",
+            "Reflektiert"
+          ],
+          "developmentTips": [
+            "Teile deine Gabe durch Lehren und Mentoring",
+            "Finde Balance zwischen Tiefe und Leichtigkeit",
+            "Nutze deine Fähigkeit für größeres Wohl",
+            "Akzeptiere, dass nicht alle auf deinem Level sind"
+          ]
+        }
+      }
+    },
+    "selfManagement": {
+      "name": "Selbststeuerung",
+      "description": "Fähigkeit, eigene Emotionen zu regulieren",
+      "profiles": {
+        "veryLow": {
+          "title": "Der Getriebene",
+          "shortDescription": "Deine Emotionen kontrollieren dich, nicht umgekehrt.",
+          "detailedDescription": "Du reagierst impulsiv auf emotionale Reize ohne Kontrolle. Wut, Trauer oder Angst überwältigen dich und bestimmen dein Verhalten. Dies führt oft zu Konflikten, bereuten Entscheidungen und instabilen Beziehungen.",
+          "strengths": [
+            "Authentischer emotionaler Ausdruck",
+            "Keine emotionale Unterdrückung"
+          ],
+          "challenges": [
+            "Impulsive, destruktive Reaktionen",
+            "Konflikte durch unkontrollierte Emotionen",
+            "Bereute Entscheidungen im Affekt",
+            "Schwierigkeiten in Beziehungen",
+            "Als unberechenbar wahrgenommen",
+            "Professionelle Probleme durch Emotionalität"
+          ],
+          "professionalSuitability": "Schwierigkeiten in allen Rollen mit Stress, Konflikt oder emotionaler Belastung. Dringende Entwicklung nötig für beruflichen Erfolg.",
+          "keywords": ["Impulsiv", "Unkontrolliert", "Emotional"],
+          "developmentTips": [
+            "Lerne Pausen-Techniken (tief atmen, bis 10 zählen)",
+            "Suche professionelle Hilfe (Therapie)",
+            "Identifiziere Trigger und meide sie zunächst",
+            "Entwickle Notfall-Strategien für starke Emotionen",
+            "Beginne mit kleinen Selbstregulationsübungen"
+          ]
+        },
+        "low": {
+          "title": "Der Kämpfende",
+          "shortDescription": "Du versuchst deine Emotionen zu kontrollieren, aber es gelingt selten.",
+          "detailedDescription": "Du merkst, wenn Emotionen hochkommen und versuchst sie zu steuern, aber die Kontrolle gelingt oft nicht. Du schwankst zwischen Unterdrückung und Ausbruch. Die fehlende Regulation belastet dich und deine Beziehungen.",
+          "strengths": [
+            "Bewusstsein für das Problem vorhanden",
+            "Bemühung um Kontrolle erkennbar",
+            "Gelegentlich gelingt Selbststeuerung"
+          ],
+          "challenges": [
+            "Inkonsistente emotionale Kontrolle",
+            "Emotionale Ausbrüche in wichtigen Momenten",
+            "Erschöpfung durch ständigen Kampf",
+            "Schwankungen belasten Beziehungen"
+          ],
+          "professionalSuitability": "Herausfordernd in stressintensiven oder konfliktreichen Rollen. Entwicklungsbedarf für Führung oder Kundenkontakt.",
+          "keywords": ["Kämpfend", "Inkonsistent", "Bemüht"],
+          "developmentTips": [
+            "Lerne spezifische Regulations-Techniken",
+            "Übe in risikoarmen Situationen",
+            "Hole Feedback von vertrauten Personen",
+            "Erwäge Emotions-Regulations-Training",
+            "Feiere kleine Erfolge"
+          ]
+        },
+        "medium": {
+          "title": "Der Regulierte",
+          "shortDescription": "Du kannst deine Emotionen meist gut steuern.",
+          "detailedDescription": "Du hast gute Strategien zur Emotionsregulation entwickelt. In den meisten Situationen kannst du deine Reaktionen steuern, auch wenn es manchmal Anstrengung erfordert. Unter extremem Stress kann die Kontrolle gelegentlich schwinden.",
+          "strengths": [
+            "Gute emotionale Selbstkontrolle",
+            "Durchdachte statt impulsive Reaktionen",
+            "Kann Emotionen situationsangemessen zeigen",
+            "Professionelles Auftreten auch unter Druck",
+            "Zuverlässiges Verhalten"
+          ],
+          "challenges": [
+            "Unter Extremstress kann Kontrolle schwinden",
+            "Manchmal Anstrengung erforderlich",
+            "Gefahr der Über-Kontrolle"
+          ],
+          "professionalSuitability": "Gut für die meisten Berufe inklusive moderater Führung, Projektmanagement, Kundenservice und Teamarbeit.",
+          "keywords": ["Kontrolliert", "Zuverlässig", "Ausgeglichen"],
+          "developmentTips": [
+            "Entwickle Strategien für Extremsituationen",
+            "Balance zwischen Kontrolle und Authentizität",
+            "Lerne, wann emotionaler Ausdruck angemessen ist",
+            "Unterstütze andere beim Entwickeln dieser Fähigkeit"
+          ]
+        },
+        "high": {
+          "title": "Der Selbstbeherrschte",
+          "shortDescription": "Du hast sehr gute Kontrolle über deine emotionalen Reaktionen.",
+          "detailedDescription": "Selbst in sehr herausfordernden Situationen bleibst du gefasst. Du kannst bewusst entscheiden, wie du reagierst, statt automatisch zu reagieren. Diese Selbstbeherrschung ermöglicht dir, auch in Krisen klar zu denken und zu handeln.",
+          "strengths": [
+            "Exzellente Impulskontrolle",
+            "Ruhe in Krisensituationen",
+            "Bewusste Wahl statt Reaktion",
+            "Vorbildfunktion für andere",
+            "Professionell auch unter Extremstress",
+            "Vertrauenswürdige Führungspersönlichkeit"
+          ],
+          "challenges": [
+            "Kann als emotionslos wahrgenommen werden",
+            "Gefahr, eigene Bedürfnisse zu vernachlässigen",
+            "Muss aufpassen, nicht zu kontrolliert zu wirken"
+          ],
+          "professionalSuitability": "Exzellent für Führung, Krisenmanagement, Notfallmedizin, Verhandlung, komplexe Kundenbeziehungen und alle hochstressigen Rollen.",
+          "keywords": [
+            "Selbstbeherrscht",
+            "Gelassen",
+            "Souverän",
+            "Verlässlich"
+          ],
+          "developmentTips": [
+            "Zeige auch gelegentlich emotionale Verletzlichkeit",
+            "Balance zwischen Kontrolle und Authentizität",
+            "Nutze deine Ruhe, um andere zu stabilisieren",
+            "Achte auf eigene emotionale Bedürfnisse"
+          ]
+        },
+        "veryHigh": {
+          "title": "Der Emotionale Zen-Meister",
+          "shortDescription": "Du besitzt außergewöhnliche emotionale Selbstbeherrschung.",
+          "detailedDescription": "Deine Fähigkeit zur Selbstregulation ist außergewöhnlich. Selbst in extremsten Situationen bewahrst du innere Ruhe und Klarheit. Du kannst Emotionen bewusst steuern ohne sie zu unterdrücken. Diese Meisterschaft ist selten und inspiriert andere.",
+          "strengths": [
+            "Außergewöhnliche emotionale Stabilität",
+            "Ruhe auch in Extremsituationen",
+            "Kann andere durch Präsenz beruhigen",
+            "Perfekte Balance zwischen Kontrolle und Authentizität",
+            "Vorbildfunktion und inspirierend",
+            "Krisenmanager par excellence"
+          ],
+          "challenges": [
+            "Kann für andere unrealistisch wirken",
+            "Gefahr emotionaler Distanzierung",
+            "Andere fühlen sich evtl. inadäquat",
+            "Muss zeigen, dass auch du menschlich bist"
+          ],
+          "professionalSuitability": "Herausragend für höchste Führung, Kriseneinsätze, Notfallmedizin, Elite-Verhandlung, Diplomatie, spirituelle Führung und alle Extremsituationen.",
+          "keywords": [
+            "Zen-artig",
+            "Unerschütterlich",
+            "Meisterhaft",
+            "Inspirierend",
+            "Weise"
+          ],
+          "developmentTips": [
+            "Teile deine Techniken durch Lehren",
+            "Zeige auch deine menschliche Seite",
+            "Nutze deine Gabe für größeres Wohl",
+            "Mentoriere andere in Selbstregulation",
+            "Balance zwischen Meisterschaft und Menschlichkeit"
+          ]
+        }
+      }
+    },
+    "socialAwareness": {
+      "name": "Soziales Bewusstsein",
+      "description": "Empathie und Wahrnehmung anderer Emotionen",
+      "profiles": {
+        "veryLow": {
+          "title": "Der Blinde",
+          "shortDescription": "Du nimmst Emotionen anderer kaum wahr.",
+          "detailedDescription": "Die emotionalen Zustände anderer Menschen sind für dich weitgehend unsichtbar. Du merkst oft nicht, wenn jemand traurig, wütend oder unwohl ist, außer es wird explizit gesagt. Dies führt zu Missverständnissen und Beziehungsproblemen.",
+          "strengths": [
+            "Nicht durch fremde Emotionen beeinflusst",
+            "Objektive Entscheidungen ohne emotionale Färbung"
+          ],
+          "challenges": [
+            "Verletzt andere unabsichtlich",
+            "Wirkt unsensibel oder egoistisch",
+            "Verpasst soziale Signale",
+            "Schwierigkeiten in Beziehungen",
+            "Als empathielos wahrgenommen",
+            "Teamprobleme durch mangelndes Einfühlungsvermögen"
+          ],
+          "professionalSuitability": "Problematisch für alle Rollen mit Menschenkontakt. Geeignet nur für rein technische oder isolierte Tätigkeiten. Entwicklung dringend empfohlen.",
+          "keywords": ["Unempathisch", "Distanziert", "Blind"],
+          "developmentTips": [
+            "Lerne Basis-Emotionen an Mimik zu erkennen",
+            "Frage aktiv nach: 'Wie geht es dir?'",
+            "Beobachte bewusst Körpersprache",
+            "Lies Bücher über Empathie",
+            "Erwäge Empathie-Training oder Coaching"
+          ]
+        },
+        "low": {
+          "title": "Der Unsichere Beobachter",
+          "shortDescription": "Du bemerkst manchmal Emotionen anderer, bist aber oft unsicher.",
+          "detailedDescription": "Du erkennst offensichtliche emotionale Signale, aber subtile Hinweise entgehen dir oft. Du bist dir unsicher in deiner Einschätzung anderer und liegst manchmal falsch. Empathie ist vorhanden, aber noch unterentwickelt.",
+          "strengths": [
+            "Grundlegende Empathie vorhanden",
+            "Offensichtliche Emotionen werden erkannt",
+            "Bewusstsein für eigene Defizite"
+          ],
+          "challenges": [
+            "Subtile Signale werden übersehen",
+            "Unsicherheit in emotionaler Einschätzung",
+            "Manchmal falsche Interpretationen",
+            "Schwierigkeiten mit komplexen emotionalen Situationen"
+          ],
+          "professionalSuitability": "Möglich in Rollen mit begrenztem Kundenkontakt. Entwicklungsbedarf für Beratung, Führung oder intensive Teamarbeit.",
+          "keywords": ["Lernend", "Unsicher", "Grundempathie"],
+          "developmentTips": [
+            "Übe aktives Zuhören",
+            "Validiere deine Wahrnehmungen durch Nachfragen",
+            "Studiere nonverbale Kommunikation",
+            "Hole Feedback zu deinen Einschätzungen",
+            "Empathie-Workshops"
+          ]
+        },
+        "medium": {
+          "title": "Der Empathische",
+          "shortDescription": "Du hast gutes Gespür für die Gefühle anderer.",
+          "detailedDescription": "Du erkennst die Emotionen anderer zuverlässig und kannst dich in sie hineinversetzen. Du bemerkst, wenn jemand sich unwohl fühlt oder Unterstützung braucht. Diese Empathie macht dich zu einem geschätzten Teamplayer und Freund.",
+          "strengths": [
+            "Gute Empathie und Einfühlungsvermögen",
+            "Erkennt emotionale Bedürfnisse anderer",
+            "Nimmt Stimmungen und Gruppendynamiken wahr",
+            "Geschätzt in sozialen Kontexten",
+            "Kann gut auf Menschen eingehen"
+          ],
+          "challenges": [
+            "Subtilste Signale können noch übersehen werden",
+            "In komplexen Situationen manchmal überfordert"
+          ],
+          "professionalSuitability": "Gut für Kundenservice, Teamarbeit, moderate Führung, Beratung, Lehre und die meisten Berufe mit zwischenmenschlicher Komponente.",
+          "keywords": ["Empathisch", "Einfühlsam", "Aufmerksam"],
+          "developmentTips": [
+            "Verfeinere deine Wahrnehmung für subtile Signale",
+            "Lerne kulturelle Unterschiede in emotionalem Ausdruck",
+            "Übe Perspektivwechsel",
+            "Nutze deine Empathie bewusst im Beruf"
+          ]
+        },
+        "high": {
+          "title": "Der Emotionale Sensor",
+          "shortDescription": "Du hast sehr starkes Gespür für fremde Emotionen.",
+          "detailedDescription": "Du nimmst nicht nur offensichtliche, sondern auch subtile emotionale Signale wahr. Du erkennst Stimmungen, Spannungen und unausgesprochene Gefühle. Diese ausgeprägte Empathie ermöglicht dir tiefe Verbindungen und effektive zwischenmenschliche Navigation.",
+          "strengths": [
+            "Starke Empathie und Einfühlungsvermögen",
+            "Erkennt subtile emotionale Nuancen",
+            "Versteht Gruppendynamiken intuitiv",
+            "Antizipiert emotionale Bedürfnisse",
+            "Schafft tiefe Verbindungen",
+            "Vermittler und Brückenbauer"
+          ],
+          "challenges": [
+            "Kann emotional überladen werden",
+            "Nimmt Leid anderer stark mit",
+            "Muss lernen, Grenzen zu setzen"
+          ],
+          "professionalSuitability": "Exzellent für Coaching, Beratung, Therapie, HR, Führung, Mediation, komplexes Stakeholder-Management und alle empathieintensiven Rollen.",
+          "keywords": [
+            "Hochempathisch",
+            "Intuitiv",
+            "Einfühlsam",
+            "Wahrnehmend"
+          ],
+          "developmentTips": [
+            "Entwickle emotionale Abgrenzung",
+            "Nutze deine Gabe gezielt professionell",
+            "Achte auf eigene emotionale Grenzen",
+            "Teile deine Fähigkeit durch Mentoring"
+          ]
+        },
+        "veryHigh": {
+          "title": "Der Emotionale Empath",
+          "shortDescription": "Du besitzt außergewöhnliches emotionales Einfühlungsvermögen.",
+          "detailedDescription": "Deine Empathie ist so stark, dass du emotionale Zustände fast wie eigene spürst. Du erfasst nicht nur was jemand fühlt, sondern warum, oft bevor die Person es selbst versteht. Diese Gabe ist selten und kann heilend wirken, aber auch belastend sein.",
+          "strengths": [
+            "Außergewöhnliche Empathie",
+            "Erfasst emotionale Komplexität vollständig",
+            "Versteht Menschen auf tiefster Ebene",
+            "Kann heilend und transformierend wirken",
+            "Sieht verborgene emotionale Muster",
+            "Schafft sichere emotionale Räume"
+          ],
+          "challenges": [
+            "Starke emotionale Belastung",
+            "Gefahr emotionaler Erschöpfung",
+            "Nimmt Leid der Welt sehr mit",
+            "Braucht viel Selbstfürsorge",
+            "Kann andere mit Tiefe überfordern"
+          ],
+          "professionalSuitability": "Herausragend für Psychotherapie, Trauma-Arbeit, spirituelle Begleitung, intensive Coaching-Arbeit, Hospizarbeit und alle Bereiche tiefer emotionaler Arbeit.",
+          "keywords": [
+            "Empath",
+            "Heilerisch",
+            "Tiefgründig",
+            "Verstehend",
+            "Weise"
+          ],
+          "developmentTips": [
+            "Professionelle Supervision ist essentiell",
+            "Starke Selbstfürsorge-Praktiken nötig",
+            "Lerne energetische Abgrenzung",
+            "Nutze deine Gabe für gezieltes Heilen",
+            "Finde Gleichgesinnte zum Austausch",
+            "Balance zwischen Gabe und eigener Gesundheit"
+          ]
+        }
+      }
+    },
+    "relationshipManagement": {
+      "name": "Beziehungsgestaltung",
+      "description": "Fähigkeit, Beziehungen positiv zu gestalten und zu pflegen",
+      "profiles": {
+        "veryLow": {
+          "title": "Der Isolierte",
+          "shortDescription": "Du hast große Schwierigkeiten, Beziehungen aufzubauen und zu pflegen.",
+          "detailedDescription": "Der Aufbau und die Pflege von Beziehungen fällt dir extrem schwer. Du weißt oft nicht, wie du auf Menschen zugehen oder Konflikte lösen sollst. Dies führt zu Isolation, häufigen Missverständnissen und instabilen Beziehungen.",
+          "strengths": [
+            "Unabhängigkeit von sozialer Bestätigung",
+            "Ehrlichkeit ohne diplomatische Filter"
+          ],
+          "challenges": [
+            "Schwierigkeiten, Freundschaften aufzubauen",
+            "Instabile Beziehungen",
+            "Konflikte eskalieren regelmäßig",
+            "Soziale Isolation",
+            "Berufliche Probleme durch mangelnde Sozialkompetenz",
+            "Als schwierig wahrgenommen"
+          ],
+          "professionalSuitability": "Sehr problematisch für alle Teamrollen. Nur isolierte, technische Tätigkeiten ohne Kooperation möglich. Dringende Entwicklung empfohlen.",
+          "keywords": ["Isoliert", "Konfliktreich", "Unbeholfen"],
+          "developmentTips": [
+            "Beginne mit kleinen sozialen Interaktionen",
+            "Lerne Grundlagen der Kommunikation",
+            "Suche professionelle Hilfe (Sozialtraining)",
+            "Übe aktives Zuhören",
+            "Studiere erfolgreiche soziale Interaktionen",
+            "Erwäge Gruppentherapie"
+          ]
+        },
+        "low": {
+          "title": "Der Unsichere Verbinder",
+          "shortDescription": "Beziehungen aufzubauen und zu pflegen fällt dir schwer.",
+          "detailedDescription": "Du möchtest Beziehungen haben, weißt aber oft nicht wie. Du machst soziale Fehler, missinterpretierst Signale und fühlst dich unsicher im Umgang mit Menschen. Mit Mühe gelingen dir einige stabile Beziehungen.",
+          "strengths": [
+            "Grundlegender Wille zur Verbindung",
+            "Einige stabile Beziehungen möglich",
+            "Bewusstsein für eigene Defizite"
+          ],
+          "challenges": [
+            "Soziale Unsicherheit",
+            "Häufige Missverständnisse",
+            "Schwierigkeiten in Konflikten",
+            "Beziehungen brauchen viel Energie",
+            "Als sozial unbeholfen wahrgenommen"
+          ],
+          "professionalSuitability": "Herausfordernd in kundenorientierten oder teamintensiven Rollen. Entwicklungsbedarf für Führung oder Beratung.",
+          "keywords": ["Unsicher", "Bemüht", "Lernend"],
+          "developmentTips": [
+            "Lerne Kommunikationsgrundlagen",
+            "Übe in sicheren Kontexten",
+            "Hole Feedback von vertrauten Personen",
+            "Nimm an Kommunikations-Workshops teil",
+            "Beobachte sozial geschickte Menschen",
+            "Feiere kleine soziale Erfolge"
+          ]
+        },
+        "medium": {
+          "title": "Der Beziehungsgestalter",
+          "shortDescription": "Du kannst Beziehungen gut aufbauen und pflegen.",
+          "detailedDescription": "Du hast solide Fähigkeiten im Aufbau und der Pflege von Beziehungen. Du kommunizierst klar, kannst Konflikte konstruktiv angehen und pflegst deine Kontakte. Menschen schätzen dich als verlässlichen Partner und Kollegen.",
+          "strengths": [
+            "Gute zwischenmenschliche Fähigkeiten",
+            "Kann Konflikte konstruktiv lösen",
+            "Baut stabile Beziehungen auf",
+            "Klare Kommunikation",
+            "Verlässlicher Partner",
+            "Geschätzt in Teams"
+          ],
+          "challenges": [
+            "In sehr komplexen Beziehungsdynamiken manchmal überfordert",
+            "Große Netzwerke zu pflegen kann anstrengend sein"
+          ],
+          "professionalSuitability": "Gut für Teamarbeit, Kundenbeziehungen, moderate Führung, Projektmanagement und die meisten kollaborativen Rollen.",
+          "keywords": ["Beziehungsfähig", "Kommunikativ", "Verlässlich"],
+          "developmentTips": [
+            "Verfeinere Konfliktlösungsstrategien",
+            "Lerne Techniken für schwierige Gespräche",
+            "Entwickle Netzwerk-Strategien",
+            "Mentoriere andere in Beziehungsfähigkeiten"
+          ]
+        },
+        "high": {
+          "title": "Der Verbindungs-Virtuose",
+          "shortDescription": "Du bist sehr geschickt im Aufbau und der Pflege von Beziehungen.",
+          "detailedDescription": "Du baust leicht tiefe, vertrauensvolle Beziehungen auf. Du navigierst komplexe soziale Situationen mühelos, löst Konflikte elegant und pflegst ein großes Netzwerk. Menschen fühlen sich in deiner Gegenwart gesehen und verstanden.",
+          "strengths": [
+            "Exzellente Beziehungsgestaltung",
+            "Meisterhaftes Netzwerken",
+            "Elegante Konfliktlösung",
+            "Schafft tiefe Vertrauensbeziehungen",
+            "Bringt Menschen zusammen",
+            "Natürliche Führungspersönlichkeit",
+            "Kann komplexe Teams orchestrieren"
+          ],
+          "challenges": [
+            "Kann zu viele Beziehungen haben",
+            "Gefahr der Oberflächlichkeit bei zu vielen Kontakten",
+            "Andere können neidisch werden"
+          ],
+          "professionalSuitability": "Exzellent für Führung, Business Development, Vertrieb, HR, Coaching, Mediation, Diplomatie und alle beziehungsintensiven Senior-Rollen.",
+          "keywords": [
+            "Vernetzend",
+            "Charismatisch",
+            "Beziehungsstark",
+            "Diplomatisch"
+          ],
+          "developmentTips": [
+            "Achte auf Qualität über Quantität",
+            "Nutze deine Gabe für Teambuilding",
+            "Mentoriere andere in Beziehungsfähigkeiten",
+            "Balance zwischen vielen Kontakten und Tiefe"
+          ]
+        },
+        "veryHigh": {
+          "title": "Der Beziehungs-Architekt",
+          "shortDescription": "Du besitzt außergewöhnliche Fähigkeit, Beziehungen zu gestalten.",
+          "detailedDescription": "Du bist ein Meister der Beziehungsgestaltung. Du schaffst nicht nur individuelle Beziehungen, sondern orchestrierst komplexe Beziehungsnetzwerke. Menschen vertrauen dir tief und du kannst selbst zerbrochene Beziehungen heilen. Diese Gabe ist transformativ für Organisationen und Gemeinschaften.",
+          "strengths": [
+            "Meisterhafte Beziehungsgestaltung",
+            "Kann ganze Netzwerke orchestrieren",
+            "Heilt zerbrochene Beziehungen",
+            "Schafft dauerhafte Verbindungen",
+            "Transformative Wirkung auf Teams",
+            "Natürliche Autorität durch Beziehungskompetenz",
+            "Bringt Menschen zu Höchstleistung zusammen"
+          ],
+          "challenges": [
+            "Große Verantwortung durch viele Beziehungen",
+            "Kann emotional erschöpfend sein",
+            "Andere können abhängig werden",
+            "Hohe Erwartungen von allen Seiten"
+          ],
+          "professionalSuitability": "Herausragend für Executive Leadership, Organisationsentwicklung, Friedensarbeit, Mediation höchster Ebenen, therapeutische Beziehungsarbeit und alle Rollen, wo Beziehungsgestaltung zentral ist.",
+          "keywords": [
+            "Meisterhaft",
+            "Vernetzend",
+            "Heilend",
+            "Transformativ",
+            "Inspirierend"
+          ],
+          "developmentTips": [
+            "Setze klare Grenzen für deine Energie",
+            "Nutze deine Gabe für größere gesellschaftliche Wirkung",
+            "Lehre und mentoriere die nächste Generation",
+            "Schreibe über deine Erkenntnisse",
+            "Balance zwischen Geben und eigener Erneuerung"
+          ]
+        }
+      }
+    }
+  },
+  "visionaryLeadership": {
+    "veryLow": {
+      "title": "Der Operative Umsetzer",
+      "shortDescription": "Du fokussierst dich auf das Hier und Jetzt und konkrete Aufgaben",
+      "detailedDescription": "Deine Führung ist stark operativ ausgerichtet. Du konzentrierst dich auf die Erledigung aktueller Aufgaben und das Tagesgeschäft, während langfristige Visionen und strategisches Denken weniger im Fokus stehen. Du bist effizient in der Umsetzung, könntest aber mehr Inspiration und Richtung bieten.",
+      "strengths": [
+        "Sehr effizient in der täglichen Aufgabenabwicklung",
+        "Pragmatisch und lösungsorientiert",
+        "Zuverlässig bei der Umsetzung von Vorgaben"
+      ],
+      "challenges": [
+        "Schwierigkeiten langfristige Strategien zu entwickeln",
+        "Kann das Team selten für große Ziele begeistern",
+        "Fokus auf Mikromanagement statt Inspiration",
+        "Verpasst möglicherweise innovative Chancen"
+      ],
+      "professionalSuitability": "Geeignet für operative Positionen, Projektmanagement im kleinen Rahmen, Teamleitung bei klar definierten Prozessen. Weniger geeignet für strategische Führungsrollen.",
+      "keywords": [
+        "Operativ",
+        "Pragmatisch",
+        "Kurzfristig",
+        "Aufgabenfokussiert"
+      ],
+      "developmentTips": [
+        "Nimm dir regelmäßig Zeit für strategisches Denken",
+        "Lies Biografien inspirierender Leader",
+        "Übe dich darin, 3-5 Jahrespläne zu entwickeln",
+        "Formuliere eine klare Vision für dein Team"
+      ]
+    },
+    "low": {
+      "title": "Der Pragmatische Organisator",
+      "shortDescription": "Du hast ansatzweise Visionen, aber Pragmatismus dominiert",
+      "detailedDescription": "Du entwickelst gelegentlich strategische Ideen, bleibst aber meist im operativen Modus. Du kannst eine Richtung vorgeben, inspirierst dein Team jedoch selten für große Ziele. Deine Führung ist solide und strukturiert, aber es fehlt die mitreißende Vision.",
+      "strengths": [
+        "Balance zwischen Tagesgeschäft und Strategie",
+        "Realistische Zielsetzungen",
+        "Strukturierte Planung",
+        "Solide Projektleitung"
+      ],
+      "challenges": [
+        "Visionen bleiben oft vage oder werden nicht kommuniziert",
+        "Schwierigkeiten andere zu inspirieren",
+        "Neigt dazu im Detail zu versinken",
+        "Kann bei großen Transformationen unsicher wirken"
+      ],
+      "professionalSuitability": "Gut für mittlere Führungspositionen, Abteilungsleitung, Projektmanagement. Mit Entwicklung auch für höhere strategische Rollen geeignet.",
+      "keywords": ["Strukturiert", "Realistisch", "Organisiert", "Ausgewogen"],
+      "developmentTips": [
+        "Entwickle eine inspirierende Erzählung für deine Ziele",
+        "Besuche Leadership-Workshops zu Vision und Strategie",
+        "Arbeite an deiner Storytelling-Fähigkeit",
+        "Frage dein Team: 'Wo sehen Sie uns in 5 Jahren?'"
+      ]
+    },
+    "medium": {
+      "title": "Der Ausgewogene Stratege",
+      "shortDescription": "Du verbindest operative Stärke mit strategischem Denken",
+      "detailedDescription": "Du findest eine gute Balance zwischen Tagesgeschäft und langfristiger Strategie. Du entwickelst klare Visionen und kannst sie auch umsetzen. Dein Team versteht die Richtung, auch wenn deine Kommunikation manchmal noch inspirierender sein könnte.",
+      "strengths": [
+        "Klare strategische Ausrichtung",
+        "Gute Balance zwischen Vision und Umsetzung",
+        "Kann Teams sinnvoll ausrichten",
+        "Denkt mittel- bis langfristig",
+        "Realistische aber ambitionierte Ziele"
+      ],
+      "challenges": [
+        "Inspiration könnte noch stärker sein",
+        "Vision manchmal nicht emotional genug kommuniziert",
+        "Bei großen Veränderungen gelegentlich zögerlich"
+      ],
+      "professionalSuitability": "Sehr gut für Führungspositionen auf mittlerer und gehobener Ebene, Bereichsleitung, strategische Projektleitung. Mit weiterer Entwicklung auch für C-Level geeignet.",
+      "keywords": [
+        "Strategisch",
+        "Ausgewogen",
+        "Zielorientiert",
+        "Klar",
+        "Umsetzungsstark"
+      ],
+      "developmentTips": [
+        "Arbeite an emotionaler Kommunikation deiner Vision",
+        "Studiere inspirierende Leader (TED Talks, Biografien)",
+        "Experimentiere mit mutigen, transformativen Ideen",
+        "Hole regelmäßig Feedback zur Klarheit deiner Vision"
+      ]
+    },
+    "high": {
+      "title": "Der Inspirierende Visionär",
+      "shortDescription": "Du entwickelst klare Visionen und begeisterst andere dafür",
+      "detailedDescription": "Du hast eine starke Fähigkeit, zukunftsweisende Visionen zu entwickeln und sie so zu kommunizieren, dass dein Team inspiriert wird. Du denkst strategisch, siehst Chancen vor anderen und kannst Menschen für große Ziele gewinnen. Deine Führung gibt klare Richtung und Motivation.",
+      "strengths": [
+        "Entwickelt inspirierende langfristige Visionen",
+        "Hervorragende strategische Kommunikation",
+        "Kann Teams für ambitionierte Ziele begeistern",
+        "Erkennt Trends und Chancen früh",
+        "Gibt klare Richtung und Orientierung",
+        "Motiviert durch sinnstiftende Narrative"
+      ],
+      "challenges": [
+        "Manchmal zu wenig Fokus auf operative Details",
+        "Kann ungeduldig mit langsamer Umsetzung sein",
+        "Vision muss manchmal an Realität angepasst werden"
+      ],
+      "professionalSuitability": "Exzellent für gehobene Führungspositionen, C-Level, strategische Leitung, Change Management, Innovation Leadership, Gründung und Scale-up von Unternehmen.",
+      "keywords": [
+        "Visionär",
+        "Inspirierend",
+        "Strategisch",
+        "Zukunftsorientiert",
+        "Motivierend"
+      ],
+      "developmentTips": [
+        "Baue ein Netzwerk zu anderen Visionären auf",
+        "Achte darauf, Vision mit operativer Exzellenz zu verbinden",
+        "Entwickle Metriken um Visionserreichung messbar zu machen",
+        "Coache andere in strategischem Denken"
+      ]
+    },
+    "veryHigh": {
+      "title": "Der Transformative Wegbereiter",
+      "shortDescription": "Du veränderst Branchen durch revolutionäre Visionen",
+      "detailedDescription": "Du bist ein außergewöhnlicher strategischer Denker mit der Fähigkeit, revolutionäre Visionen zu entwickeln und ganze Organisationen zu transformieren. Du siehst die Zukunft vor anderen, formulierst sie inspirierend und gewinnst Menschen für radikale Veränderungen. Du bist ein Wegbereiter, der neue Märkte erschließt und Innovationen vorantreibt.",
+      "strengths": [
+        "Entwickelt bahnbrechende strategische Visionen",
+        "Außergewöhnliche Fähigkeit Menschen zu inspirieren",
+        "Erkennt disruptive Trends Jahre im Voraus",
+        "Kommuniziert Vision so klar dass alle mitziehen",
+        "Mutig in der Umsetzung großer Transformationen",
+        "Schafft Sinn und Purpose auf höchstem Niveau",
+        "Kann ganze Industrien neu denken"
+      ],
+      "challenges": [
+        "Vision kann für manche zu ambitioniert wirken",
+        "Operative Exzellenz könnte vernachlässigt werden",
+        "Nicht jeder kann mit diesem Tempo mithalten",
+        "Braucht starke operative Partner"
+      ],
+      "professionalSuitability": "Ideal für C-Level, CEO, Founder, Strategic Transformation Leader, Innovation Officer. Du bist geschaffen für die höchsten strategischen Führungsrollen.",
+      "keywords": [
+        "Transformativ",
+        "Revolutionär",
+        "Visionär",
+        "Disruptiv",
+        "Wegweisend",
+        "Inspirierend"
+      ],
+      "developmentTips": [
+        "Stelle sicher dass deine Vision praktisch umsetzbar bleibt",
+        "Baue ein starkes operatives Führungsteam um dich",
+        "Nutze deine Gabe um die nächste Generation zu mentoren",
+        "Dokumentiere deine Vision schriftlich für andere"
+      ]
+    }
+  },
+  "teamEmpowerment": {
+    "veryLow": {
+      "title": "Der Kontrollierende Mikromanager",
+      "shortDescription": "Du behältst alle Entscheidungen bei dir und delegierst ungern",
+      "detailedDescription": "Deine Führung ist sehr kontrollierend. Du traust deinem Team wenig zu und machst vieles lieber selbst. Delegation fällt dir schwer, und wenn du delegierst, kontrollierst du engmaschig. Dein Team fühlt sich oft nicht befähigt und entwickelt sich langsam.",
+      "strengths": [
+        "Hohe Qualitätskontrolle",
+        "Du weißt immer was läuft",
+        "Wenige Überraschungen"
+      ],
+      "challenges": [
+        "Team wird nicht entwickelt oder befähigt",
+        "Sehr zeitaufwendig für dich persönlich",
+        "Team ist unmotiviert und abhängig",
+        "Skalierung unmöglich",
+        "Hohe Burnout-Gefahr für dich",
+        "Talente verlassen das Team"
+      ],
+      "professionalSuitability": "Begrenzt geeignet für Führungspositionen. Eher für Expertenrollen ohne Personalverantwortung geeignet. Dringender Entwicklungsbedarf für Leadership.",
+      "keywords": [
+        "Kontrollierend",
+        "Misstrauisch",
+        "Mikromanagement",
+        "Überlastet"
+      ],
+      "developmentTips": [
+        "Beginne mit kleinen Delegationen und lerne loszulassen",
+        "Lies 'The Five Dysfunctions of a Team' von Patrick Lencioni",
+        "Arbeite an Vertrauen in dein Team",
+        "Suche professionelles Leadership-Coaching"
+      ]
+    },
+    "low": {
+      "title": "Der Skeptische Vorgesetzte",
+      "shortDescription": "Du delegierst zögerlich und kontrollierst oft nach",
+      "detailedDescription": "Du versuchst zu delegieren, aber Kontrolle und Misstrauen überwiegen noch. Du gibst Aufgaben ab, überwachst aber engmaschig und greifst schnell ein. Dein Team spürt, dass du ihnen nicht voll vertraust, was die Motivation dämpft.",
+      "strengths": [
+        "Versuch der Delegation vorhanden",
+        "Strukturierte Aufgabenzuweisung",
+        "Aufmerksam für Fehler"
+      ],
+      "challenges": [
+        "Zu viel Kontrolle hemmt Eigeninitiative",
+        "Team fühlt sich bevormundet",
+        "Wenig Raum für Wachstum und Lernen",
+        "Kann Team nicht voll auslasten",
+        "Schafft Abhängigkeit statt Selbstständigkeit"
+      ],
+      "professionalSuitability": "Geeignet für kleinere Teamleitung mit klaren Prozessen. Für größere Führungsrollen Entwicklung notwendig.",
+      "keywords": ["Kontrollierend", "Skeptisch", "Vorsichtig", "Bevormundend"],
+      "developmentTips": [
+        "Definiere klare Ziele, aber lass den Weg offen",
+        "Übe bewusst Delegation ohne Nachkontrolle",
+        "Führe Entwicklungsgespräche statt Kontrollgespräche",
+        "Feiere Erfolge deines Teams öffentlich"
+      ]
+    },
+    "medium": {
+      "title": "Der Unterstützende Coach",
+      "shortDescription": "Du delegierst gut und unterstützt dein Team in ihrer Entwicklung",
+      "detailedDescription": "Du hast einen gesunden Ansatz zur Delegation. Du gibst deinem Team Verantwortung, unterstützt bei Bedarf und greifst nur bei echten Problemen ein. Du förderst Entwicklung und schaffst Raum für Wachstum. Dein Team fühlt sich weitgehend befähigt.",
+      "strengths": [
+        "Gute Balance zwischen Freiheit und Unterstützung",
+        "Fördert Entwicklung des Teams",
+        "Delegiert klar und vertrauensvoll",
+        "Gibt konstruktives Feedback",
+        "Erkennt und nutzt Stärken der Einzelnen"
+      ],
+      "challenges": [
+        "Könnte noch mehr Verantwortung abgeben",
+        "Gelegentlich noch zu vorsichtig bei großen Entscheidungen",
+        "Coaching-Skills ausbaubar"
+      ],
+      "professionalSuitability": "Sehr gut für mittlere und gehobene Führungspositionen. Effektiv in den meisten Leadership-Kontexten.",
+      "keywords": [
+        "Unterstützend",
+        "Delegierend",
+        "Fördernd",
+        "Vertrauensvoll",
+        "Entwicklungsorientiert"
+      ],
+      "developmentTips": [
+        "Entwickle deine Coaching-Fähigkeiten weiter",
+        "Gib noch mehr Ownership an dein Team",
+        "Lerne verschiedene Coaching-Methoden",
+        "Experimentiere mit servant leadership"
+      ]
+    },
+    "high": {
+      "title": "Der Befähigende Entwickler",
+      "shortDescription": "Du machst dein Team zu autonomen Höchstleistern",
+      "detailedDescription": "Du bist hervorragend darin, Menschen zu befähigen und zu entwickeln. Du gibst große Verantwortung ab, vertraust deinem Team vollständig und unterstützt aktiv ihre Entwicklung. Dein Team ist hochmotiviert, selbstständig und wächst kontinuierlich. Du bist ein echter Talent-Entwickler.",
+      "strengths": [
+        "Entwickelt Teammitglieder zu eigenständigen Leadern",
+        "Gibt mutig große Verantwortung ab",
+        "Exzellente Coaching-Fähigkeiten",
+        "Schafft Umfeld für Innovation und Wachstum",
+        "Team ist hochmotiviert und loyal",
+        "Erkennt und fördert individuelle Stärken"
+      ],
+      "challenges": [
+        "Muss aufpassen dass Standards eingehalten werden",
+        "Könnte gelegentlich zu viel Freiraum geben",
+        "Braucht klare Eskalationsmechanismen"
+      ],
+      "professionalSuitability": "Exzellent für gehobene Führungspositionen, Talent Development, Leadership Development, Head-of Positionen, Führung von Führungskräften.",
+      "keywords": [
+        "Befähigend",
+        "Entwickelnd",
+        "Vertrauend",
+        "Coachend",
+        "Empowerment"
+      ],
+      "developmentTips": [
+        "Dokumentiere deine Coaching-Methoden für andere",
+        "Werde Mentor für andere Führungskräfte",
+        "Balance zwischen Empowerment und Accountability sicherstellen",
+        "Teile deine Best Practices in der Organisation"
+      ]
+    },
+    "veryHigh": {
+      "title": "Der Transformative Talent-Architekt",
+      "shortDescription": "Du erschaffst selbstorganisierte Hochleistungsteams",
+      "detailedDescription": "Du bist ein außergewöhnlicher Entwickler von Menschen und Teams. Du schaffst Umfelder, in denen Talente zu ihren Bestleistungen kommen und über sich hinauswachsen. Dein Team ist selbstorganisiert, hochmotiviert und entwickelt kontinuierlich neue Führungskräfte. Du bist bekannt dafür, die Karrieren anderer zu beschleunigen.",
+      "strengths": [
+        "Baut selbstorganisierte Hochleistungsteams",
+        "Entwickelt kontinuierlich neue Führungskräfte",
+        "Außergewöhnliche Coaching- und Mentoring-Fähigkeiten",
+        "Schafft Kultur von Ownership und Accountability",
+        "Team übertrifft regelmäßig alle Erwartungen",
+        "Talente wollen für dich arbeiten",
+        "Multipliziert Führungskapazität in der Organisation"
+      ],
+      "challenges": [
+        "Muss sicherstellen dass nicht alle gleichzeitig in neue Rollen wechseln",
+        "Könnte gelegentlich zu optimistisch über Fähigkeiten sein",
+        "Braucht klare Governance trotz Freiheit"
+      ],
+      "professionalSuitability": "Ideal für höchste Führungspositionen, VP/SVP Level, Chief People Officer, Leadership Development, Transformation Leader. Du bist geschaffen um ganze Organisationen zu entwickeln.",
+      "keywords": [
+        "Transformativ",
+        "Talent-Magnet",
+        "Entwicklungsorientiert",
+        "Empowerment",
+        "Kulturschaffend"
+      ],
+      "developmentTips": [
+        "Schreibe ein Buch oder Blog über deine Leadership-Philosophie",
+        "Werde Executive Coach oder Berater",
+        "Baue Führungskräfte-Programme in deiner Organisation",
+        "Teile deine Methoden über Konferenzen und Artikel"
+      ]
+    }
+  },
+  "decisionMaking": {
+    "veryLow": {
+      "title": "Der Zögerliche Zweifler",
+      "shortDescription": "Entscheidungen fallen dir sehr schwer",
+      "detailedDescription": "Du hast große Schwierigkeiten Entscheidungen zu treffen. Du zögerst lange, sammelst endlos Informationen und vermeidest wenn möglich klare Festlegungen. Dein Team ist frustriert über fehlende Richtungsentscheidungen und die Organisation leidet unter langsamen Prozessen.",
+      "strengths": [
+        "Sehr vorsichtig und risikoavers",
+        "Sammelt viele Informationen"
+      ],
+      "challenges": [
+        "Entscheidungslähmung bei wichtigen Fragen",
+        "Team ist frustriert und orientierungslos",
+        "Verpasst Chancen durch Zögern",
+        "Wirkt unsicher und nicht führungsfähig",
+        "Schiebt Verantwortung ab",
+        "Projekte verzögern sich erheblich"
+      ],
+      "professionalSuitability": "Nicht geeignet für Führungspositionen mit Entscheidungsverantwortung. Eher für beratende oder analytische Rollen ohne finale Entscheidungsmacht.",
+      "keywords": ["Zögerlich", "Unsicher", "Vermeidend", "Risikoscheu"],
+      "developmentTips": [
+        "Beginne mit kleinen, risikoarmen Entscheidungen",
+        "Setze dir Entscheidungs-Deadlines",
+        "Lerne: Keine Entscheidung ist auch eine (meist schlechte) Entscheidung",
+        "Suche professionelles Coaching für Entscheidungskompetenz"
+      ]
+    },
+    "low": {
+      "title": "Der Unsichere Abwäger",
+      "shortDescription": "Du triffst Entscheidungen, aber langsam und mit viel Zweifeln",
+      "detailedDescription": "Du kannst Entscheidungen treffen, brauchst aber lange dafür und hinterfragst sie oft. Du sammelst viele Meinungen ein und fühlst dich mit der Verantwortung unwohl. Dein Team wartet oft zu lange auf klare Ansagen.",
+      "strengths": [
+        "Trifft durchdachte Entscheidungen",
+        "Bezieht verschiedene Perspektiven ein",
+        "Vorsichtig und risikoavers"
+      ],
+      "challenges": [
+        "Zu langsam für dynamische Umfelder",
+        "Wirkt unsicher und wenig entschlossen",
+        "Sucht zu viel Konsens und Absicherung",
+        "Zweifelt Entscheidungen nachträglich an",
+        "Team verliert Vertrauen in Führung"
+      ],
+      "professionalSuitability": "Bedingt geeignet für Führung. Gut in strukturierten, weniger dynamischen Umfeldern. Entwicklung dringend empfohlen für höhere Positionen.",
+      "keywords": ["Abwägend", "Vorsichtig", "Zögerlich", "Konsenssuchend"],
+      "developmentTips": [
+        "Nutze Entscheidungsframeworks (z.B. RAPID, Eisenhower)",
+        "Übe 80/20-Regel: Mit 80% Info entscheiden",
+        "Akzeptiere dass nicht alle Entscheidungen perfekt sein können",
+        "Kommuniziere Entscheidungen selbstbewusster"
+      ]
+    },
+    "medium": {
+      "title": "Der Abgewogene Entscheider",
+      "shortDescription": "Du triffst klare Entscheidungen nach angemessener Analyse",
+      "detailedDescription": "Du findest eine gute Balance zwischen Analyse und Entscheidungsgeschwindigkeit. Du sammelst ausreichend Informationen, wägst Optionen ab und triffst dann klare Entscheidungen. Dein Team schätzt deine durchdachte, aber zeitnahe Entscheidungsfindung.",
+      "strengths": [
+        "Ausgewogener Entscheidungsprozess",
+        "Zeitnahe aber durchdachte Entscheidungen",
+        "Gute Balance zwischen Risiko und Chance",
+        "Kommuniziert Entscheidungen klar",
+        "Berücksichtigt Input aber entscheidet eigenständig"
+      ],
+      "challenges": [
+        "Könnte in Krisen noch schneller entscheiden",
+        "Manchmal noch etwas zu vorsichtig bei großen Entscheidungen",
+        "Gelegentlich zu viel Konsenssuche"
+      ],
+      "professionalSuitability": "Gut geeignet für die meisten Führungspositionen. Effektiv in strukturierten wie dynamischen Umfeldern.",
+      "keywords": ["Abgewogen", "Klar", "Durchdacht", "Zeitnah", "Ausgewogen"],
+      "developmentTips": [
+        "Übe in Hochdrucksituationen schneller zu entscheiden",
+        "Entwickle Expertise für mutigere Entscheidungen",
+        "Lerne von entscheidungsfreudigen Leadern",
+        "Reflektiere: Wann zahlte sich schnelles Entscheiden aus?"
+      ]
+    },
+    "high": {
+      "title": "Der Entschlossene Lenker",
+      "shortDescription": "Du triffst schnell klare Entscheidungen und stehst dazu",
+      "detailedDescription": "Du bist hervorragend im Treffen zeitnaher, klarer Entscheidungen. Du sammelst effizient Informationen, wägst schnell ab und entscheidest dann entschlossen. Du kommunizierst deine Entscheidungen klar, stehst dazu und übernimmst Verantwortung. Dein Team schätzt deine Klarheit und Entschlossenheit.",
+      "strengths": [
+        "Trifft schnelle, klare Entscheidungen",
+        "Hervorragend in Krisen und unter Druck",
+        "Kommuniziert Entscheidungen selbstbewusst",
+        "Übernimmt Verantwortung für Konsequenzen",
+        "Effiziente Informationsverarbeitung",
+        "Team hat klare Richtung"
+      ],
+      "challenges": [
+        "Könnte gelegentlich vorschnell entscheiden",
+        "Muss aufpassen mehr Perspektiven einzubeziehen",
+        "Kann dominant wirken"
+      ],
+      "professionalSuitability": "Exzellent für Führungspositionen, besonders in dynamischen, schnelllebigen Umfeldern. Crisis Management, Turnaround, Fast-Growth Companies, Strategic Leadership.",
+      "keywords": [
+        "Entschlossen",
+        "Schnell",
+        "Klar",
+        "Verantwortungsvoll",
+        "Selbstbewusst"
+      ],
+      "developmentTips": [
+        "Achte darauf wichtige Stimmen einzubeziehen",
+        "Balance zwischen Geschwindigkeit und Qualität wahren",
+        "Reflektiere: Wann wäre mehr Abwägung besser gewesen?",
+        "Mentoriere andere in Entscheidungskompetenz"
+      ]
+    },
+    "veryHigh": {
+      "title": "Der Blitzschnelle Stratege",
+      "shortDescription": "Du triffst unter höchstem Druck komplexe Entscheidungen sofort",
+      "detailedDescription": "Du bist außergewöhnlich in der Entscheidungsfindung. Du erfasst komplexe Situationen blitzschnell, triffst auch unter enormem Druck klare Entscheidungen und navigierst sicher durch Unsicherheit. Du bist bekannt für deine Entschlossenheit und deinen Mut auch bei schwierigen Entscheidungen. Deine Trefferquote ist überdurchschnittlich.",
+      "strengths": [
+        "Außergewöhnlich schnelle Entscheidungsfindung",
+        "Brilliant in Krisensituationen",
+        "Trifft mutige strategische Entscheidungen",
+        "Navigiert sicher durch Unsicherheit",
+        "Übernimmt volle Verantwortung",
+        "Inspiriert durch Entschlossenheit",
+        "Hohe Erfolgsquote bei Entscheidungen"
+      ],
+      "challenges": [
+        "Kann andere durch Tempo überfordern",
+        "Muss bewusst Input von langsameren Denkern einholen",
+        "Könnte gelegentlich zu risikofreudig sein",
+        "Wichtig: Auch Fehlentscheidungen transparent kommunizieren"
+      ],
+      "professionalSuitability": "Ideal für höchste Führungspositionen, CEO, Crisis Manager, Turnaround Specialist, Strategic Transformation Leader, Military Leadership, Emergency Services Leadership.",
+      "keywords": [
+        "Blitzschnell",
+        "Mutig",
+        "Entschlossen",
+        "Krisenmanager",
+        "Strategisch",
+        "Risikobereit"
+      ],
+      "developmentTips": [
+        "Baue bewusst Checkpoints für kritische Entscheidungen ein",
+        "Höre auch auf leisere, nachdenklichere Stimmen",
+        "Dokumentiere Entscheidungslogik für andere",
+        "Nutze deine Gabe um andere in Entscheidungsmut zu coachen"
+      ]
+    }
+  },
+  "adaptability": {
+    "veryLow": {
+      "title": "Der Starre Traditionist",
+      "shortDescription": "Veränderungen fallen dir sehr schwer",
+      "detailedDescription": "Du hältst stark an bekannten Methoden und Strukturen fest. Veränderungen lösen Stress und Widerstand bei dir aus. Du bevorzugst Stabilität und Vorhersehbarkeit und reagierst defensiv auf neue Ansätze. In dynamischen Umfeldern fühlst du dich unwohl und wenig wirksam.",
+      "strengths": [
+        "Bewahrer bewährter Prozesse",
+        "Stabil und verlässlich in bekannten Strukturen"
+      ],
+      "challenges": [
+        "Hoher Widerstand gegen Veränderungen",
+        "Wirkt unflexibel und festgefahren",
+        "Hemmt Innovation im Team",
+        "Kommt in dynamischen Märkten nicht zurecht",
+        "Verpasst Chancen durch Risikoaversion",
+        "Team wird frustriert durch Inflexibilität"
+      ],
+      "professionalSuitability": "Nur geeignet für sehr stabile, unveränderliche Umfelder. In modernen, dynamischen Organisationen erhebliche Limitierung.",
+      "keywords": ["Starr", "Widerständig", "Traditionell", "Inflexibel"],
+      "developmentTips": [
+        "Beginne mit kleinen, kontrollierten Veränderungen",
+        "Lerne über Growth Mindset (Carol Dweck)",
+        "Erkenne: Veränderung ist heute die einzige Konstante",
+        "Suche gezielt neue Erfahrungen außerhalb der Komfortzone"
+      ]
+    },
+    "low": {
+      "title": "Der Zögerliche Anpasser",
+      "shortDescription": "Du passt dich Veränderungen an, aber langsam und widerwillig",
+      "detailedDescription": "Du akzeptierst Veränderungen wenn nötig, brauchst aber lange dafür und fühlst dich dabei unwohl. Du bleibst lieber im Bekannten und gehst neue Wege erst, wenn klar ist dass sie funktionieren. Deine Führung ist in stabilen Phasen OK, in Transformationen aber wenig effektiv.",
+      "strengths": [
+        "Passt sich letztlich an",
+        "Vorsichtig bei Risiken",
+        "Bewahrt Kontinuität"
+      ],
+      "challenges": [
+        "Zu langsam für dynamische Märkte",
+        "Wirkt bremsend bei Innovationen",
+        "Team spürt die Unsicherheit bei Veränderungen",
+        "Verpasst oft den richtigen Zeitpunkt",
+        "Reagiert statt proaktiv zu gestalten"
+      ],
+      "professionalSuitability": "Bedingt geeignet für moderne Führungsrollen. Besser in stabilen als in dynamischen Organisationen. Entwicklung wichtig für Karrierefortschritt.",
+      "keywords": ["Zögerlich", "Vorsichtig", "Reaktiv", "Bewahrend"],
+      "developmentTips": [
+        "Übe dich in kleineren Veränderungen aktiv gestalten",
+        "Studiere erfolgreiche Change-Leader",
+        "Erkenne den Wettbewerbsvorteil von Agilität",
+        "Nimm bewusst an Innovationsprojekten teil"
+      ]
+    },
+    "medium": {
+      "title": "Der Flexible Pragmatiker",
+      "shortDescription": "Du passt dich Veränderungen gut an und gestaltest mit",
+      "detailedDescription": "Du bist offen für Veränderungen und kannst dich gut anpassen. Du bleibst in unsicheren Situationen handlungsfähig und findest pragmatische Lösungen. Du führst dein Team erfolgreich durch Veränderungsphasen, auch wenn du nicht immer der treibende Innovator bist.",
+      "strengths": [
+        "Gute Anpassungsfähigkeit",
+        "Bleibt handlungsfähig in Unsicherheit",
+        "Pragmatische Lösungsfindung",
+        "Offen für neue Ansätze",
+        "Führt Team sicher durch Veränderungen"
+      ],
+      "challenges": [
+        "Könnte proaktiver Veränderungen initiieren",
+        "Gelegentlich noch etwas zögerlich bei großen Transformationen",
+        "Manchmal mehr Reaktion als Vision"
+      ],
+      "professionalSuitability": "Gut geeignet für die meisten Führungspositionen in modernen Organisationen. Effektiv in Change-Projekten.",
+      "keywords": [
+        "Flexibel",
+        "Anpassungsfähig",
+        "Pragmatisch",
+        "Offen",
+        "Lösungsorientiert"
+      ],
+      "developmentTips": [
+        "Werde proaktiver im Initiieren von Veränderungen",
+        "Lerne Agile und Change Management Methoden",
+        "Führe bewusst kleinere Innovationsprojekte",
+        "Entwickle Komfort mit mehr Unsicherheit"
+      ]
+    },
+    "high": {
+      "title": "Der Agile Gestalter",
+      "shortDescription": "Du gestaltest Veränderungen aktiv und bleibst in Dynamik effektiv",
+      "detailedDescription": "Du bist hervorragend in dynamischen, sich schnell ändernden Umfeldern. Du bleibst nicht nur handlungsfähig in Unsicherheit, sondern gestaltest Veränderungen aktiv. Du führst dein Team sicher durch Transformationen und nutzt Veränderungen als Chance. Deine Flexibilität ist eine Stärke.",
+      "strengths": [
+        "Exzellent in dynamischen Umfeldern",
+        "Gestaltet Veränderungen proaktiv",
+        "Bleibt in Krisen ruhig und lösungsorientiert",
+        "Innovationsfreudig und experimentierfreudig",
+        "Führt Team sicher durch Unsicherheit",
+        "Nutzt Veränderungen als Wettbewerbsvorteil"
+      ],
+      "challenges": [
+        "Könnte gelegentlich zu schnell Veränderungen vorantreiben",
+        "Muss Stabilität für manche Teammitglieder schaffen",
+        "Wichtig: Auch Bewährtes bewahren"
+      ],
+      "professionalSuitability": "Exzellent für dynamische Organisationen, Scale-ups, Transformation Leader, Change Manager, Innovation Leader, Turnaround Specialist.",
+      "keywords": [
+        "Agil",
+        "Gestaltend",
+        "Innovativ",
+        "Flexibel",
+        "Transformativ"
+      ],
+      "developmentTips": [
+        "Balance zwischen Change und Stabilität achten",
+        "Nimm das Team bei schnellen Veränderungen mit",
+        "Werde Change Management Expert oder Berater",
+        "Mentoriere andere in Agilität"
+      ]
+    },
+    "veryHigh": {
+      "title": "Der Transformation Catalyst",
+      "shortDescription": "Du lebst für Veränderung und treibst revolutionäre Transformationen",
+      "detailedDescription": "Du bist außergewöhnlich in deiner Fähigkeit mit Veränderung umzugehen und sie voranzutreiben. Du fühlst dich in Chaos und Unsicherheit zu Hause und nutzt es als Chance für Innovation. Du führst revolutionäre Transformationen an und inspirierst andere, mutig in die Zukunft zu gehen. Du bist der Katalysator für fundamentale Veränderungen.",
+      "strengths": [
+        "Außergewöhnliche Adaptabilität",
+        "Thrived in Chaos und Unsicherheit",
+        "Treibt revolutionäre Veränderungen voran",
+        "Inspiriert andere Change zu umarmen",
+        "Denkt und handelt disruptiv",
+        "Höchste Resilienz in Krisen",
+        "Schafft Innovation als Kultur"
+      ],
+      "challenges": [
+        "Kann Stabilität unterschätzen",
+        "Muss bewusst Kontinuität für andere schaffen",
+        "Nicht jeder kann mit diesem Tempo mithalten",
+        "Wichtig: Change nicht um des Changes willen"
+      ],
+      "professionalSuitability": "Ideal für Transformation Leader, Turnaround CEO, Innovation Officer, Disruption Leader, Startup Founder. Du bist geschaffen für die herausforderndsten Veränderungssituationen.",
+      "keywords": [
+        "Revolutionär",
+        "Katalysator",
+        "Disruptiv",
+        "Resilient",
+        "Transformativ",
+        "Innovativ"
+      ],
+      "developmentTips": [
+        "Stelle sicher dass Veränderungen nachhaltig sind",
+        "Schaffe auch Inseln der Stabilität für dein Team",
+        "Nutze deine Gabe um Change-Kultur zu etablieren",
+        "Schreibe oder lehre über Transformation Leadership"
+      ]
+    }
+  }
+}

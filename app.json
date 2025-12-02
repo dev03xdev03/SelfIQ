@@ -1,58 +1,57 @@
 {
   "expo": {
-    "name": "Dreamz",
-    "slug": "dreamz-story-app",
-    "version": "1.0.0",
+    "name": "SelfIQ",
+    "slug": "selfiqapp",
+    "version": "1.0.1",
     "orientation": "portrait",
-    "icon": "./assets/dreamzappicon.png",
+    "icon": "./assets/selfiqicon.png",
     "userInterfaceStyle": "dark",
     "newArchEnabled": true,
     "splash": {
-      "image": "./assets/dreamzappicon.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#1a1a2e"
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "cover",
+      "backgroundColor": "#1a0a0a"
     },
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.dreamz.storyapp",
-      "icon": "./assets/dreamzappicon.png"
+      "bundleIdentifier": "com.selfiq.app",
+      "buildNumber": "1",
+      "icon": "./assets/selfiqicon.png",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      },
+      "usesAppleSignIn": true
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/dreamzappicon.png",
+        "foregroundImage": "./assets/selfiqicon.png",
         "backgroundColor": "#1a1a2e"
       },
       "edgeToEdgeEnabled": true,
       "predictiveBackGestureEnabled": false,
-      "package": "com.dreamz.storyapp",
-      "permissions": [
-        "android.permission.RECORD_AUDIO",
-        "android.permission.MODIFY_AUDIO_SETTINGS",
-        "android.permission.RECORD_AUDIO",
-        "android.permission.MODIFY_AUDIO_SETTINGS"
-      ]
+      "package": "com.selfiq.app",
+      "permissions": []
     },
+    "privacy": "https://dev03xdev03.github.io/SelfIQ/privacy-policy.html",
     "web": {
       "favicon": "./assets/favicon.png"
     },
     "packagerOpts": {
       "port": 8081
     },
-    "plugins": [
-      "expo-video",
-      "expo-font",
-      "expo-audio"
-    ],
-    "extra": {
-      "eas": {
-        "projectId": "351d61c8-b254-4acb-8367-257c7d45357e"
-      }
-    },
+    "assetBundlePatterns": ["assets/**/*"],
+    "plugins": ["expo-font", "expo-apple-authentication"],
     "runtimeVersion": {
       "policy": "appVersion"
     },
     "updates": {
-      "url": "https://u.expo.dev/351d61c8-b254-4acb-8367-257c7d45357e"
+      "url": "https://u.expo.dev/c277948f-80a1-4cd5-a61f-33e0fcaf137a"
+    },
+    "owner": "01xdev",
+    "extra": {
+      "eas": {
+        "projectId": "c277948f-80a1-4cd5-a61f-33e0fcaf137a"
+      }
     }
   }
 }
