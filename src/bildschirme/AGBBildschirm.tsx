@@ -172,7 +172,7 @@ const AGBBildschirm: React.FC<AGBBildschirmProps> = ({ onClose }) => {
               Mozartstr. 11{"\n"}
               94060 Pocking{"\n"}
               Deutschland{"\n\n"}
-              E-Mail: support@selfiq.app{"\n"}
+              E-Mail: developers@x-verse.de{"\n"}
               (Reaktionszeit: innerhalb von 48 Stunden)
             </Text>
           </View>

@@ -52,7 +52,7 @@ const DatenschutzBildschirm: React.FC<DatenschutzBildschirmProps> = ({
               Mozartstr. 11{'\n'}
               94060 Pocking{'\n'}
               Deutschland{'\n\n'}
-              E-Mail: support@selfiq.app
+              E-Mail: developers@x-verse.de
             </Text>
 
             <Text style={styles.sectionTitle}>
@@ -307,7 +307,7 @@ const DatenschutzBildschirm: React.FC<DatenschutzBildschirmProps> = ({
               Mozartstr. 11{'\n'}
               94060 Pocking{'\n'}
               Deutschland{'\n\n'}
-              E-Mail: support@selfiq.app{'\n'}
+              E-Mail: developers@x-verse.de{'\n'}
               (Reaktionszeit: innerhalb von 48 Stunden){'\n\n'}
               Wir nehmen Datenschutz sehr ernst und werden Ihr Anliegen
               schnellstmöglich bearbeiten.
